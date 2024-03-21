@@ -9,4 +9,4 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 02 | [Challenge/Work02](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Challenge/Work02) | Mini Project : 설문조사 양식 만들기 | 03/21 |
 | - | - | - | - |
 
-- POST <br>.<br>.<br>.
+- POST <br>.&nbsp;[**HTML 회고**](https://plaid-plow-0e3.notion.site/HTML-f9ecf5bf5d814bcbb75f2eaab728dc5a?pvs=4)<br>.<br>.
