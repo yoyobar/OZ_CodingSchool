@@ -1,4 +1,4 @@
-# OZ_CodingSchool## 오즈 코딩 스쿨 Front-end 3기 회고
+## 오즈 코딩 스쿨 Front-end 3기 회고
 Front-end 3기 김민수의 개인 기록입니다.
 
 
