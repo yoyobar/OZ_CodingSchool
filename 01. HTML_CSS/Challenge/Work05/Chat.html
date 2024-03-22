@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Chat.css" />
+    <link rel="stylesheet" href="./Text.css" />
+    <title>채팅방</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="chat-screen">
+        <section class="chat-screen__bar">
+          <div class="user">
+            <div class="user__column">
+              <div class="user__pic"></div>
+            </div>
+            <div class="user__column">
+              <p class="user__nick">친구</p>
+              <p class="user__count">2</p>
+            </div>
+          </div>
+        </section>
+        <ul class="chat-screen__texts">
+          <li class="text">친구야 반가워</li>
+          <li class="text">우리 언제 밥이나 한번 먹자</li>
+          <li class="text">친구야 반가워</li>
+          <li class="text">우리 언제 밥이나 한번 먹자</li>
+          <li class="text">친구야 반가워</li>
+          <li class="text">우리 언제 밥이나 한번 먹자</li>
+          <li class="text">친구야 반가워</li>
+          <li class="text">우리 언제 밥이나 한번 먹자</li>
+          <li class="text">친구야 반가워</li>
+          <li class="text">우리 언제 밥이나 한번 먹자</li>
+          <li class="text">친구야 반가워</li>
+          <li class="text">우리 언제 밥이나 한번 먹자</li>
+          <li class="text">친구야 반가워</li>
+          <li class="text">우리 언제 밥이나 한번 먹자</li>
+          <li class="text">친구야 반가워</li>
+          <li class="text">우리 언제 밥이나 한번 먹자</li>
+          <li class="text">친구야 반가워</li>
+          <li class="text">우리 언제 밥이나 한번 먹자</li>
+        </ul>
+      </main>
+      <form class="chat-form">
+        <section class="chat-form__field">
+          <textarea class="chat-form__msg" placeholder="알았으니까 그만 보내..."></textarea>
+          <input type="submit" value="전송" class="chat-form__bt" />
+        </section>
+      </form>
+    </div>
+  </body>
+</html>
+
+<!-- overflow의 처리방법 -->
+<!-- 기본적으로 z-index를 이용해서 처리해야되나, z-index는 position값이 조정되어있지 않은 object에는 영향을 주지 못한다. -->
+<!-- 따라서 내가 조정해둔 .user와 .chat-form__msg .chat-form__bt에게 z-index 1을 제공해준다. -->
+<!-- 하지만 이것만으로는 채팅창을 가리는 것만 해결되지, 채팅창 자체를 넘어가는건 해결하지 못한다. -->
+<!-- 따라서 .chat-screen에 overflow-y: auto; 속성을 제공한다. -->
+<!-- 안에있는 object가 .chat-screen의 크기를 초과할 경우, 자동으로 스크롤이 되게 지원해준다. -->

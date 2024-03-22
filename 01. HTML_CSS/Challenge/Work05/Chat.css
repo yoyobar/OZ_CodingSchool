@@ -15,13 +15,15 @@ body {
 .container {
   height: 100%;
   background-color: #87cefa;
+  background-size: 50px 120px;
+  background-image: linear-gradient(to bottom, #65a6ce 1px, transparent 1px);
 }
 
 /* 스크린 사이즈 */
 .chat-screen {
   height: calc(100% - 120px);
+  overflow-y: auto;
   /* 100%중 120px를 제외한 값 */
-  background-color: 87cefa;
 }
 
 /* 유저 정보 */
@@ -31,6 +33,7 @@ body {
   height: 80px;
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
 .user__column {
   float: left;
@@ -63,12 +66,14 @@ body {
   height: 120px;
 }
 .chat-form__msg {
-  width: calc(100% - 120px);
-  height: 120px;
+  width: calc(100% - 130px);
+  height: 110px;
   border: none;
   border-radius: 5px;
   font-size: 24px;
   padding: 10px;
+  z-index: 1;
+  position: relative;
   resize: none;
   /* 사이즈 조절 못하게 */
   outline: none;
@@ -76,11 +81,15 @@ body {
 }
 .chat-form__bt {
   width: 120px;
-  height: 120px;
+  height: 110px;
   border-radius: 10px;
   background-color: aliceblue;
+  font-size: 60px;
+  text-align: center;
   float: right;
   transition: 0.5s;
+  position: relative;
+  z-index: 1;
 }
 .chat-form__bt:hover {
   font-size: 45px;

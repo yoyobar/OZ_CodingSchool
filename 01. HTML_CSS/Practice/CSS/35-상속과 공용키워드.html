@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <title>상속과 공용키워드</title>
+    <style>
+      .list {
+        /* 상속X */
+        border: 3px dashed green;
+        padding: 0;
+
+        /* 상속O */
+        color: brown;
+        font-style: italic;
+        font-weight: 900;
+      }
+      ul {
+        border: inherit;
+        /* 상속 받음 */
+      }
+      li:nth-child(3) {
+        color: initial;
+        font-style: initial;
+        font-weight: initial;
+        /* 상속 안받겟음 */
+      }
+      /* 인헤리트는 상속 */
+      /* 이니셜은 상속X */
+    </style>
+  </head>
+  <body>
+    <!-- 글자와 관련된 경우는 상속이 대부분 됨 -->
+    <!-- 박스와 관련된 경우는 상속이 대부분 안됨 -->
+    <!-- inherit 상속시킴 -->
+    <!-- initial 기본값 -->
+    <!-- unset 상속되는건 상속받고, 없다면 initial -->
+
+    <h2>마라톤 대회 참가 기록</h2>
+    <div class="list">
+      <ul>
+        <li>새해맞이 대전 마라톤 대회</li>
+        <li>서울 국제 마라톤 대회</li>
+        <li>대전 대청호 벚꽃길 마라톤 대회</li>
+        <li>대전 3대하천 마라톤 대회</li>
+      </ul>
+    </div>
+  </body>
+</html>
