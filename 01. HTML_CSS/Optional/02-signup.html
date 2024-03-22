@@ -43,8 +43,8 @@
             <label for="phone">휴대폰 :</label>
             <input type="number" name="phone" id="phone" />
           </li>
-          <button>가입하기</button
-          >&nbsp;<button>취소</button>
+          <button onclick="submit()">가입하기</button
+          >&nbsp;<button onclick="cancel()">취소</button>
         </ul>
       </fieldset>
     </main>
@@ -80,5 +80,15 @@
         </ul>
       </fieldset>
     </footer>
+    <script>
+      function submit() {
+        alert("가입해주셔서 감사합니다.");
+      }
+      function cancel() {
+        alert("다음에 봐요 :()");
+        window.close();
+      }
+      //   window.close() 기본 function을 활용하여 알림 발송후 홈페이지를 닫는다.
+    </script>
   </body>
 </html>
