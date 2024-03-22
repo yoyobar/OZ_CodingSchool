@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <title>요소의 유형</title>
+  </head>
+  <body>
+    <!-- display: none; 요소를 화면에 표시X 
+    display: block; 요소를 블록레벨로 
+    display: inline; 요소를 인라인레벨로
+    display: inline-block 요소의 공간은 인라인레벨로 하지만, 크기지정은 블록레벨을 차지함 -->
+    <style>
+      #p1 {
+        display: none;
+      }
+      #p2 {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid red;
+      }
+      #p3 {
+        display: inline;
+        border: 1px solid blue;
+      }
+      #p4 {
+        display: inline-block;
+        border: 1px solid green;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+    <p id="p1">경제</p>
+    <p id="p2">정치</p>
+    <p id="p3">과학</p>
+    <p id="p4">생활</p>
+  </body>
+</html>
