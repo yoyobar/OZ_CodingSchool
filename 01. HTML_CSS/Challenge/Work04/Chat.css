@@ -90,3 +90,6 @@ body {
 .chat-form__bt:active {
   background-color: #87cefa;
 }
+
+/* calc 사용법 숙지 */
+/* position:fixed를 활용한 상단 친구바 위치잠금 */
