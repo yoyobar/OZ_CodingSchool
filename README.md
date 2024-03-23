@@ -26,4 +26,4 @@ Front-end 3기 김민수의 개인 기록입니다.
 - [**인라인 구조 / 블록 레벨 구조의 특징과 차이점**](https://plaid-plow-0e3.notion.site/f2289703cfdb4b30b60c7551c47cb1ae?pvs=4)
 - [**✨ CSS 회고**](https://plaid-plow-0e3.notion.site/CSS-df4d0286e6254d38881fa5cabea45d92?pvs=4)
 - [**맥북 기본설정 및 유틸리티**](https://plaid-plow-0e3.notion.site/06a97bc7a91a48f0941ea69f565568ab?pvs=4)
-- [**채팅방 리팩토링**] 작성중⚙
+- [**채팅방 리팩토링 1일차**](https://plaid-plow-0e3.notion.site/1-d5bb05c5850a4864aed1f64cc6e5f58e?pvs=4)
