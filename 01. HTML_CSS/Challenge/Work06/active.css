@@ -1,0 +1,39 @@
+.header-content__nav ul li {
+  transition: color, border-bottom 0.5s;
+  border-bottom: 1px solid transparent;
+}
+.header-content__nav ul li:hover {
+  color: #8e694b;
+  border-bottom: 1px solid #4a3728;
+  transition: 0.5s;
+}
+
+.header-content__input .chat {
+  transition: background-color, color 0.5s;
+}
+.header-content__input .chat:hover {
+  background-color: #8e694b;
+  color: white;
+  transition: 0.5s;
+}
+.notice__thumb {
+  transition: transform 0.5s;
+}
+.notice__thumb:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.banner__button {
+  transition: background-color 0.5s;
+}
+.banner__button:hover {
+  background-color: #4a3728;
+  transition: 0.5s;
+}
+.footer__appbtn button {
+  transition: transform 0.5s;
+}
+.footer__appbtn button:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
