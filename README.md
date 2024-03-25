@@ -19,6 +19,12 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Optional 02 |[Optional/Work02](https://github.com/yoyobar/OZ_CodingSchool/blob/main/01.%20HTML_CSS/Optional/02-signup.html)|회원가입 폼 만들어보기 |03/22|
 | Optional 03 |[Optional/Work03](https://plaid-plow-0e3.notion.site/Minsu-Kim-3d4cdf754f1e42cf8460dd12408a41a4?pvs=4)|나만의 기술블로그 만들기|03/22|
 
+#### 개인 스터디
+| Project | Repository | 과제 명 | 제출 기간 |
+| --- | --- | --- | --- |
+| Chat refactoring | [Refac/Chat](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Refac/Chat) | 채팅방 리팩토링 프로젝트 | 03/24~03/25 | 
+
+
 <hr>
 
 ### POST
@@ -27,3 +33,4 @@ Front-end 3기 김민수의 개인 기록입니다.
 - [**✨ CSS 회고**](https://plaid-plow-0e3.notion.site/CSS-df4d0286e6254d38881fa5cabea45d92?pvs=4)
 - [**맥북 기본설정 및 유틸리티**](https://plaid-plow-0e3.notion.site/06a97bc7a91a48f0941ea69f565568ab?pvs=4)
 - [**채팅방 리팩토링 1일차**](https://plaid-plow-0e3.notion.site/1-d5bb05c5850a4864aed1f64cc6e5f58e?pvs=4)
+- [**채팅방 리팩토링 2일차**](https://plaid-plow-0e3.notion.site/Minsu-Kim-3d4cdf754f1e42cf8460dd12408a41a4?pvs=4)
