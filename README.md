@@ -11,6 +11,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 03 | [Challenge/Work03](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Challenge/Work03) | Mini Project : 프로필 페이지에 스타일시트 더하기 | 03/22     |
 | Challenge 04 | [Challenge/Work04](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Challenge/Work04) | Mini Project : 나만의 채팅방 만들기              | 03/22     |
 | Challenge 05 | [Challenge/Work05](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Challenge/Work05) | Mini Project : 채팅방에 말풍선 추가하기          | 03/22     |
+| Challenge 06 | [Challenge/Work06](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Challenge/Work06) | Mini Project : 더덕마켓 클론 코딩         | 03/25     |
 
 #### 선택 과제
 
