@@ -36,4 +36,4 @@ Front-end 3기 김민수의 개인 기록입니다.
 - [**CSS 회고**](https://plaid-plow-0e3.notion.site/CSS-df4d0286e6254d38881fa5cabea45d92?pvs=4)
 - [**맥북 기본설정 및 유틸리티**](https://plaid-plow-0e3.notion.site/06a97bc7a91a48f0941ea69f565568ab?pvs=4)
 - [**채팅방 리팩토링 1일차**](https://plaid-plow-0e3.notion.site/1-d5bb05c5850a4864aed1f64cc6e5f58e?pvs=4)
-- [**채팅방 리팩토링 2일차**](https://plaid-plow-0e3.notion.site/Minsu-Kim-3d4cdf754f1e42cf8460dd12408a41a4?pvs=4)
+- [**채팅방 리팩토링 2일차**](https://plaid-plow-0e3.notion.site/2-34c26b7acf3c46649c01a09ed337b70b)
