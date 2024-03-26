@@ -4,7 +4,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 
 ### 01. HTML & CSS
 
-| Project      | Repository                                                                                               | 과제 명                                          | 제출 기간 |
+| Project      | Repository                                                                                               | 과제 명                                          | 제출 날짜 |
 | ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------- |
 | Challenge 01 | [Challenge/Work01](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Challenge/Work01) | Mini Project : 프로필 페이지 만들기              | 03/21     |
 | Challenge 02 | [Challenge/Work02](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Challenge/Work02) | Mini Project : 설문조사 양식 만들기              | 03/21     |
@@ -15,19 +15,19 @@ Front-end 3기 김민수의 개인 기록입니다.
 
 #### 선택 과제
 
-| Project     | Repository                                                                                                     | 과제 명                  | 제출 기간 |
+| Project     | Repository                                                                                                     | 과제 명                  | 제출 날짜 |
 | ----------- | -------------------------------------------------------------------------------------------------------------- | ------------------------ | --------- |
-| Optional 01 | [Optional/Work01](https://github.com/yoyobar/OZ_CodingSchool/blob/main/01.%20HTML_CSS/Optional/01-tag.html)    | 태그 더 사용해보기       | 03/22     |
-| Optional 02 | [Optional/Work02](https://github.com/yoyobar/OZ_CodingSchool/blob/main/01.%20HTML_CSS/Optional/02-signup.html) | 회원가입 폼 만들어보기   | 03/22     |
-| Optional Post | [Optional/Post](https://plaid-plow-0e3.notion.site/f2289703cfdb4b30b60c7551c47cb1ae)         | 나만의 기술블로그 만들기(인라인 구조와 블록레벨구조) | 03/22     |
-| Optional 03 | [Optional/Work03]()         | [제작 중]나만의 일기장 만들어보기 | -     |
-| Optional 04 | [Optional/Work04](https://github.com/yoyobar/OZ_CodingSchool/blob/main/01.%20HTML_CSS/Optional/04-background.html)         | 배경화면과 박스 디자인 | 03/26     |
-| Optional 05 | [Optional/Work05](https://github.com/yoyobar/OZ_CodingSchool/blob/main/01.%20HTML_CSS/Optional/05-login.html)         | 회원가입 폼 꾸미기 | 03/26     |
-| Optional Post | [Optional/Post]()         | [제작 중]나만의 기술블로그 만들기(SPA의 정의)| -     |
+| Optional 01 | [Optional/Work01](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work01)    | 태그 더 사용해보기       | 03/22     |
+| Optional 02 | [Optional/Work02](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work02) | 회원가입 폼 만들어보기   | 03/22     |
+| Optional Post | [Blog Post](https://www.notion.so/OZ-bc6f92be73114b698ab85e8d14756e99)         | 나만의 기술블로그 만들기(인라인 구조와 블록레벨구조) | 03/22     |
+| Optional 03 | [Optional/Work03](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work03)         | 나만의 일기장 만들어보기 | 03/26     |
+| Optional 04 | [Optional/Work04](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work04)         | 배경화면과 박스 디자인 | 03/26     |
+| Optional 05 | [Optional/Work05](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work05)         | 회원가입 폼 꾸미기 | 03/26     |
+| Optional Post | [Blog Post](https://www.notion.so/OZ-bc6f92be73114b698ab85e8d14756e99)         | 나만의 기술블로그 만들기(SPA의 정의)| 03/26    |
 
 #### 개인 스터디
 
-| Project          | Repository                                                                                   | 과제 명                  | 제출 기간   |
+| Project          | Repository                                                                                   | 과제 명                  | 제출 날짜   |
 | ---------------- | -------------------------------------------------------------------------------------------- | ------------------------ | ----------- |
 | Chat refactoring | [Refac/Chat](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Refac/Chat) | 채팅방 리팩토링 프로젝트 | 03/24~03/25 |
 
