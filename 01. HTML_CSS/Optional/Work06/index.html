@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/3f58dd8361.js" crossorigin="anonymous"></script>
+    <link href="./animation.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <link href="./left.css" rel="stylesheet" />
+    <link href="./footer.css" rel="stylesheet" />
+    <title>자기소개서</title>
+    <style>
+      /* 컴포넌트 */
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        color: white;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+      }
+      .bg {
+        background: linear-gradient(20deg, #282c34, #383f4b);
+      }
+      .br1 {
+        border-radius: 10px;
+      }
+      .br2 {
+        border-radius: 20px;
+      }
+      .flex {
+        display: flex;
+      }
+      .beige {
+        color: beige;
+      }
+      .black {
+        color: black;
+      }
+      .gray {
+        color: gray;
+      }
+      .title {
+        font-size: 3rem;
+      }
+      .subtitle {
+        font-size: 1.2rem;
+      }
+      .space {
+        padding-right: 1rem;
+      }
+      .btn {
+        appearance: none;
+        border: none;
+        border-radius: 1rem;
+        width: 50%;
+        cursor: pointer;
+        transition: background-color 0.5s;
+      }
+      .btn:hover {
+        background-color: gray;
+        transition: background-color 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flex">
+      <div class="wrapper__body">
+        <div class="wrapper__left__body flex bg br1">
+          <div class="image__profile__box flex">
+            <img src="./images/indexProfile.jpeg" class="image__profile br1" />
+            <img src="./images/indexProfile.jpeg" class="image__subProfile br2" />
+            <div class="title__subProfile__box beige flex title">KMS</div>
+          </div>
+          <div class="title__profile__box flex">
+            <div class="title beige">Kim Minsu</div>
+            <div class="subtitle">yoyobar, Fast-growing developer</div>
+          </div>
+          <button class="btn subtitle black">Edit Profile</button>
+          <nav class="profile flex subtitle">
+            <i class="fa-solid fa-user space"></i>
+            <div class="subtitle gray space">23 follower</div>
+          </nav>
+          <nav class="profile flex subtitle">
+            <i class="fa-solid fa-user space"></i>
+            <div class="subtitle gray space">27 following</div>
+          </nav>
+          <nav class="profile flex subtitle">
+            <i class="fa-solid fa-cake-candles space"></i>
+            <div class="subtitle gray space">1998-01-03</div>
+          </nav>
+          <nav class="profile flex subtitle">
+            <i class="fa-solid fa-globe space"></i>
+            <div class="subtitle gray space">Republic of Korea</div>
+          </nav>
+          <nav class="profile flex subtitle">
+            <i class="fa-solid fa-note-sticky space"></i>
+            <div class="subtitle gray">Notion</div>
+          </nav>
+        </div>
+        <div class="wrapper__main__body flex bg br1">
+          <img src="https://github-readme-stats.vercel.app/api?username=yoyobar&show_icons=true&theme=radical" />
+        </div>
+        <div class="wrapper__footer__body bg br1"></div>
+      </div>
+    </div>
+  </body>
+</html>

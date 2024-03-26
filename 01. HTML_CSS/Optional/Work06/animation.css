@@ -1,0 +1,44 @@
+.wrapper {
+  background: linear-gradient(45deg, skyblue, tomato);
+}
+.wrapper__left__body {
+  animation: right 2s 0s ease-in-out 1 normal running;
+}
+.wrapper__main__body {
+  animation: left 3s 0s ease-in-out 1 normal running;
+}
+.wrapper__footer__body {
+  animation: top 3s 0s ease-in-out 1 normal running;
+}
+@keyframes loading {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+@keyframes right {
+  to {
+    right: 0%;
+  }
+  from {
+    right: 300%;
+  }
+}
+@keyframes left {
+  to {
+    left: 0%;
+  }
+  from {
+    left: 200%;
+  }
+}
+@keyframes top {
+  to {
+    top: 0%;
+  }
+  from {
+    top: 200%;
+  }
+}
