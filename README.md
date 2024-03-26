@@ -19,7 +19,11 @@ Front-end 3기 김민수의 개인 기록입니다.
 | ----------- | -------------------------------------------------------------------------------------------------------------- | ------------------------ | --------- |
 | Optional 01 | [Optional/Work01](https://github.com/yoyobar/OZ_CodingSchool/blob/main/01.%20HTML_CSS/Optional/01-tag.html)    | 태그 더 사용해보기       | 03/22     |
 | Optional 02 | [Optional/Work02](https://github.com/yoyobar/OZ_CodingSchool/blob/main/01.%20HTML_CSS/Optional/02-signup.html) | 회원가입 폼 만들어보기   | 03/22     |
-| Optional 03 | [Optional/Work03](https://plaid-plow-0e3.notion.site/Minsu-Kim-3d4cdf754f1e42cf8460dd12408a41a4?pvs=4)         | 나만의 기술블로그 만들기 | 03/22     |
+| Optional 03 | [Optional/Post](https://plaid-plow-0e3.notion.site/f2289703cfdb4b30b60c7551c47cb1ae)         | 나만의 기술블로그 만들기(인라인 구조와 블록레벨구조) | 03/22     |
+| Optional 04 | [Optional/Work03]()         | [제작 중]나만의 일기장 만들어보기 | -     |
+| Optional 05 | [Optional/Work04](https://github.com/yoyobar/OZ_CodingSchool/blob/main/01.%20HTML_CSS/Optional/04-background.html)         | 배경화면과 박스 디자인 | 03/26     |
+| Optional 06 | [Optional/Work05](https://github.com/yoyobar/OZ_CodingSchool/blob/main/01.%20HTML_CSS/Optional/05-login.html)         | 회원가입 폼 꾸미기 | 03/26     |
+| Optional 07 | [Optional/Post]()         | [제작 중]나만의 기술블로그 만들기(SPA의 정의)| -     |
 
 #### 개인 스터디
 
