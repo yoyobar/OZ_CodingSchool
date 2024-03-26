@@ -1,0 +1,226 @@
+/* login.html */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  input:focus {
+    outline: none;
+  }
+}
+.content {
+  width: 390px;
+  height: 640px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 30px;
+  position: relative;
+}
+.content__chat__color {
+  background-color: #191919;
+}
+.content__chat__border {
+  border: 1px solid #545454;
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 1);
+}
+.content__login__color {
+  background-color: rgb(254, 229, 10);
+}
+.content__login__border {
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 1);
+}
+.content:hover {
+  .bar__circle:nth-child(1) {
+    background-color: rgb(251, 69, 69);
+  }
+  .bar__circle:nth-child(2) {
+    background-color: rgb(252, 175, 36);
+  }
+  .bar__circle:nth-child(3) {
+    background-color: rgb(40, 192, 50);
+  }
+}
+.nav-bar {
+  width: 380px;
+  height: 15px;
+  padding-left: 3px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+}
+.bar__circle {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.main-content {
+  width: 100%;
+  height: 500px;
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+.main-content__input {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.main-content__input > input {
+  border: 1px solid rgb(230 204 2);
+  border-radius: 4px;
+  width: 230px;
+  height: 40px;
+  padding-left: 20px;
+}
+.main-content__input > input::placeholder {
+  color: rgba(180, 180, 180, 1);
+}
+.main-content__input > button {
+  border: 1px solid rgb(230 204 2);
+  margin: 5px 0px;
+  border-radius: 4px;
+  width: 230px;
+  height: 40px;
+}
+#content__input1 {
+  border-bottom: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#content__input2 {
+  border-top: 1px solid rgb(242, 242, 242);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+#content__button1 {
+  color: white;
+  background-color: rgba(66, 57, 52);
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+#content__button2 {
+  font-size: 14px;
+  font-weight: 400;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.main-content__hr {
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__hr {
+  margin: 18px 0px;
+  width: 100px;
+  border: 1px solid rgba(230, 204, 2, 1);
+  transform: scaleY(0.5);
+}
+.content__hr__text {
+  font-size: 12px;
+  font-weight: 200;
+  color: rgba(133, 124, 29, 1);
+}
+.content__box__radio {
+  margin-top: 10px;
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#box__check {
+  /* button design */
+  appearance: none;
+  vertical-align: middle;
+  background-color: white;
+  border: 1px solid rgb(230 204 2);
+  border-radius: 20px;
+  cursor: pointer;
+  /* design */
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  transition: 0.5s;
+}
+#box__check:checked {
+  background-color: dodgerblue;
+  box-shadow: 0px 0px 0px 3px white inset;
+  transition: 0.5s;
+}
+#box__text {
+  font-size: 12px;
+  color: rgb(133, 124, 29);
+  cursor: pointer;
+}
+#box__info {
+  /* button design */
+  cursor: pointer;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgb(230, 204, 2);
+  background-color: rgb(244, 218, 10);
+  border-radius: 24px;
+  color: rgb(133, 124, 29);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  /* design */
+  margin-left: 8px;
+}
+.foot-setting {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+}
+.foot-setting__list {
+  display: flex;
+  align-items: center;
+}
+.list__hr {
+  height: 10px;
+  border: 1px solid rgb(230, 204, 2);
+  margin: 0px 10px;
+}
+.list__text {
+  font-size: 12px;
+  color: rgb(133, 124, 29);
+  cursor: pointer;
+}
+
+@keyframes ping {
+  from {
+    left: 10px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .content {
+    width: 320px;
+    height: 630px;
+  }
+}
+@media screen and (max-height: 650px) {
+  .content {
+    transform: rotate(-90deg);
+    left: 100px;
+    top: -150px;
+  }
+}
