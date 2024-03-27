@@ -29,6 +29,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Optional 05 | [Optional/Work05](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work05)         | 회원가입 폼 꾸미기 | 03/26     |
 | Optional Post | [Blog Post](https://www.notion.so/OZ-bc6f92be73114b698ab85e8d14756e99)         | 나만의 기술블로그 만들기(SPA의 정의)| 03/26    |
 | Optional 06 | [Optional/Work06](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work06)         | 소개 페이지 만들기 | 03/27     |
+| Optional 07 | [Optional/Work07](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work07)         | 사이트 디자인 클론하기 | 03/27     |
 
 #### 개인 스터디
 
