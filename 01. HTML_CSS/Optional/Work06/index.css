@@ -17,24 +17,31 @@
     "left main main main"
     "footer footer footer footer";
 }
+.wrapper__left__body {
+  position: relative;
+  grid-area: left;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  min-height: 500px;
+}
 .wrapper__main__body {
   position: relative;
   width: 100%;
   height: 100%;
   grid-area: main;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: block;
 }
-@media screen and (max-width: 1200px) {
-  .wrapper__main__body {
-    display: none;
-  }
-  .wrapper__body {
-    gap: 5px;
-    grid-template-areas:
-      "left"
-      "left"
-      "footer";
-  }
-  .wrapper__footer__body {
-    min-width: 200px;
-  }
+.wrapper__footer__body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  grid-area: footer;
+  min-height: 100px;
 }

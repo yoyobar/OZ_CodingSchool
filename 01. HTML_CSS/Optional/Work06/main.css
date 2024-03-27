@@ -1,0 +1,53 @@
+.main__content {
+  width: 100%;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sub__content {
+  width: 100%;
+  padding: 1rem 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.stat {
+  width: 50%;
+  padding-bottom: 1rem;
+}
+.badge {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+/* badge design */
+.html {
+  background-color: #c34f26;
+}
+.css {
+  background-color: #1372b6;
+}
+.js {
+  background-color: #f7df1e;
+}
+.vs {
+  background-color: #007acc;
+}
+.git {
+  background-color: #f05032;
+}
+.oz {
+  background-color: #6700e6;
+  cursor: pointer;
+}
+.post {
+  background-color: #7b5b54;
+  cursor: pointer;
+}
+.notion {
+  background-color: #382925;
+  cursor: pointer;
+}
+.mail {
+  background-color: #00c75a;
+}
