@@ -6,7 +6,7 @@
 
 Front-end 3기 김민수의 개인 기록입니다.
 
-### 01. HTML & CSS
+ ### 01. HTML & CSS
 
 | Project      | Repository                                                                                               | 과제 명                                          | 제출 날짜 |
 | ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------- |
@@ -31,6 +31,9 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Optional 06 | [Optional/Work06](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work06)         | 소개 페이지 만들기 | 03/27     |
 | Optional 07 | [Optional/Work07](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work07)         | 사이트 디자인 클론하기 | 03/27     |
 | Optional Post | [Blog Post](https://www.notion.so/UI-UX-048571bb250547d5aeb783c368e20025)         | 나만의 기술블로그 만들기(UI/UX의 정의)| 03/27    |
+| Optional 08 | [Optional/Work08](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work08)         | 반응형 디자인 만들기 | 03/27     |
+| Optional 09 | [Optional/Work09](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work09)         | 햄버거 바 만들기 | 03/27     |
+| Optional Post | [Blog Post]()         | 나만의 기술블로그 만들기(Reset.css vs Normalize.css)| -    |
 
 
 #### 개인 스터디
@@ -38,8 +41,6 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Project          | Repository                                                                                   | 과제 명                  | 제출 날짜   |
 | ---------------- | -------------------------------------------------------------------------------------------- | ------------------------ | ----------- |
 | Chat refactoring | [Refac/Chat](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Refac/Chat) | 채팅방 리팩토링 프로젝트 | 03/24 ~ 03/25 |
-
-<hr>
 
 ### POST
 
@@ -51,3 +52,13 @@ Front-end 3기 김민수의 개인 기록입니다.
 - [**채팅방 리팩토링 2일차**](https://plaid-plow-0e3.notion.site/2-34c26b7acf3c46649c01a09ed337b70b)
 - [**SPA의 정의**](https://www.notion.so/SPA-90d3a519c1b140eb9a49bf793754d458)
 - [**UI/UX의 차이**](https://www.notion.so/UI-UX-048571bb250547d5aeb783c368e20025)
+- [**Reset.css vs Normalize.css**]()
+- [**햄버거바 제작해보기(CSS)**]()
+
+<hr>
+
+  ### 02. JavaScript
+  
+| Project      | Repository                                                                                               | 과제 명                                          | 제출 날짜 |
+| ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------- |
+| - | - | -              | -     |
