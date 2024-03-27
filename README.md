@@ -30,6 +30,8 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Optional Post | [Blog Post](https://www.notion.so/OZ-bc6f92be73114b698ab85e8d14756e99)         | 나만의 기술블로그 만들기(SPA의 정의)| 03/26    |
 | Optional 06 | [Optional/Work06](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work06)         | 소개 페이지 만들기 | 03/27     |
 | Optional 07 | [Optional/Work07](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.%20HTML_CSS/Optional/Work07)         | 사이트 디자인 클론하기 | 03/27     |
+| Optional Post | [Blog Post](https://www.notion.so/UI-UX-048571bb250547d5aeb783c368e20025)         | 나만의 기술블로그 만들기(UI/UX의 정의)| 03/27    |
+
 
 #### 개인 스터디
 
@@ -48,3 +50,4 @@ Front-end 3기 김민수의 개인 기록입니다.
 - [**채팅방 리팩토링 1일차**](https://plaid-plow-0e3.notion.site/1-d5bb05c5850a4864aed1f64cc6e5f58e?pvs=4)
 - [**채팅방 리팩토링 2일차**](https://plaid-plow-0e3.notion.site/2-34c26b7acf3c46649c01a09ed337b70b)
 - [**SPA의 정의**](https://www.notion.so/SPA-90d3a519c1b140eb9a49bf793754d458)
+- [**UI/UX의 차이**](https://www.notion.so/UI-UX-048571bb250547d5aeb783c368e20025)
