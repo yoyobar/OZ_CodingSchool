@@ -3,6 +3,20 @@
   margin: 0;
 }
 /* label 버튼 크기, 투명 */
+.hamburger {
+  display: flex;
+  display: none;
+  gap: 50px;
+}
+.menu {
+  display: flex;
+  gap: 50px;
+  height: 100%;
+  font-size: 1.5em;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
 header label {
   display: flex;
   width: 35px;
@@ -84,4 +98,13 @@ nav a {
 /* input 박스부터 nav까지 전부, ~는 형제도 선택함 */
 header:has(input:checked) ~ nav {
   transform: translateY(10%);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
 }
