@@ -4,11 +4,36 @@
 .wrapper__left__body {
   animation: right 2s 0s ease-in-out 1 normal running;
 }
+.btn {
+  transition: background-color 0.5s;
+}
+.btn:hover {
+  background-color: gray;
+  transition: background-color 0.5s;
+}
 .wrapper__main__body {
   animation: left 3s 0s ease-in-out 1 normal running;
 }
+.badge {
+  transition: transform 0.5s;
+}
+.oz:hover {
+  transform: scale(1.1);
+}
+.post:hover {
+  transform: scale(1.1);
+}
+.notion:hover {
+  transform: scale(1.1);
+}
 .wrapper__footer__body {
   animation: top 3s 0s ease-in-out 1 normal running;
+}
+.footer__content {
+  transition: background-color 0.5s;
+}
+.footer__content:hover {
+  background-color: #444b5d;
 }
 @keyframes loading {
   to {
