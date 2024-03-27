@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <title>간단한 반응형 웹 만들기</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        for (let i = 0; i < document.querySelectorAll(".viewport__subtitle").length; i++) {
+          document.querySelectorAll(".viewport__subtitle")[i].style.background =
+            "#ff" +
+            String(Math.floor(Math.random() * 100)).padStart(2, "0") +
+            String(Math.floor(Math.random() * 10)).padStart(1, "0") +
+            "2";
+        }
+      });
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+      }
+    </style>
+    <link rel="stylesheet" href="./viewport.css" />
+  </head>
+  <body>
+    <div class="viewport">
+      <!-- TITLE -->
+      <div class="viewport__title QHD">화면 : 2560 X 1440 이하</div>
+      <div class="viewport__title FHD">화면 : 1920 X 1080 이하</div>
+      <div class="viewport__title IPADPRO">화면 : 1024 X 1366 이하</div>
+      <div class="viewport__title IPADMINI">화면 : 768 X 1024 이하</div>
+      <div class="viewport__title PIXEL">화면 : 412 x 915 이하</div>
+      <div class="viewport__title IPHONESE">화면 : 375 x 667 이하</div>
+      <!-- SUBTITLE -->
+      <div class="viewport__subtitle QHD">QHD DISPLAY</div>
+      <div class="viewport__subtitle FHD">FHD DISPLAY</div>
+      <div class="viewport__subtitle IPADPRO">IPAD PRO</div>
+      <div class="viewport__subtitle IPADMINI">IPAD MINI</div>
+      <div class="viewport__subtitle PIXEL">PIXEL 7</div>
+      <div class="viewport__subtitle IPHONESE">IPHONE SE</div>
+    </div>
+  </body>
+</html>
