@@ -52,8 +52,8 @@ Front-end 3기 김민수의 개인 기록입니다.
 - [**채팅방 리팩토링 2일차**](https://plaid-plow-0e3.notion.site/2-34c26b7acf3c46649c01a09ed337b70b)
 - [**SPA의 정의**](https://www.notion.so/SPA-90d3a519c1b140eb9a49bf793754d458)
 - [**UI/UX의 차이**](https://www.notion.so/UI-UX-048571bb250547d5aeb783c368e20025)
+- [**햄버거바 제작해보기(CSS)**](https://plaid-plow-0e3.notion.site/CSS-7310846089164693a422b2eb0796ce86)
 - [**Reset.css vs Normalize.css**]()
-- [**햄버거바 제작해보기(CSS)**]()
 
 <hr>
 
