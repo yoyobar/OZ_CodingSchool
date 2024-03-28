@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer / StopWatch</title>
+    <link href="./header.css" rel="stylesheet" />
+    <link href="./stopwatch.css" rel="stylesheet" />
+    <link href="./timer.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3f58dd8361.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+      }
+      body {
+        padding: 2rem;
+      }
+      .flex {
+        display: flex;
+      }
+      .col {
+        flex-direction: column;
+      }
+      .wrapper {
+        width: 800px;
+        height: 700px;
+        border: 2px solid black;
+        border-collapse: collapse;
+        margin: auto;
+        position: relative;
+        z-index: 99;
+        overflow: hidden;
+      }
+      .wrapper__body {
+        width: 100%;
+        height: 568px;
+        position: relative;
+        /* overflow: hidden; */
+      }
+      .body__home {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 18rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        border-radius: 5px;
+        background-color: beige;
+        transition: opacity 0.5s;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrapper">
+      <header class="wrapper__head">
+        <div class="head__menubar flex">
+          <div class="head__icon flex">
+            <button onclick="toggleNav()" class="nav__icon flex col">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <div class="head__description">HOME</div>
+        </div>
+        <nav class="head__nav flex">
+          <button onclick="toggleTimer()" class="nav__timer nav__content"><i class="fa-solid fa-clock"></i></button>
+          <button onclick="toggleStopWatch()" class="nav__stopwatch nav__content">
+            <i class="fa-solid fa-hourglass-end"></i>
+          </button>
+        </nav>
+      </header>
+      <main class="wrapper__body">
+        <article class="body__timer">
+          <div class="timer__main flex col">
+            <nav class="timer__result flex">
+              <span class="result rDate"></span>
+              <span class="result rHour"></span>
+              <span class="result rMinute"></span>
+              <span class="result rSecond"></span>
+            </nav>
+            <nav class="timer__up flex">
+              <button onclick="uYear()" class="upper"><i class="fa-solid fa-chevron-up"></i></button>
+              <button onclick="uMonth()" class="upper"><i class="fa-solid fa-chevron-up"></i></button>
+              <button onclick="uDate()" class="upper"><i class="fa-solid fa-chevron-up"></i></button>
+            </nav>
+            <div class="timer__text flex">
+              <span class="number nYear">2024</span>
+              <span>년</span>
+              <span class="number nMonth">3</span>
+              <span>월</span>
+              <span class="number nDate">29</span>
+              <span>일</span>
+            </div>
+            <nav class="timer__down flex">
+              <button onclick="dYear()" class="lower"><i class="fa-solid fa-chevron-down"></i></button>
+              <button onclick="dMonth()" class="lower"><i class="fa-solid fa-chevron-down"></i></button>
+              <button onclick="dDate()" class="lower"><i class="fa-solid fa-chevron-down"></i></button>
+            </nav>
+            <nav class="timer__setting flex">
+              <button onclick="totalTime()" id="tStart">시작</button>
+              <button onclick="stopped()" id="tStop">취소</button>
+            </nav>
+          </div>
+        </article>
+        <article class="body__home flex">메뉴를 눌러 전환하세요</article>
+        <article class="body__stopwatch">
+          <div class="stopwatch__content flex col">
+            <div class="stopwatch__text flex">
+              <span class="watchH">0</span>
+              : <span class="watchM">0</span> : <span class="watchS">0</span> :<span class="watchMs">0</span>
+            </div>
+            <button onclick="stopWatch()" class="stopwatch__btn">시작</button>
+          </div>
+        </article>
+      </main>
+    </main>
+  </body>
+</html>

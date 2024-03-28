@@ -1,0 +1,91 @@
+.body__timer {
+  z-index: 2;
+  position: absolute;
+  width: 800px;
+  height: 100%;
+  background-color: #cfe7ff;
+  top: 0px;
+  right: 798px;
+}
+.timer__main {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: default;
+}
+.timer__result {
+  width: 400px;
+  border-radius: 3px;
+  height: 6rem;
+  font-size: 4rem;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  margin-bottom: 2rem;
+}
+.timer__result > span {
+  margin: 0.1rem;
+  text-align: center;
+}
+.timer__text {
+  justify-content: center;
+  align-items: center;
+}
+.timer__text > span {
+  display: inline-block;
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.timer__text > span:first-child {
+  width: 150px;
+}
+.number {
+  width: 100px;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0.25rem;
+}
+.timer__up {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.timer__down {
+  width: 100%;
+  margin-top: 1rem;
+}
+.timer__main button {
+  width: 4rem;
+  height: 2rem;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+.timer__main button:hover:enabled {
+  background-color: gray;
+}
+.timer__main button:disabled {
+  cursor: default;
+}
+
+.timer__up button:first-child,
+.timer__down button:first-child {
+  margin-left: 75px;
+}
+.timer__up button:nth-child(2),
+.timer__down button:nth-child(2) {
+  margin-left: 200px;
+}
+.timer__up button:last-child,
+.timer__down button:last-child {
+  margin-left: 175px;
+}
+
+.timer__setting {
+  width: 100%;
+  justify-content: space-around;
+  margin: 2rem auto;
+}
