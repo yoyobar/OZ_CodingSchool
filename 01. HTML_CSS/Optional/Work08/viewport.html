@@ -9,10 +9,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         for (let i = 0; i < document.querySelectorAll(".viewport__subtitle").length; i++) {
           document.querySelectorAll(".viewport__subtitle")[i].style.background =
-            "#ff" +
-            String(Math.floor(Math.random() * 100)).padStart(2, "0") +
-            String(Math.floor(Math.random() * 10)).padStart(1, "0") +
-            "2";
+            "#ff" + String(Math.floor(Math.random() * 1000)).padStart(3, "0") + "2";
         }
       });
     </script>
