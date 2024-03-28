@@ -54,6 +54,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 - [**UI/UX의 차이**](https://www.notion.so/UI-UX-048571bb250547d5aeb783c368e20025)
 - [**햄버거바 제작해보기(CSS)**](https://plaid-plow-0e3.notion.site/CSS-7310846089164693a422b2eb0796ce86)
 - [**Reset.css vs Normalize.css**](https://www.notion.so/Normalize-css-VS-Reset-css-afb0bd2870bf48e1aedee3869a4a8837)
+- [**오래된 Var와 호이스팅**](https://plaid-plow-0e3.notion.site/var-6cc0a1461f67497dab2e452a589d267b)
 
 <hr>
 
