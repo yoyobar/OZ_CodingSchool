@@ -54,7 +54,6 @@ Front-end 3기 김민수의 개인 기록입니다.
 - [**UI/UX의 차이**](https://www.notion.so/UI-UX-048571bb250547d5aeb783c368e20025)
 - [**햄버거바 제작해보기(CSS)**](https://plaid-plow-0e3.notion.site/CSS-7310846089164693a422b2eb0796ce86)
 - [**Reset.css vs Normalize.css**](https://www.notion.so/Normalize-css-VS-Reset-css-afb0bd2870bf48e1aedee3869a4a8837)
-- [**오래된 Var와 호이스팅**](https://plaid-plow-0e3.notion.site/var-6cc0a1461f67497dab2e452a589d267b)
 
 <hr>
 
@@ -63,13 +62,17 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Project      | Repository                                                                                               | 과제 명                                          | 제출 날짜 |
 | ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------- |
 | Challenge 01 | [Challenge/Work01](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work01) | 문제풀기 - 01 | 03/29 |
+| Challenge 02 | [Challenge/Work01](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work02) | 입출력 과제 | 03/29 |
+| Challenge 03 | 현재 제출 불가 | - | 03/29 |
+| Challenge 04 | 현재 제출 불가 | - | 03/29 |
+| Challenge 01 | [Challenge/Work01](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work05) | Mini Project : 몬스터 잡기 게임 | 03/29 |
 
 
 #### 선택 과제
 
 | Project      | Repository                                                                                               | 과제 명                                          | 제출 날짜 |
 | ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------- |
-| - | - | -              | -     |
+| Optional Post | [Blog Post](https://www.notion.so/OZ-bc6f92be73114b698ab85e8d14756e99) | 나만의 기술블로그 만들기(var를 사용하지 않는 이유)              | 03/29     |
 
 #### 개인 스터디
 
@@ -79,4 +82,4 @@ Front-end 3기 김민수의 개인 기록입니다.
 
 ### POST
 
-
+- [**오래된 Var와 호이스팅**](https://plaid-plow-0e3.notion.site/var-6cc0a1461f67497dab2e452a589d267b)
