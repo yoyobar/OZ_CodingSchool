@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+  </head>
+  <body>
+    <button id="span">SPAN</button>
+    <button id="strong">STRONG</button>
+    <button id="mark">MARK</button>
+    <hr />
+  </body>
+  <script>
+    const spanBtn = document.getElementById("span");
+    const strongBtn = document.getElementById("strong");
+    const markBtn = document.getElementById("mark");
+
+    // spanBtn.onclick = handleClick;
+    // 선언식
+    // spanBtn.onclick = function () {
+    //   const span = document.createElement("span");
+    //   span.textContent = "SPAN";
+    //   document.body.appendChild(span);
+    // };
+    // onclick으로 실행
+    // spanBtn.addEventListener("click", function () {
+    //   const span = document.createElement("span");
+    //   span.textContent = document.body.appendChild(span);
+    // });
+    // addEventLister로 실행
+
+    const handleClick = function () {
+      if (event.target.id == "span") {
+        const span = document.createElement("span");
+        span.textContent = "SPAN 태그";
+        document.body.appendChild(span);
+      }
+      if (event.target.id == "strong") {
+        const strong = document.createElement("strong");
+        strong.textContent = "STRONG 태그";
+        document.body.appendChild(strong);
+      }
+      if (event.target.id == "mark") {
+        const mark = document.createElement("mark");
+        mark.textContent = "MARK 태그";
+        document.body.appendChild(mark);
+      }
+    };
+
+    spanBtn.addEventListener("click", handleClick);
+    strongBtn.addEventListener("click", handleClick);
+    markBtn.addEventListener("click", handleClick);
+  </script>
+</html>

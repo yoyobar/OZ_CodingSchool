@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="talk" />
+    <input id="push" type="button" value="push" />
+    <form id="form" action="#">
+      <input name="name" />
+      <input name="nick" />
+      <input type="submit" />
+    </form>
+
+    <script>
+      const form = document.getElementById("form");
+      form.addEventListener("submit", function () {
+        event.preventDefault(); //기본기능 차단, 연습용
+
+        const p = document.createElement("p");
+        p.textContent = `이름은 ${event.target.name.value}이고 별명은 ${event.target.nick.value}입니다.`;
+        document.body.appendChild(p);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="talk" />
+    <input id="push" type="button" value="push" />
+    <script>
+      const input = document.getElementById("talk");
+      const button = document.getElementById("push");
+
+      input.addEventListener("keyup", function (e) {
+        console.log(e.target.value);
+      });
+      button.addEventListener("click", function () {
+        const p = document.createElement("p");
+        p.textContent = input.value;
+        document.body.appendChild(p);
+      });
+    </script>
+  </body>
+</html>
