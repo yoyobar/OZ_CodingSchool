@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>입 출력 과제</title>
+    <style>
+      body :nth-child(n) {
+        margin: 2rem;
+        padding: 1rem;
+        background-color: beige;
+        border-radius: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="name"></h1>
+    <p id="animal"></p>
+    <p id="fruit"></p>
+  </body>
+  <script>
+    const nameElement = document.querySelector("#name");
+    nameElement.innerText = "이름 : " + prompt("당신의 이름은?");
+
+    const animalElement = document.querySelector("#animal");
+    animalElement.textContent = "좋아하는 동물 : " + prompt("좋아하는 동물은?");
+
+    const fruitElement = document.querySelector("#fruit");
+    let fruitQuestion = prompt("좋아하는 과일은?");
+    if (fruitQuestion == "귤") {
+      fruitElement.innerText = "좋아하는 과일 : " + fruitQuestion + "(저랑 같으시네요)";
+    } else {
+      fruitElement.innerText = "좋아하는 과일 : " + fruitQuestion;
+    }
+  </script>
+</html>
