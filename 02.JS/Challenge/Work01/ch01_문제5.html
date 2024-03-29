@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 최대한 할당연산자를 활용해 문제를 풀어주세요
+
+      // console.log()안에 코드를 작성해주세요
+      // 출력에 사용되는 변수명은 result입니다.
+      // 무게 : weight(75kg)
+      // 출력 요청 값 : 무게 + 5kg
+      let weight = 75;
+      weight += 5;
+      let result = weight;
+      console.log(`${result} kg`);
+
+      // console.log()안에 코드를 작성해주세요
+      // 출력에 사용되는 변수명은 result입니다.
+      // 피자 : pizza(9조각)
+      // 출력 요청 값 : pizza를 4명이서 나누었을때 남는 조각의 수
+      let pizza = 9 % 4;
+      result = pizza;
+      console.log(`${result} 조각`);
+
+      // console.log()안에 코드를 작성해주세요
+      // 출력에 사용되는 변수명은 result입니다.
+      // 반지름 : radius(3cm)
+      // 출력 요청 값 : radius * radius * 3.14
+      let radius = 3;
+      result = radius * radius * 3.14;
+      console.log(result);
+
+      // console.log()안에 코드를 작성해주세요
+      // 출력에 사용되는 변수명은 result입니다.
+      // 체질량 지수 : mbi
+      // 키 : 178cm, 몸무게 : 75kg
+      // 출력 요청 값 : 몸무게 / (키 * 키)
+      let manHeight = 178;
+      let manWeight = 75 * 100;
+      let bmi = manWeight / (manHeight * manHeight);
+      result = (bmi * 100).toFixed(2);
+      //   mbi가 아니라 bmi라고 생각합니다..
+      console.log(result);
+    </script>
+  </body>
+</html>
