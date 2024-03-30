@@ -1,103 +1,103 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: "Dongle", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 32px;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
 }
 html {
-  height: 100%;
+    height: 100%;
 }
 body {
-  height: 100%;
+    height: 100%;
 }
 .container {
-  height: 100%;
-  background-color: #87cefa;
-  background-size: 50px 120px;
-  background-image: linear-gradient(to bottom, #65a6ce 1px, transparent 1px);
+    height: 100%;
+    background-color: #87cefa;
+    background-size: 50px 120px;
+    background-image: linear-gradient(to bottom, #65a6ce 1px, transparent 1px);
 }
 
 /* 스크린 사이즈 */
 .chat-screen {
-  height: calc(100% - 120px);
-  overflow-y: auto;
-  /* 100%중 120px를 제외한 값 */
+    height: calc(100% - 120px);
+    overflow-y: auto;
+    /* 100%중 120px를 제외한 값 */
 }
 
 /* 유저 정보 */
 .user {
-  background-color: aliceblue;
-  padding: 16px;
-  height: 80px;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
+    background-color: aliceblue;
+    padding: 16px;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 .user__column {
-  float: left;
+    float: left;
 }
 .user__pic {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-  border-radius: 10px;
-  background-color: #87cefa;
-  background-image: url(./images/git.svg);
-  background-size: 35px;
-  background-repeat: no-repeat;
-  background-position: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #87cefa;
+    background-image: url(./images/git.svg);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .user__nick,
 .user__count {
-  margin: 0px;
-  line-height: 30px;
+    margin: 0px;
+    line-height: 30px;
 }
 .user__count {
-  color: gray;
+    color: gray;
 }
 
 .chat-form {
-  height: 120px;
-  background-color: #87cefa;
+    height: 120px;
+    background-color: #87cefa;
 }
 .chat-form__field {
-  height: 120px;
+    height: 120px;
 }
 .chat-form__msg {
-  width: calc(100% - 130px);
-  height: 110px;
-  border: none;
-  border-radius: 5px;
-  font-size: 24px;
-  padding: 10px;
-  z-index: 1;
-  position: relative;
-  resize: none;
-  /* 사이즈 조절 못하게 */
-  outline: none;
-  /* 아웃라인 안보이게 */
+    width: calc(100% - 130px);
+    height: 110px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 10px;
+    z-index: 1;
+    position: relative;
+    resize: none;
+    /* 사이즈 조절 못하게 */
+    outline: none;
+    /* 아웃라인 안보이게 */
 }
 .chat-form__bt {
-  width: 120px;
-  height: 110px;
-  border-radius: 10px;
-  background-color: aliceblue;
-  font-size: 60px;
-  text-align: center;
-  float: right;
-  transition: 0.5s;
-  position: relative;
-  z-index: 1;
+    width: 120px;
+    height: 110px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    font-size: 60px;
+    text-align: center;
+    float: right;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
 }
 .chat-form__bt:hover {
-  font-size: 45px;
-  background-color: #87cefa;
-  transition: 0.5s;
+    font-size: 45px;
+    background-color: #87cefa;
+    transition: 0.5s;
 }
 .chat-form__bt:active {
-  background-color: #87cefa;
+    background-color: #87cefa;
 }
 
 /* calc 사용법 숙지 */

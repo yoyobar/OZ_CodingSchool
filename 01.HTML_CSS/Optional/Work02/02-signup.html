@@ -9,86 +9,86 @@
 
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
-    <title>회원가입 폼 만들기</title>
-  </head>
-  <body>
-    <header>
-      <h1>회원가입</h1>
-    </header>
-    <main>
-      <fieldset>
-        <!-- input에 붙는 label은 id를 따라 붙는다. -->
-        <legend>필수 입력 사항</legend>
-        <ul>
-          <li>
-            <label for="name">이 름 :</label>
-            <input type="text" name="name" id="name" />
-          </li>
-          <li>
-            <label for="id">아이디 :</label>
-            <input type="text" name="id" id="id" />
-          </li>
-          <li>
-            <label for="pass">비밀번호 :</label>
-            <input type="password" name="pass" id="pass" />
-          </li>
-          <li>
-            <label for="mail">이메일 :</label>
-            <input type="email" name="mail" id="mail" />
-          </li>
-          <li>
-            <label for="phone">휴대폰 :</label>
-            <input type="number" name="phone" id="phone" />
-          </li>
-          <button onclick="submit()">가입하기</button
-          >&nbsp;<button onclick="cancel()">취소</button>
-        </ul>
-      </fieldset>
-    </main>
-    <footer>
-      <!-- radio, checkbox내 name은 맞추되 id는 각각 달라야한다. -->
-      <fieldset>
-        <legend>취미</legend>
-        <ul>
-          <li>
-            <input type="checkbox" name="check" id="coding" />
-            <label for="coding">코딩</label>
-            <input type="checkbox" name="check" id="exercise" />
-            <label for="exercise">운동</label>
-            <input type="checkbox" name="check" id="breath" />
-            <label for="breath">숨쉬기</label>
-            <input type="checkbox" name="check" id="travel" />
-            <label for="travel">여행</label>
-            <input type="checkbox" name="check" id="sleeping" />
-            <label for="sleeping">잠자기</label>
-            <input type="checkbox" name="check" id="reading" />
-            <label for="reading">독서</label>
-            <input type="checkbox" name="check" id="play" />
-            <label for="play">넷플시청</label>
-          </li>
-          <li>
-            <input type="radio" name="gender" id="male" />
-            <label for="male">남</label>
-            <input type="radio" name="gender" id="female" />
-            <label for="female">여</label>
-            <input type="radio" name="gender" id="secret" />
-            <label for="secret">비밀</label>
-          </li>
-        </ul>
-      </fieldset>
-    </footer>
-    <script>
-      function submit() {
-        alert("가입해주셔서 감사합니다.");
-      }
-      function cancel() {
-        alert("다음에 봐요 :()");
-        window.close();
-      }
-      //   window.close() 기본 function을 활용하여 알림 발송후 홈페이지를 닫는다.
-    </script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+        <title>회원가입 폼 만들기</title>
+    </head>
+    <body>
+        <header>
+            <h1>회원가입</h1>
+        </header>
+        <main>
+            <fieldset>
+                <!-- input에 붙는 label은 id를 따라 붙는다. -->
+                <legend>필수 입력 사항</legend>
+                <ul>
+                    <li>
+                        <label for="name">이 름 :</label>
+                        <input type="text" name="name" id="name" />
+                    </li>
+                    <li>
+                        <label for="id">아이디 :</label>
+                        <input type="text" name="id" id="id" />
+                    </li>
+                    <li>
+                        <label for="pass">비밀번호 :</label>
+                        <input type="password" name="pass" id="pass" />
+                    </li>
+                    <li>
+                        <label for="mail">이메일 :</label>
+                        <input type="email" name="mail" id="mail" />
+                    </li>
+                    <li>
+                        <label for="phone">휴대폰 :</label>
+                        <input type="number" name="phone" id="phone" />
+                    </li>
+                    <button onclick="submit()">가입하기</button
+                    >&nbsp;<button onclick="cancel()">취소</button>
+                </ul>
+            </fieldset>
+        </main>
+        <footer>
+            <!-- radio, checkbox내 name은 맞추되 id는 각각 달라야한다. -->
+            <fieldset>
+                <legend>취미</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="check" id="coding" />
+                        <label for="coding">코딩</label>
+                        <input type="checkbox" name="check" id="exercise" />
+                        <label for="exercise">운동</label>
+                        <input type="checkbox" name="check" id="breath" />
+                        <label for="breath">숨쉬기</label>
+                        <input type="checkbox" name="check" id="travel" />
+                        <label for="travel">여행</label>
+                        <input type="checkbox" name="check" id="sleeping" />
+                        <label for="sleeping">잠자기</label>
+                        <input type="checkbox" name="check" id="reading" />
+                        <label for="reading">독서</label>
+                        <input type="checkbox" name="check" id="play" />
+                        <label for="play">넷플시청</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="gender" id="male" />
+                        <label for="male">남</label>
+                        <input type="radio" name="gender" id="female" />
+                        <label for="female">여</label>
+                        <input type="radio" name="gender" id="secret" />
+                        <label for="secret">비밀</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </footer>
+        <script>
+            function submit() {
+                alert('가입해주셔서 감사합니다.');
+            }
+            function cancel() {
+                alert('다음에 봐요 :()');
+                window.close();
+            }
+            //   window.close() 기본 function을 활용하여 알림 발송후 홈페이지를 닫는다.
+        </script>
+    </body>
 </html>

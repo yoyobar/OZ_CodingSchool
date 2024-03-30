@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
-    <title>위치 지정</title>
-    <style>
-      div {
-        width: 100px;
-        height: 100px;
-        background-color: orange;
-        border: 1px solid black;
-        color: white;
-      }
-      .rel {
-        background-color: red;
-        position: relative;
-        top: 50px;
-        left: 50px;
-      }
-      .abs {
-        background-color: blue;
-        position: absolute;
-        right: 50px;
-        top: 50px;
-        /* 상위요소에 position값이 없을 경우, 화면을 기준으로 이동한다. */
-      }
-      .scroll {
-        height: 2000px;
-      }
-      .fixed {
-        background-color: green;
-        position: fixed;
-        right: 50px;
-        bottom: 50px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- position top, right, bottom, left등으로 조정되며, 수치를 입력하면 그만큼 밀려난다. -->
-    <!-- 유형 4가지 -->
-    <!-- static 이동X -->
-    <!-- relative 문서의 흐름에 맞춰 배치된 자리 기준으로 이동 -->
-    <!-- absolute 문서의 흐름에서 제외되고 절대위치 기준으로 이동-->
-    <!-- fixed 화면을 기준으로 고정 -->
-    <div class="abs">1</div>
-    <div class="rel">2</div>
-    <div class="scroll">3</div>
-    <div class="fixed">4</div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+        <title>위치 지정</title>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                border: 1px solid black;
+                color: white;
+            }
+            .rel {
+                background-color: red;
+                position: relative;
+                top: 50px;
+                left: 50px;
+            }
+            .abs {
+                background-color: blue;
+                position: absolute;
+                right: 50px;
+                top: 50px;
+                /* 상위요소에 position값이 없을 경우, 화면을 기준으로 이동한다. */
+            }
+            .scroll {
+                height: 2000px;
+            }
+            .fixed {
+                background-color: green;
+                position: fixed;
+                right: 50px;
+                bottom: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- position top, right, bottom, left등으로 조정되며, 수치를 입력하면 그만큼 밀려난다. -->
+        <!-- 유형 4가지 -->
+        <!-- static 이동X -->
+        <!-- relative 문서의 흐름에 맞춰 배치된 자리 기준으로 이동 -->
+        <!-- absolute 문서의 흐름에서 제외되고 절대위치 기준으로 이동-->
+        <!-- fixed 화면을 기준으로 고정 -->
+        <div class="abs">1</div>
+        <div class="rel">2</div>
+        <div class="scroll">3</div>
+        <div class="fixed">4</div>
+    </body>
 </html>

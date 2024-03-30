@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
-    <title>겹치거나 넘치는 요소</title>
-    <style>
-      div {
-        width: 100px;
-        height: 100px;
-        position: relative;
-      }
-      .div1 {
-        background-color: orange;
-        z-index: 4;
-        overflow: scroll;
-      }
-      .div2 {
-        background-color: red;
-        bottom: 50px;
-        z-index: 3;
-      }
-      .div3 {
-        background-color: purple;
-        bottom: 100px;
-        z-index: 2;
-      }
-      .div4 {
-        background-color: green;
-        bottom: 150px;
-        z-index: 1;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- z-index는 요소가 겹칠때, 상위값, 즉 쌓인 순서를 적용함 -->
-    <!-- z-index기본값은 auto며, 적용된 객체끼리 정수가 높을수록 위쪽에 배치 -->
-    <!-- 요소가 넘치는 경우, overflow 속성을 사용해서 조절, visible(기본값) / hidden(안보이게) / scroll(스크롤) / auto(브라우저 설정) -->
-    <div class="div1">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus, harum molestias cupiditate porro
-      earum eveniet repudiandae quis quibusdam asperiores? Voluptates dolores quos animi reprehenderit suscipit, atque
-      quas amet facilis!
-    </div>
-    <div class="div2">2</div>
-    <div class="div3">3</div>
-    <div class="div4">4</div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+        <title>겹치거나 넘치는 요소</title>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                position: relative;
+            }
+            .div1 {
+                background-color: orange;
+                z-index: 4;
+                overflow: scroll;
+            }
+            .div2 {
+                background-color: red;
+                bottom: 50px;
+                z-index: 3;
+            }
+            .div3 {
+                background-color: purple;
+                bottom: 100px;
+                z-index: 2;
+            }
+            .div4 {
+                background-color: green;
+                bottom: 150px;
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- z-index는 요소가 겹칠때, 상위값, 즉 쌓인 순서를 적용함 -->
+        <!-- z-index기본값은 auto며, 적용된 객체끼리 정수가 높을수록 위쪽에 배치 -->
+        <!-- 요소가 넘치는 경우, overflow 속성을 사용해서 조절, visible(기본값) / hidden(안보이게) / scroll(스크롤) / auto(브라우저 설정) -->
+        <div class="div1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus, harum molestias cupiditate
+            porro earum eveniet repudiandae quis quibusdam asperiores? Voluptates dolores quos animi reprehenderit
+            suscipit, atque quas amet facilis!
+        </div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </body>
 </html>

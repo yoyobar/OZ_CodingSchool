@@ -1,69 +1,69 @@
 .wrapper {
-  background: linear-gradient(45deg, skyblue, tomato);
+    background: linear-gradient(45deg, skyblue, tomato);
 }
 .wrapper__left__body {
-  animation: right 2s 0s ease-in-out 1 normal running;
+    animation: right 2s 0s ease-in-out 1 normal running;
 }
 .btn {
-  transition: background-color 0.5s;
+    transition: background-color 0.5s;
 }
 .btn:hover {
-  background-color: gray;
-  transition: background-color 0.5s;
+    background-color: gray;
+    transition: background-color 0.5s;
 }
 .wrapper__main__body {
-  animation: left 3s 0s ease-in-out 1 normal running;
+    animation: left 3s 0s ease-in-out 1 normal running;
 }
 .badge {
-  transition: transform 0.5s;
+    transition: transform 0.5s;
 }
 .oz:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 .post:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 .notion:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 .wrapper__footer__body {
-  animation: top 3s 0s ease-in-out 1 normal running;
+    animation: top 3s 0s ease-in-out 1 normal running;
 }
 .footer__content {
-  transition: background-color 0.5s;
+    transition: background-color 0.5s;
 }
 .footer__content:hover {
-  background-color: #444b5d;
+    background-color: #444b5d;
 }
 @keyframes loading {
-  to {
-    opacity: 1;
-  }
-  from {
-    opacity: 0;
-  }
+    to {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
 }
 @keyframes right {
-  to {
-    right: 0%;
-  }
-  from {
-    right: 300%;
-  }
+    to {
+        right: 0%;
+    }
+    from {
+        right: 300%;
+    }
 }
 @keyframes left {
-  to {
-    left: 0%;
-  }
-  from {
-    left: 200%;
-  }
+    to {
+        left: 0%;
+    }
+    from {
+        left: 200%;
+    }
 }
 @keyframes top {
-  to {
-    top: 0%;
-  }
-  from {
-    top: 200%;
-  }
+    to {
+        top: 0%;
+    }
+    from {
+        top: 200%;
+    }
 }

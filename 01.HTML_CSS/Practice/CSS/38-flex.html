@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
-    <title>Flex</title>
-  </head>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-    }
-    ul {
-      padding: 0px;
-      list-style-type: none;
-      height: 200px;
-      /* 1차원적으로 배치됨, 공간이 좁아지면 wrap속성으로 컨트롤가능 */
-      /* flex-wrap: nowrap; */
-      display: flex;
-      flex-direction: row; /* 주축 */
-      justify-content: space-between;
-      align-items: center;
-    }
-    /* li:nth-child(3) {
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+        <title>Flex</title>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        ul {
+            padding: 0px;
+            list-style-type: none;
+            height: 200px;
+            /* 1차원적으로 배치됨, 공간이 좁아지면 wrap속성으로 컨트롤가능 */
+            /* flex-wrap: nowrap; */
+            display: flex;
+            flex-direction: row; /* 주축 */
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* li:nth-child(3) {
       item 입장에서 어떻게 배치 될지
       align-self: flex-start;
     } */
-    /* li:nth-child(2) {
+        /* li:nth-child(2) {
       다른 애들보다 커질 수 있음
       flex-grow: 1;
     }
     li:nth-child(4) {
       flex-grow: 2;
     } */
-    /* li:nth-child(2) {
+        /* li:nth-child(2) {
         다른 애들보다 작아질 수 있음
       flex-shrink: 2;
     } */
-    /* li:nth-child(2n-1) {
+        /* li:nth-child(2n-1) {
         초기값 설정
       flex-basis: 100px;
       flex-grow: 1;
     } */
-    /* li:nth-child(2n-1) {
+        /* li:nth-child(2n-1) {
       flex: 1 1 120px;
       단축 속성, grow shrink basis
     } */
-    li {
-      background: tomato;
-    }
-    li:nth-child(2n) {
-      background-color: teal;
-    }
-  </style>
-  <body>
-    <h2>유노코딩이 집앞 강가에서 목격한 동물들</h2>
-    <ul>
-      <li>물오리</li>
-      <li>물까치</li>
-      <li>고라니</li>
-      <li>누룩뱀</li>
-      <li>너구리</li>
-    </ul>
-  </body>
+        li {
+            background: tomato;
+        }
+        li:nth-child(2n) {
+            background-color: teal;
+        }
+    </style>
+    <body>
+        <h2>유노코딩이 집앞 강가에서 목격한 동물들</h2>
+        <ul>
+            <li>물오리</li>
+            <li>물까치</li>
+            <li>고라니</li>
+            <li>누룩뱀</li>
+            <li>너구리</li>
+        </ul>
+    </body>
 </html>

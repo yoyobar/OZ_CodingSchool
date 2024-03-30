@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
-    <title>Background</title>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        font-size: 12px;
-      }
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-      }
-      .container {
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(45deg, skyblue, tomato);
-      }
-      .container button {
-        position: relative;
-        left: 50%;
-        top: 50%;
-        width: 10rem;
-        height: 5rem;
-        border: 1px solid transparent;
-        border-radius: 8px;
-        font-size: 2rem;
-        color: white;
-        background-color: skyblue;
-        transition: transform 0.5s;
-      }
-      .container button:after {
-        content: "";
-        position: absolute;
-        top: -3px;
-        left: 1px;
-        width: 5px;
-        height: 5.5rem;
-        background: whitesmoke;
-        transform: rotate(30deg);
-        transition: 1000ms cubic-bezier(0.23, 1, 0.32, 1);
-        opacity: 0;
-      }
-      .container button:hover:after {
-        left: calc(100% - 20px);
-        opacity: 0.5;
-      }
-      .container button:hover {
-        transform: scale(1.1);
-        transition: transform 0.5s ease;
-      }
-    </style>
-  </head>
-  <body>
-    <main class="container">
-      <button>BTN</button>
-    </main>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+        <title>Background</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                font-size: 12px;
+            }
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+            }
+            .container {
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(45deg, skyblue, tomato);
+            }
+            .container button {
+                position: relative;
+                left: 50%;
+                top: 50%;
+                width: 10rem;
+                height: 5rem;
+                border: 1px solid transparent;
+                border-radius: 8px;
+                font-size: 2rem;
+                color: white;
+                background-color: skyblue;
+                transition: transform 0.5s;
+            }
+            .container button:after {
+                content: '';
+                position: absolute;
+                top: -3px;
+                left: 1px;
+                width: 5px;
+                height: 5.5rem;
+                background: whitesmoke;
+                transform: rotate(30deg);
+                transition: 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+                opacity: 0;
+            }
+            .container button:hover:after {
+                left: calc(100% - 20px);
+                opacity: 0.5;
+            }
+            .container button:hover {
+                transform: scale(1.1);
+                transition: transform 0.5s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="container">
+            <button>BTN</button>
+        </main>
+    </body>
 </html>

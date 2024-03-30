@@ -1,442 +1,442 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
-    <title>wanted</title>
-    <link href="./index.css" rel="stylesheet" />
-    <link href="./header.css" rel="stylesheet" />
-    <link href="./nav.css" rel="stylesheet" />
-    <link href="./footer.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/3f58dd8361.js" crossorigin="anonymous"></script>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-      }
-      html,
-      body {
-        width: 100%;
-        font-size: 12px;
-      }
-      .flex {
-        display: flex;
-      }
-      .fixed {
-        position: fixed;
-      }
-      .btn {
-        border: 1px solid #eeeeee;
-        border-radius: 0.5rem;
-        background-color: transparent;
-        margin: 4px;
-        padding: 0.7rem 1rem;
-        font-size: 15px;
-      }
-      .blue {
-        color: #0a69ff;
-      }
-      .space {
-        margin: 0 0.5rem;
-      }
-      .divideLine {
-        border-top: 1px solid #eeeeee;
-        margin: 1rem 0rem;
-        width: 1080px;
-        justify-content: center;
-        align-items: center;
-      }
-      .mainLine {
-        border-top: 1px solid #eeeeee;
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <header class="wrapper__header flex">
-      <div class="wrapper__header__menu flex fixed">
-        <div class="header__menu flex">
-          <div class="menu__logo">wanted</div>
-          <span><i class="fa-solid fa-bars-staggered"></i>채용</span>
-          <span>커리어</span>
-          <span>소셜</span>
-          <span>이력서</span>
-          <span>프리랜서</span>
-          <span>더보기</span>
-        </div>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <button class="btn blue">회원가입/로그인</button>
-        <button class="btn">기업 서비스</button>
-      </div>
-    </header>
-    <article class="nav__bar__container flex">
-      <div class="bar__content flex">
-        <div>개발</div>
-        <div>⥥</div>
-        <div>|</div>
-        <div>개발 전체</div>
-        <div>⥥</div>
-      </div>
-    </article>
-    <nav class="wrapper__stick__menu flex">
-      <div class="stick__menu__button flex">
-        <button class="btn"><span class="space">지역 </span><span class="blue space">한국</span></button>
-        <button class="btn">
-          <span class="space">경력 </span><span class="blue">전체</span><span class="space">⥥</span>
-        </button>
-        <button class="btn"><span class="space">기술스택 </span><span class="space">⥥</span></button>
-        <button class="btn">추천순<span class="space">⥥</span></button>
-      </div>
-      <div class="divideLine flex"></div>
-      <div class="stick__menu__badge flex">
-        <span id="b1" class="badge space">연봉이 최고의 복지💰</span>
-        <span id="b2" class="badge space">재택근무🏠</span>
-        <span id="b3" class="badge space">퇴사율 10% 이하🍬</span>
-        <span id="b4" class="badge space">급성장 중📈</span>
-        <span id="b5" class="badge space">병역특례🕰️</span>
-        <span id="b6" class="badge space">50인 이하⬇</span>
-        <span id="b7" class="badge space">50인 이상⬆</span>
-        <span id="b8" class="badge space">업력 5년 이상🏢</span>
-      </div>
-    </nav>
-    <main class="wrapper__main flex">
-      <article class="main__ad__content flex">
-        <div class="ad__subtitle flex">
-          <i class="fa-solid fa-bookmark blue space"></i>
-          <div class="blue">북마크 모아보기</div>
-        </div>
-        <div class="ad__title">적극 채용 중인 회사</div>
-        <div class="ad__banner flex">
-          <div class="banner__box flex">
-            <img src="http://via.placeholder.com/50x50" class="banner__thumb" />
-            <img src="http://via.placeholder.com/197x147" class="placeholder" />
-            <div class="placeholder__footer">
-              <div class="placeholder__title">샘플</div>
-              <div class="placeholder__subtitle">샘플</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+        <title>wanted</title>
+        <link href="./index.css" rel="stylesheet" />
+        <link href="./header.css" rel="stylesheet" />
+        <link href="./nav.css" rel="stylesheet" />
+        <link href="./footer.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/3f58dd8361.js" crossorigin="anonymous"></script>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+            }
+            html,
+            body {
+                width: 100%;
+                font-size: 12px;
+            }
+            .flex {
+                display: flex;
+            }
+            .fixed {
+                position: fixed;
+            }
+            .btn {
+                border: 1px solid #eeeeee;
+                border-radius: 0.5rem;
+                background-color: transparent;
+                margin: 4px;
+                padding: 0.7rem 1rem;
+                font-size: 15px;
+            }
+            .blue {
+                color: #0a69ff;
+            }
+            .space {
+                margin: 0 0.5rem;
+            }
+            .divideLine {
+                border-top: 1px solid #eeeeee;
+                margin: 1rem 0rem;
+                width: 1080px;
+                justify-content: center;
+                align-items: center;
+            }
+            .mainLine {
+                border-top: 1px solid #eeeeee;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="wrapper__header flex">
+            <div class="wrapper__header__menu flex fixed">
+                <div class="header__menu flex">
+                    <div class="menu__logo">wanted</div>
+                    <span><i class="fa-solid fa-bars-staggered"></i>채용</span>
+                    <span>커리어</span>
+                    <span>소셜</span>
+                    <span>이력서</span>
+                    <span>프리랜서</span>
+                    <span>더보기</span>
+                </div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button class="btn blue">회원가입/로그인</button>
+                <button class="btn">기업 서비스</button>
             </div>
-          </div>
-          <div class="banner__box flex">
-            <img src="http://via.placeholder.com/50x50" class="banner__thumb" />
-            <img src="http://via.placeholder.com/197x147" class="placeholder" />
-            <div class="placeholder__footer">
-              <div class="placeholder__title">샘플</div>
-              <div class="placeholder__subtitle">샘플</div>
+        </header>
+        <article class="nav__bar__container flex">
+            <div class="bar__content flex">
+                <div>개발</div>
+                <div>⥥</div>
+                <div>|</div>
+                <div>개발 전체</div>
+                <div>⥥</div>
             </div>
-          </div>
-          <div class="banner__box flex">
-            <img src="http://via.placeholder.com/50x50" class="banner__thumb" />
-            <img src="http://via.placeholder.com/197x147" class="placeholder" />
-            <div class="placeholder__footer">
-              <div class="placeholder__title">샘플</div>
-              <div class="placeholder__subtitle">샘플</div>
-            </div>
-          </div>
-          <div class="banner__box flex">
-            <img src="http://via.placeholder.com/50x50" class="banner__thumb" />
-            <img src="http://via.placeholder.com/197x147" class="placeholder" />
-            <div class="placeholder__footer">
-              <div class="placeholder__title">샘플</div>
-              <div class="placeholder__subtitle">샘플</div>
-            </div>
-          </div>
-          <div class="banner__box flex">
-            <img src="http://via.placeholder.com/50x50" class="banner__thumb" />
-            <img src="http://via.placeholder.com/197x147" class="placeholder" />
-            <div class="placeholder__footer">
-              <div class="placeholder__title">샘플</div>
-              <div class="placeholder__subtitle">샘플</div>
-            </div>
-          </div>
-        </div>
-      </article>
-      <article class="main__content flex">
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <article class="main__banner">
-          <div class="main__banner__title">찐 합격자들의 연봉 보고가세요</div>
-          <div class="main__banner__subtitle">합격자 정보 보러 가기</div>
         </article>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-        <aside class="content__card flex">
-          <div class="card__ad">
-            <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
-            <div class="ad__money">합격보상금 100만원</div>
-          </div>
-          <div class="card__text flex">
-            <div class="placeholder__title">샘플</div>
-            <div class="placeholder__subtitle">샘플</div>
-          </div>
-        </aside>
-      </article>
-    </main>
-    <footer></footer>
-  </body>
+        <nav class="wrapper__stick__menu flex">
+            <div class="stick__menu__button flex">
+                <button class="btn"><span class="space">지역 </span><span class="blue space">한국</span></button>
+                <button class="btn">
+                    <span class="space">경력 </span><span class="blue">전체</span><span class="space">⥥</span>
+                </button>
+                <button class="btn"><span class="space">기술스택 </span><span class="space">⥥</span></button>
+                <button class="btn">추천순<span class="space">⥥</span></button>
+            </div>
+            <div class="divideLine flex"></div>
+            <div class="stick__menu__badge flex">
+                <span id="b1" class="badge space">연봉이 최고의 복지💰</span>
+                <span id="b2" class="badge space">재택근무🏠</span>
+                <span id="b3" class="badge space">퇴사율 10% 이하🍬</span>
+                <span id="b4" class="badge space">급성장 중📈</span>
+                <span id="b5" class="badge space">병역특례🕰️</span>
+                <span id="b6" class="badge space">50인 이하⬇</span>
+                <span id="b7" class="badge space">50인 이상⬆</span>
+                <span id="b8" class="badge space">업력 5년 이상🏢</span>
+            </div>
+        </nav>
+        <main class="wrapper__main flex">
+            <article class="main__ad__content flex">
+                <div class="ad__subtitle flex">
+                    <i class="fa-solid fa-bookmark blue space"></i>
+                    <div class="blue">북마크 모아보기</div>
+                </div>
+                <div class="ad__title">적극 채용 중인 회사</div>
+                <div class="ad__banner flex">
+                    <div class="banner__box flex">
+                        <img src="http://via.placeholder.com/50x50" class="banner__thumb" />
+                        <img src="http://via.placeholder.com/197x147" class="placeholder" />
+                        <div class="placeholder__footer">
+                            <div class="placeholder__title">샘플</div>
+                            <div class="placeholder__subtitle">샘플</div>
+                        </div>
+                    </div>
+                    <div class="banner__box flex">
+                        <img src="http://via.placeholder.com/50x50" class="banner__thumb" />
+                        <img src="http://via.placeholder.com/197x147" class="placeholder" />
+                        <div class="placeholder__footer">
+                            <div class="placeholder__title">샘플</div>
+                            <div class="placeholder__subtitle">샘플</div>
+                        </div>
+                    </div>
+                    <div class="banner__box flex">
+                        <img src="http://via.placeholder.com/50x50" class="banner__thumb" />
+                        <img src="http://via.placeholder.com/197x147" class="placeholder" />
+                        <div class="placeholder__footer">
+                            <div class="placeholder__title">샘플</div>
+                            <div class="placeholder__subtitle">샘플</div>
+                        </div>
+                    </div>
+                    <div class="banner__box flex">
+                        <img src="http://via.placeholder.com/50x50" class="banner__thumb" />
+                        <img src="http://via.placeholder.com/197x147" class="placeholder" />
+                        <div class="placeholder__footer">
+                            <div class="placeholder__title">샘플</div>
+                            <div class="placeholder__subtitle">샘플</div>
+                        </div>
+                    </div>
+                    <div class="banner__box flex">
+                        <img src="http://via.placeholder.com/50x50" class="banner__thumb" />
+                        <img src="http://via.placeholder.com/197x147" class="placeholder" />
+                        <div class="placeholder__footer">
+                            <div class="placeholder__title">샘플</div>
+                            <div class="placeholder__subtitle">샘플</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__content flex">
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <article class="main__banner">
+                    <div class="main__banner__title">찐 합격자들의 연봉 보고가세요</div>
+                    <div class="main__banner__subtitle">합격자 정보 보러 가기</div>
+                </article>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+                <aside class="content__card flex">
+                    <div class="card__ad">
+                        <img src="http://via.placeholder.com/254x170" class="card__placeholder" />
+                        <div class="ad__money">합격보상금 100만원</div>
+                    </div>
+                    <div class="card__text flex">
+                        <div class="placeholder__title">샘플</div>
+                        <div class="placeholder__subtitle">샘플</div>
+                    </div>
+                </aside>
+            </article>
+        </main>
+        <footer></footer>
+    </body>
 </html>

@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>입력태그</title>
-</head>
-<body>
-    <select>
-        <option selected disabled> 음료를 고르세요</option>
-        <option value="coffee">커피</option>
-        <option value="cola">콜라</option>
-        <option value="juice">쥬스</option>
-        <option value="water">생수</option>
-    </select>
-    <br>
-    <select multiple size="2">
-        <option selected disabled> 음료를 고르세요</option>
-        <option value="coffee">커피</option>
-        <option value="cola">콜라</option>
-        <option value="juice">쥬스</option>
-        <option value="water">생수</option>
-    </select>
-    <br>
-    <!-- js적 처리를 위해 value반환 -->
-    <!-- selected를 추가하여 미리 선택 시킬 수 있음 -->
+    <head>
+        <meta charset="UTF-8" />
+        <title>입력태그</title>
+    </head>
+    <body>
+        <select>
+            <option selected disabled>음료를 고르세요</option>
+            <option value="coffee">커피</option>
+            <option value="cola">콜라</option>
+            <option value="juice">쥬스</option>
+            <option value="water">생수</option>
+        </select>
+        <br />
+        <select multiple size="2">
+            <option selected disabled>음료를 고르세요</option>
+            <option value="coffee">커피</option>
+            <option value="cola">콜라</option>
+            <option value="juice">쥬스</option>
+            <option value="water">생수</option>
+        </select>
+        <br />
+        <!-- js적 처리를 위해 value반환 -->
+        <!-- selected를 추가하여 미리 선택 시킬 수 있음 -->
 
-    <fieldset>
-        <legend>음료 주문</legend>
-        <textarea cols="30" rows="4" placeholder="기타 음료를 원한다면 자유롭게 써주세요"></textarea>
-    <!-- 글씨 범위 지정, cols 행 rows 열 -->
-        <br>    
-        <progress max="100" value="30"></progress>
-        <br>
-        <button>호출</button>
-    </fieldset>
-<!-- fieldset을 이용해 공간을 나누고, legend(범례)를 통해 구별도 된다. -->
-</body>
+        <fieldset>
+            <legend>음료 주문</legend>
+            <textarea cols="30" rows="4" placeholder="기타 음료를 원한다면 자유롭게 써주세요"></textarea>
+            <!-- 글씨 범위 지정, cols 행 rows 열 -->
+            <br />
+            <progress max="100" value="30"></progress>
+            <br />
+            <button>호출</button>
+        </fieldset>
+        <!-- fieldset을 이용해 공간을 나누고, legend(범례)를 통해 구별도 된다. -->
+    </body>
 </html>

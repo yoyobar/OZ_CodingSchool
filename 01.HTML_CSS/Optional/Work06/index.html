@@ -1,206 +1,216 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/3f58dd8361.js" crossorigin="anonymous"></script>
-    <link href="./animation.css" rel="stylesheet" />
-    <link href="./index.css" rel="stylesheet" />
-    <link href="./left.css" rel="stylesheet" />
-    <link href="./main.css" rel="stylesheet" />
-    <link href="./footer.css" rel="stylesheet" />
-    <link href="./component.css" rel="stylesheet" />
-    <title>자기소개서</title>
-    <style>
-      /* 기본 값 */
-      * {
-        cursor: default;
-        margin: 0;
-        box-sizing: border-box;
-        color: white;
-      }
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-        font-size: 12px;
-      }
-      a {
-        text-decoration-line: none;
-      }
-      .image__subProfile {
-        width: 100px;
-        height: 100px;
-        display: none;
-      }
-      .title__subProfile__box {
-        padding-left: 1rem;
-        display: none;
-      }
-      /* 반응형 레이아웃 */
-      @media screen and (max-width: 1200px) {
-        .wrapper__body {
-          gap: 5px;
-          grid-template-areas:
-            "left"
-            "left"
-            "footer";
-        }
-        .wrapper__main__body {
-          display: none;
-        }
-        .wrapper__footer__body {
-          min-width: 200px;
-        }
-        .image__profile__box {
-          height: 100px;
-          justify-content: flex-start;
-        }
-        .wrapper__left__body {
-          min-width: 200px;
-        }
-        .image__profile {
-          display: none;
-        }
-        .image__subProfile {
-          display: block;
-        }
-        .title__profile__box {
-          display: none;
-        }
-        .title__subProfile__box {
-          display: block;
-        }
-        .profile {
-          width: 100%;
-          height: 0rem;
-        }
-        .space {
-          padding-right: 0.5rem;
-        }
-        .btn {
-          width: 80%;
-        }
-        .wrapper__footer__body {
-          height: 30rem;
-          min-width: 30rem;
-        }
-        .wrapper__footer__content {
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        .content__title {
-          width: 100%;
-        }
-        .footer__content {
-          width: 80%;
-          margin: 2rem;
-        }
-        .subtitle {
-          font-size: 1.2rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrapper flex">
-      <div class="wrapper__body">
-        <div class="wrapper__left__body flex bg br1">
-          <div class="image__profile__box flex">
-            <img src="https://avatars.githubusercontent.com/u/118744078?v=4" class="image__profile br1" />
-            <img src="https://avatars.githubusercontent.com/u/118744078?v=4" class="image__subProfile br2" />
-            <div class="title__subProfile__box beige flex title">Kim Minsu</div>
-          </div>
-          <div class="title__profile__box flex">
-            <div class="title beige">Kim Minsu</div>
-            <div class="subtitle">yoyobar, Fast-growing developer</div>
-          </div>
-          <button class="btn subtitle black">Edit Profile</button>
-          <nav class="profile flex subtitle">
-            <i class="fa-solid fa-user space"></i>
-            <div class="subtitle gray space">23 follower</div>
-          </nav>
-          <nav class="profile flex subtitle">
-            <i class="fa-solid fa-user space"></i>
-            <div class="subtitle gray space">27 following</div>
-          </nav>
-          <nav class="profile flex subtitle">
-            <i class="fa-solid fa-cake-candles space"></i>
-            <div class="subtitle gray space">1998-01-03</div>
-          </nav>
-          <nav class="profile flex subtitle">
-            <i class="fa-solid fa-globe space"></i>
-            <div class="subtitle gray space">Republic of Korea</div>
-          </nav>
-          <nav class="profile flex subtitle">
-            <i class="fa-solid fa-note-sticky space"></i>
-            <div class="subtitle gray">Notion</div>
-          </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/3f58dd8361.js" crossorigin="anonymous"></script>
+        <link href="./animation.css" rel="stylesheet" />
+        <link href="./index.css" rel="stylesheet" />
+        <link href="./left.css" rel="stylesheet" />
+        <link href="./main.css" rel="stylesheet" />
+        <link href="./footer.css" rel="stylesheet" />
+        <link href="./component.css" rel="stylesheet" />
+        <title>자기소개서</title>
+        <style>
+            /* 기본 값 */
+            * {
+                cursor: default;
+                margin: 0;
+                box-sizing: border-box;
+                color: white;
+            }
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                font-size: 12px;
+            }
+            a {
+                text-decoration-line: none;
+            }
+            .image__subProfile {
+                width: 100px;
+                height: 100px;
+                display: none;
+            }
+            .title__subProfile__box {
+                padding-left: 1rem;
+                display: none;
+            }
+            /* 반응형 레이아웃 */
+            @media screen and (max-width: 1200px) {
+                .wrapper__body {
+                    gap: 5px;
+                    grid-template-areas:
+                        'left'
+                        'left'
+                        'footer';
+                }
+                .wrapper__main__body {
+                    display: none;
+                }
+                .wrapper__footer__body {
+                    min-width: 200px;
+                }
+                .image__profile__box {
+                    height: 100px;
+                    justify-content: flex-start;
+                }
+                .wrapper__left__body {
+                    min-width: 200px;
+                }
+                .image__profile {
+                    display: none;
+                }
+                .image__subProfile {
+                    display: block;
+                }
+                .title__profile__box {
+                    display: none;
+                }
+                .title__subProfile__box {
+                    display: block;
+                }
+                .profile {
+                    width: 100%;
+                    height: 0rem;
+                }
+                .space {
+                    padding-right: 0.5rem;
+                }
+                .btn {
+                    width: 80%;
+                }
+                .wrapper__footer__body {
+                    height: 30rem;
+                    min-width: 30rem;
+                }
+                .wrapper__footer__content {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .content__title {
+                    width: 100%;
+                }
+                .footer__content {
+                    width: 80%;
+                    margin: 2rem;
+                }
+                .subtitle {
+                    font-size: 1.2rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper flex">
+            <div class="wrapper__body">
+                <div class="wrapper__left__body flex bg br1">
+                    <div class="image__profile__box flex">
+                        <img src="https://avatars.githubusercontent.com/u/118744078?v=4" class="image__profile br1" />
+                        <img
+                            src="https://avatars.githubusercontent.com/u/118744078?v=4"
+                            class="image__subProfile br2"
+                        />
+                        <div class="title__subProfile__box beige flex title">Kim Minsu</div>
+                    </div>
+                    <div class="title__profile__box flex">
+                        <div class="title beige">Kim Minsu</div>
+                        <div class="subtitle">yoyobar, Fast-growing developer</div>
+                    </div>
+                    <button class="btn subtitle black">Edit Profile</button>
+                    <nav class="profile flex subtitle">
+                        <i class="fa-solid fa-user space"></i>
+                        <div class="subtitle gray space">23 follower</div>
+                    </nav>
+                    <nav class="profile flex subtitle">
+                        <i class="fa-solid fa-user space"></i>
+                        <div class="subtitle gray space">27 following</div>
+                    </nav>
+                    <nav class="profile flex subtitle">
+                        <i class="fa-solid fa-cake-candles space"></i>
+                        <div class="subtitle gray space">1998-01-03</div>
+                    </nav>
+                    <nav class="profile flex subtitle">
+                        <i class="fa-solid fa-globe space"></i>
+                        <div class="subtitle gray space">Republic of Korea</div>
+                    </nav>
+                    <nav class="profile flex subtitle">
+                        <i class="fa-solid fa-note-sticky space"></i>
+                        <div class="subtitle gray">Notion</div>
+                    </nav>
+                </div>
+                <main class="wrapper__main__body flex bg br1">
+                    <article class="main__content flex">
+                        <img
+                            class="stat"
+                            src="https://github-readme-stats.vercel.app/api?username=yoyobar&show_icons=true&theme=radical"
+                        />
+                        <div class="divideLine"></div>
+                    </article>
+                    <article class="sub__content flex">
+                        <div class="subtitle">Tech Stacks</div>
+                        <div class="badge html br0">HTML5</div>
+                        <div class="badge css br0">CSS3</div>
+                        <div class="badge js br0 black">JAVASCRIPT</div>
+                    </article>
+                    <article class="sub__content flex">
+                        <div class="subtitle">Tools</div>
+                        <div class="badge vs br0">VS CODE</div>
+                        <div class="badge git br0">GIT</div>
+                    </article>
+                    <article class="sub__content flex">
+                        <div class="subtitle">Studying</div>
+                        <a href="https://ozcodingschool.com/" class="badge oz br0">OZ CODING SCHOOL</a>
+                        <a href="https://www.notion.so/OZ-bc6f92be73114b698ab85e8d14756e99" class="badge post br0"
+                            >MY. POST</a
+                        >
+                    </article>
+                    <article class="sub__content flex">
+                        <div class="subtitle">Contact</div>
+                        <a
+                            href="https://www.notion.so/Minsu-Kim-3d4cdf754f1e42cf8460dd12408a41a4"
+                            class="badge notion br0"
+                            >NOTION</a
+                        >
+                        <div class="badge mail br0">BARWAIT@NAVER.COM</div>
+                    </article>
+                </main>
+                <div class="wrapper__footer__body flex bg br1">
+                    <div class="wrapper__footer__content flex">
+                        <nav
+                            onclick="location.href='https://github.com/yoyobar/OZ_CodingSchool';"
+                            class="footer__content flex br1"
+                        >
+                            <div class="content__title flex">
+                                <i class="fa-solid fa-book"></i>
+                                <div class="subtitle">OZ_CodingSchool</div>
+                                <div class="status subtitle black br0">Public</div>
+                            </div>
+                            <div class="content__subtitle flex">
+                                <div class="information br1"></div>
+                                <div class="subtitle">HTML</div>
+                            </div>
+                        </nav>
+                        <nav
+                            onclick="location.href='https://github.com/yoyobar/inflearn-js-practice';"
+                            class="footer__content flex br1"
+                        >
+                            <div class="content__title flex">
+                                <i class="fa-solid fa-book"></i>
+                                <div class="subtitle">Inflearn-js-practice</div>
+                                <div class="status subtitle black br0">Public</div>
+                            </div>
+                            <div class="content__subtitle flex">
+                                <div class="information br1"></div>
+                                <div class="subtitle">HTML</div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
-        <main class="wrapper__main__body flex bg br1">
-          <article class="main__content flex">
-            <img
-              class="stat"
-              src="https://github-readme-stats.vercel.app/api?username=yoyobar&show_icons=true&theme=radical"
-            />
-            <div class="divideLine"></div>
-          </article>
-          <article class="sub__content flex">
-            <div class="subtitle">Tech Stacks</div>
-            <div class="badge html br0">HTML5</div>
-            <div class="badge css br0">CSS3</div>
-            <div class="badge js br0 black">JAVASCRIPT</div>
-          </article>
-          <article class="sub__content flex">
-            <div class="subtitle">Tools</div>
-            <div class="badge vs br0">VS CODE</div>
-            <div class="badge git br0">GIT</div>
-          </article>
-          <article class="sub__content flex">
-            <div class="subtitle">Studying</div>
-            <a href="https://ozcodingschool.com/" class="badge oz br0">OZ CODING SCHOOL</a>
-            <a href="https://www.notion.so/OZ-bc6f92be73114b698ab85e8d14756e99" class="badge post br0">MY. POST</a>
-          </article>
-          <article class="sub__content flex">
-            <div class="subtitle">Contact</div>
-            <a href="https://www.notion.so/Minsu-Kim-3d4cdf754f1e42cf8460dd12408a41a4" class="badge notion br0"
-              >NOTION</a
-            >
-            <div class="badge mail br0">BARWAIT@NAVER.COM</div>
-          </article>
-        </main>
-        <div class="wrapper__footer__body flex bg br1">
-          <div class="wrapper__footer__content flex">
-            <nav onclick="location.href='https://github.com/yoyobar/OZ_CodingSchool';" class="footer__content flex br1">
-              <div class="content__title flex">
-                <i class="fa-solid fa-book"></i>
-                <div class="subtitle">OZ_CodingSchool</div>
-                <div class="status subtitle black br0">Public</div>
-              </div>
-              <div class="content__subtitle flex">
-                <div class="information br1"></div>
-                <div class="subtitle">HTML</div>
-              </div>
-            </nav>
-            <nav
-              onclick="location.href='https://github.com/yoyobar/inflearn-js-practice';"
-              class="footer__content flex br1"
-            >
-              <div class="content__title flex">
-                <i class="fa-solid fa-book"></i>
-                <div class="subtitle">Inflearn-js-practice</div>
-                <div class="status subtitle black br0">Public</div>
-              </div>
-              <div class="content__subtitle flex">
-                <div class="information br1"></div>
-                <div class="subtitle">HTML</div>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>

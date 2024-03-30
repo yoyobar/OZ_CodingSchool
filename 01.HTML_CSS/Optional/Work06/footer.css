@@ -1,37 +1,37 @@
 .wrapper__footer__content {
-  width: 100%;
-  height: 100%;
-  padding: 2rem;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
 }
 .footer__content {
-  width: 30%;
-  height: 100%;
-  padding: 1rem;
-  margin-right: 1rem;
-  background-color: #7884a2;
-  flex-direction: column;
-  justify-content: center;
-  cursor: pointer;
+    width: 30%;
+    height: 100%;
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: #7884a2;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
 }
 .content__title {
-  width: 70%;
-  align-items: center;
+    width: 70%;
+    align-items: center;
 }
 .content__subtitle {
-  align-items: center;
-  padding-left: 1rem;
+    align-items: center;
+    padding-left: 1rem;
 }
 .information {
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  margin-right: 0.5rem;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin-right: 0.5rem;
 }
 .fa-book {
-  margin-right: 1rem;
+    margin-right: 1rem;
 }
 .status {
-  margin-left: 1rem;
-  padding: 2px;
-  background-color: beige;
+    margin-left: 1rem;
+    padding: 2px;
+    background-color: beige;
 }

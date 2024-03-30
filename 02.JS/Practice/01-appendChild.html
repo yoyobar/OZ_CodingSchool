@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>appendChild</title>
-    <style>
-      #container {
-        display: flex;
-        justify-content: space-between;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="container"></div>
-  </body>
-  <script>
-    for (let i = 0; i < 5; i++) {
-      const div = document.getElementById("container");
-      const box = document.createElement("div");
-      box.style.color = "blue";
-      box.style.width = "200px";
-      box.style.height = "200px";
-      box.style.border = "1px solid red";
-      box.textContent = "테스트";
-      div.appendChild(box);
-    }
-    // append와 appendChild는 기능적으로는 차이가 없다
-    // append는 단순 텍스트 문자열도 추가할 수 있다.
-    // appendChild는 반환값이 존재한다.
-  </script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>appendChild</title>
+        <style>
+            #container {
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+    </body>
+    <script>
+        for (let i = 0; i < 5; i++) {
+            const div = document.getElementById('container');
+            const box = document.createElement('div');
+            box.style.color = 'blue';
+            box.style.width = '200px';
+            box.style.height = '200px';
+            box.style.border = '1px solid red';
+            box.textContent = '테스트';
+            div.appendChild(box);
+        }
+        // append와 appendChild는 기능적으로는 차이가 없다
+        // append는 단순 텍스트 문자열도 추가할 수 있다.
+        // appendChild는 반환값이 존재한다.
+    </script>
 </html>

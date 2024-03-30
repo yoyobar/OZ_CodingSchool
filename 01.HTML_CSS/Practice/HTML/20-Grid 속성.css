@@ -1,30 +1,30 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* grid container */
 ul {
-  padding: 0;
-  list-style-type: none;
-  border: 5px solid teal;
+    padding: 0;
+    list-style-type: none;
+    border: 5px solid teal;
 }
 /* style */
 li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: beige;
-  border: 5px solid tomato;
-  border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border: 5px solid tomato;
+    border-radius: 8px;
 }
 /* minmax(최소길이, 최대길이) auto*/
 /* repeat(반복회수, 길이) */
 /* auto-fill 최소길이 합보다 컨테이너가 길어지면 빈 공간을 남긴다 */
 /* auto-fit 컨테이너의 빈공간을 전부 채운다*/
 .container {
-  display: grid;
-  height: 500px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
 }

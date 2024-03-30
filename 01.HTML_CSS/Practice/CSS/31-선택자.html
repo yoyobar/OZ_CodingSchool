@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
-    <title>선택자</title>
-    <style>
-      /* 속성 선택자 */
-      [alt] {
-        border: 3px solid red;
-      }
-      [width*="120"] {
-        /* 5라는 속성이 포함되어있는 width */
-        border: 1px solid blue;
-      }
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+        <title>선택자</title>
+        <style>
+            /* 속성 선택자 */
+            [alt] {
+                border: 3px solid red;
+            }
+            [width*='120'] {
+                /* 5라는 속성이 포함되어있는 width */
+                border: 1px solid blue;
+            }
 
-      body em {
-        /* body에 포함된 em */
-        color: blue;
-      }
+            body em {
+                /* body에 포함된 em */
+                color: blue;
+            }
 
-      p > em {
-        /* p의 자식요소인 em */
-        color: red;
-      }
+            p > em {
+                /* p의 자식요소인 em */
+                color: red;
+            }
 
-      #sam + p {
-        /* sam의 인접 형제선택자 */
-        color: orange;
-      }
+            #sam + p {
+                /* sam의 인접 형제선택자 */
+                color: orange;
+            }
 
-      #sam ~ p {
-        /* sam의 모든 형제선택자 */
-        /* 형제 선택자는 뒤이어서 있는 개체에만 전달이된다. 즉 위에있는 형제선택자는 안먹힘 */
-        color: blue;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- 선택자 -->
-    <!-- 속성 선택자[]-->
-    <!-- 하위 요소 선택자 공백 -->
-    <!-- 자식 요소 선택자 > -->
-    <!-- 인접 형제 선택자 + -->
-    <!-- 형제 요소 선택자 ~ -->
-    <!-- 기호와 함께 사용하는 속성 선택자
+            #sam ~ p {
+                /* sam의 모든 형제선택자 */
+                /* 형제 선택자는 뒤이어서 있는 개체에만 전달이된다. 즉 위에있는 형제선택자는 안먹힘 */
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 선택자 -->
+        <!-- 속성 선택자[]-->
+        <!-- 하위 요소 선택자 공백 -->
+        <!-- 자식 요소 선택자 > -->
+        <!-- 인접 형제 선택자 + -->
+        <!-- 형제 요소 선택자 ~ -->
+        <!-- 기호와 함께 사용하는 속성 선택자
     * : 값의 포함 여부
     ^ : 값의 시작 여부
     $ : 값의 끝 여부
  -->
 
-    <img src="../../Challenge/Work01/Images/profile_main.png" width="120" alt="번개" />
-    <img src="../../Challenge/Work01/Images/profile_main.png" width="120" />
-    <img src="../../Challenge/Work01/Images/profile_main.png" width="120" id="sam" />
-    <p>대전은 유노코딩의 고향이자, 현 거주지이기도 합니다.</p>
-    <p>대전 광역시 유성구에는 대전의 랜드마크 한빛탑이 있습니다.</p>
-    <p>한빛탑 맞은 편에는 <em>엑스포다리</em>가 놓여 있습니다.</p>
-    <p>엑스포다리 아래에는 대전 3대하천 중 하나인 갑천이 흐릅니다.</p>
-  </body>
+        <img src="../../Challenge/Work01/Images/profile_main.png" width="120" alt="번개" />
+        <img src="../../Challenge/Work01/Images/profile_main.png" width="120" />
+        <img src="../../Challenge/Work01/Images/profile_main.png" width="120" id="sam" />
+        <p>대전은 유노코딩의 고향이자, 현 거주지이기도 합니다.</p>
+        <p>대전 광역시 유성구에는 대전의 랜드마크 한빛탑이 있습니다.</p>
+        <p>한빛탑 맞은 편에는 <em>엑스포다리</em>가 놓여 있습니다.</p>
+        <p>엑스포다리 아래에는 대전 3대하천 중 하나인 갑천이 흐릅니다.</p>
+    </body>
 </html>
