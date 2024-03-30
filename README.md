@@ -61,7 +61,7 @@ Front-end 3기 김민수의 개인 기록입니다.
   
 | Project      | Repository                                                                                               | 과제 명                                          | 제출 날짜 |
 | ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------- |
-| Challenge 01 | [Challenge/Work01](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work01) | 문제풀기 - 01 | 03/29 |
+| Challenge 01 | [Challenge/Work01](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work01) | 문제풀기 | 03/29 |
 | Challenge 02 | [Challenge/Work02](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work02) | 입출력 과제 | 03/29 |
 | Challenge 03 | 현재 제출 불가 | - | - |
 | Challenge 04 | 현재 제출 불가 | - | - |
@@ -72,6 +72,8 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 09 | 현재 제출 불가 | - | - |
 | Challenge 10 | 현재 제출 불가 | - | - |
 | Challenge 11 | [Challenge/Work11](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work11) | Mini Project : 로또 번호 추첨 게임 | 03/30 |
+| Challenge 12 | 현재 제출 불가 | - | - |
+| Challenge 13 | [Challenge/Work13](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work13) | Mini Project : 투두 리스트 | 03/31 |
 
 
 #### 선택 과제
@@ -85,6 +87,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Project      | Repository                                                                                               | 과제 명                                          | 제출 날짜 |
 | ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------- |
 | Timer & Stopwatch | [Study/Timer](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Study/Counter) | 타이머/스톱워치 프로젝트 | 03/28     |
+| TodoList | [Study/Timer](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Study/Counter) | 투두리스트 프로젝트 | 03/31     |
 
 ### POST
 
