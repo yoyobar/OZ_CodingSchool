@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 700px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    margin-top: 20px;
+}
+
+input[name='todo'] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+input[type='submit'] {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+}
+input[type='submit']:hover {
+    background-color: #00458e;
+}
+ul {
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+ul li {
+    padding: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+.marked {
+    background-color: #979797;
+}
+
+button {
+    margin-left: 10px;
+    border: none;
+    background-color: tomato;
+    border-radius: 3px;
+    color: cornsilk;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(157, 59, 42);
+}
