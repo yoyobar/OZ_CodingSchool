@@ -8,9 +8,9 @@
 // interval명.clearInterval()
 
 setTimeout(function () {
-  console.log("test");
+    console.log('test');
 }, 3000);
 
 setInterval(function () {
-  console.log("갱신");
+    console.log('갱신');
 }, 1000);

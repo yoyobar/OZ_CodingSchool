@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gothic A1', sans-serif;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lotto {
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+h3 {
+    font-size: 2rem;
+}
+span {
+    padding-right: 10px;
+}
+.numbers {
+    width: 100%;
+    height: 4rem;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+}
+.eachNum {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 2rem;
+    margin: auto;
+    padding: auto;
+}
+button {
+    width: 60px;
+    padding: 5px;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    background: #f87f70;
+}
+button:hover {
+    background: rgb(131, 66, 58);
+}
