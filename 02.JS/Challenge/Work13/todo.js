@@ -1,90 +1,93 @@
-const todoList = document.getElementById('todo-list');
+//global
 const todoForm = document.getElementById('todo-form');
-let todoArr = [];
+const todoList = document.getElementById('todo-list');
+let todoArray = [];
 
-// 할일 추가, 화면 보여주기, 할일 수정하기, 할일 삭제하기
-
-// 로컬 저장소에 저장하기
-function saveTodo() {
-    const todoString = JSON.stringify(todoArr);
-    localStorage.setItem('myTodo', todoString);
-}
-
-// 삭제 하기
-function handleTodoDelBtnClick(clickedId) {
-    todoArr = todoArr.filter((aTodo) => {
-        return aTodo.todoId !== clickedId;
+// 생성된 li>button으로의 삭제판단, 조건 : 이벤트 발생 후 함수호출, Array.filter로 반환
+const todoDel = (todoId) => {
+    todoArray = todoArray.filter((aTodo) => {
+        return aTodo.id !== todoId;
     });
-    displayTodo();
-    saveTodo();
-}
+    todoDisplay();
+    todoSave();
+};
 
-// 수정 하기
-function handleTodoItemClick(clickedId) {
-    todoArr = todoArr.map((aTodo) => {
-        if (aTodo.todoId === clickedId) {
+// 생성된 li의 mark변환, 조건 : 이벤트 발생 후 함수호출, Array.map로 변환
+const todoMark = (todoId) => {
+    todoArray = todoArray.map((aTodo) => {
+        if (aTodo.id === todoId) {
             return {
                 ...aTodo,
-                todoDone: !aTodo.todoDone,
+                mark: !aTodo.mark,
             };
         } else {
-            return { ...aTodo };
+            return {
+                ...aTodo,
+            };
         }
     });
-    displayTodo();
-    saveTodo();
-}
+    todoDisplay();
+    todoSave();
+};
 
-// 표시
-const displayTodo = () => {
+// 생성된 Array표기, 조건 : 이벤트 발생 후 함수호출, 각각 forEach로 데이터 참조 가능하게
+const todoDisplay = () => {
     todoList.innerHTML = '';
-
-    todoArr.forEach((aTodo) => {
+    todoArray.forEach((aTodo) => {
         const todoItem = document.createElement('li');
-        const todoDelBtn = document.createElement('span');
-        todoDelBtn.textContent = 'x';
-        todoItem.textContent = aTodo.todoText;
-        todoItem.title = '클릭하면 완료됨';
-        if (aTodo.todoDone) {
-            todoItem.classList.add('done');
+        const todoItemBtn = document.createElement('button');
+        todoItem.title = '누를 경우 완료 처리 됩니다';
+        todoItemBtn.title = '누를 경우 삭제 처리 됩니다';
+        todoItem.textContent = aTodo.name;
+        todoItemBtn.textContent = 'X';
+
+        // 클래스 삽입으로 구별
+        if (aTodo.mark) {
+            todoItem.classList.add('marked');
         } else {
-            todoItem.classList.add('yet');
+            todoItem.classList.add('unmarked');
         }
-        todoDelBtn.title = '클릭하면 삭제됨';
-
         todoItem.addEventListener('click', () => {
-            handleTodoItemClick(aTodo.todoId);
+            todoMark(aTodo.id);
         });
-
-        todoDelBtn.addEventListener('click', () => {
-            handleTodoDelBtnClick(aTodo.todoId);
+        todoItemBtn.addEventListener('click', () => {
+            todoDel(aTodo.id);
         });
-
-        todoItem.appendChild(todoDelBtn);
         todoList.appendChild(todoItem);
+        todoItem.appendChild(todoItemBtn);
     });
 };
 
-// 추가
-todoForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const toBeAdded = {
-        todoText: todoForm.todo.value,
-        todoId: new Date().getTime(),
-        todoDone: false,
+// Array 생성, 조건 : submit 이벤트 발생
+todoForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const addContent = {
+        name: todoForm.todo.value,
+        id: new Date().getTime(),
+        mark: false,
     };
+
+    todoArray.push(addContent);
     todoForm.todo.value = '';
-    todoArr.push(toBeAdded);
-    displayTodo();
-    saveTodo();
+    todoDisplay();
+    todoSave();
 });
 
-// 로컬 저장소에 가져오기
-function loadTodo() {
-    const todoArray = localStorage.getItem('myTodo');
-    if (todoArray !== null) {
-        todoArr = JSON.parse(todoArray);
-        displayTodo();
+// localStorage의 저장
+const todoSave = () => {
+    const todoSaveList = JSON.stringify(todoArray);
+    localStorage.setItem('myTodo', todoSaveList);
+};
+
+// localStorage의 불러오기
+const todoLoad = () => {
+    const todoLoadList = localStorage.getItem('myTodo');
+    if (todoLoadList === null) {
+        return alert('localStorage is Empty');
+    } else {
+        todoArray = JSON.parse(todoLoadList);
+        todoDisplay();
     }
-}
-loadTodo();
+};
+todoLoad();
