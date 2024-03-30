@@ -69,6 +69,9 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 06 | 현재 제출 불가 | - | - |
 | Challenge 07 | 현재 제출 불가 | - | - |
 | Challenge 08 | [Challenge/Work08](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work08) | Mini Project : 회원가입 폼 만들기 | 03/29 |
+| Challenge 09 | 현재 제출 불가 | - | - |
+| Challenge 10 | 현재 제출 불가 | - | - |
+| Challenge 11 | [Challenge/Work11](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work11) | Mini Project : 로또 번호 추첨 게임 | 03/30 |
 
 
 #### 선택 과제
