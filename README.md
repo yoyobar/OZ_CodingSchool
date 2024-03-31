@@ -44,16 +44,16 @@ Front-end 3기 김민수의 개인 기록입니다.
 
 ### POST
 
-- [**HTML 회고**](https://plaid-plow-0e3.notion.site/HTML-f9ecf5bf5d814bcbb75f2eaab728dc5a?pvs=4)
-- [**인라인 구조 / 블록 레벨 구조의 특징과 차이점**](https://plaid-plow-0e3.notion.site/f2289703cfdb4b30b60c7551c47cb1ae?pvs=4)
-- [**CSS 회고**](https://plaid-plow-0e3.notion.site/CSS-df4d0286e6254d38881fa5cabea45d92?pvs=4)
-- [**맥북 기본설정 및 유틸리티**](https://plaid-plow-0e3.notion.site/06a97bc7a91a48f0941ea69f565568ab?pvs=4)
-- [**채팅방 리팩토링 1일차**](https://plaid-plow-0e3.notion.site/1-d5bb05c5850a4864aed1f64cc6e5f58e?pvs=4)
-- [**채팅방 리팩토링 2일차**](https://plaid-plow-0e3.notion.site/2-34c26b7acf3c46649c01a09ed337b70b)
-- [**SPA의 정의**](https://www.notion.so/SPA-90d3a519c1b140eb9a49bf793754d458)
-- [**UI/UX의 차이**](https://www.notion.so/UI-UX-048571bb250547d5aeb783c368e20025)
-- [**햄버거바 제작해보기(CSS)**](https://plaid-plow-0e3.notion.site/CSS-7310846089164693a422b2eb0796ce86)
-- [**Reset.css vs Normalize.css**](https://www.notion.so/Normalize-css-VS-Reset-css-afb0bd2870bf48e1aedee3869a4a8837)
+- [**HTML 회고**](https://www.notion.so/HTML-4ca1f79fae8b4992a4594ab709a2443b?pvs=4)
+- [**인라인 구조 / 블록 레벨 구조의 특징과 차이점**](https://www.notion.so/2b7c40fc0cd24495a5ca8dcaf1918037?pvs=4)
+- [**CSS 회고**](https://www.notion.so/CSS-3d553c614a3a4d238dbbaa0773dc37af?pvs=4)
+- [**맥북 기본설정 및 유틸리티**](https://www.notion.so/5c566b23522a46dfbfb60576220ae3da?pvs=4)
+- [**채팅방 리팩토링 1일차**](https://www.notion.so/1-8a9f51061e1d4acbbfce221225ac330f?pvs=4)
+- [**채팅방 리팩토링 2일차**](https://www.notion.so/2-335aa918b25a4ce2b92266de0677c002?pvs=4)
+- [**SPA의 정의**](https://www.notion.so/SPA-068a26fd11a74e1c91bd42710d1b4c44?pvs=4)
+- [**UI/UX의 차이**](https://www.notion.so/UI-UX-ab3e81ae93974f40b4e8b9c115f94098?pvs=4)
+- [**햄버거바 제작해보기(CSS)**](https://www.notion.so/CSS-c9fc1192a3594a699038ea55ed173dae?pvs=4)
+- [**Reset.css vs Normalize.css**](https://www.notion.so/Normalize-css-VS-Reset-css-e8a0ef87b80d4fa1a8c9591584fac813?pvs=4)
 
 <hr>
 
@@ -91,4 +91,6 @@ Front-end 3기 김민수의 개인 기록입니다.
 
 ### POST
 
-- [**오래된 Var와 호이스팅**](https://plaid-plow-0e3.notion.site/var-6cc0a1461f67497dab2e452a589d267b)
+- [**오래된 Var와 호이스팅**](https://www.notion.so/var-3f1b7e9f5ca344bf83d0465810e56fb2?pvs=4)
+- [**다양한 기능이 있는 투두리스트 만들기**](https://www.notion.so/bff6c3851324437fb5e35a73e6bd934f?pvs=4)
+- [**자바스크립트 회고 1**](https://www.notion.so/1-63ceb21d0f5b4687822ba9ddf3743e8a?pvs=4)
