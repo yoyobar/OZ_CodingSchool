@@ -1,6 +1,7 @@
 //global
 const todoForm = document.getElementById('todo-form');
 const todoList = document.getElementById('todo-list');
+const alert = document.getElementById('alert');
 let todoArray = [];
 
 // 생성된 li>button으로의 삭제판단, 조건 : 이벤트 발생 후 함수호출, Array.filter로 반환

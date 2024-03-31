@@ -1,6 +1,7 @@
 //global
 const todoForm = document.getElementById('todo-form');
 const todoList = document.getElementById('todo-list');
+const alert = document.querySelector('.alert');
 let todoArray = [];
 
 // 생성된 li>button으로의 삭제판단, 조건 : 이벤트 발생 후 함수호출, Array.filter로 반환
@@ -67,6 +68,9 @@ todoForm.addEventListener('submit', (event) => {
         id: new Date().getTime(),
         mark: false,
     };
+    if (addContent.name === '') {
+        return alert.classList.remove('hidden');
+    }
 
     todoArray.push(addContent);
     todoForm.todo.value = '';
@@ -91,3 +95,8 @@ const todoLoad = () => {
     }
 };
 todoLoad();
+
+// alert 박스 되돌리기
+alert.addEventListener('click', () => {
+    alert.classList.toggle('hidden');
+});
