@@ -23,17 +23,17 @@ Front-end 3기 김민수의 개인 기록입니다.
 | ----------- | -------------------------------------------------------------------------------------------------------------- | ------------------------ | --------- |
 | Optional 01 | [Optional/Work01](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.HTML_CSS/Optional/Work01)    | 태그 더 사용해보기       | 03/22     |
 | Optional 02 | [Optional/Work02](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.HTML_CSS/Optional/Work02) | 회원가입 폼 만들어보기   | 03/22     |
-| Optional Post | [Blog Post](https://www.notion.so/OZ-bc6f92be73114b698ab85e8d14756e99)         | 나만의 기술블로그 만들기(인라인 구조와 블록레벨구조) | 03/22     |
+| Optional Post | [Blog Post](https://www.notion.so/Minsu-Kim-3d4cdf754f1e42cf8460dd12408a41a4)        | 나만의 기술블로그 만들기(인라인 구조와 블록레벨구조) | 03/22     |
 | Optional 03 | [Optional/Work03](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.HTML_CSS/Optional/Work03)         | 나만의 일기장 만들어보기 | 03/26     |
 | Optional 04 | [Optional/Work04](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.HTML_CSS/Optional/Work04)         | 배경화면과 박스 디자인 | 03/26     |
 | Optional 05 | [Optional/Work05](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.HTML_CSS/Optional/Work05)         | 회원가입 폼 꾸미기 | 03/26     |
-| Optional Post | [Blog Post](https://www.notion.so/OZ-bc6f92be73114b698ab85e8d14756e99)         | 나만의 기술블로그 만들기(SPA의 정의)| 03/26    |
+| Optional Post | [Blog Post](https://www.notion.so/Minsu-Kim-3d4cdf754f1e42cf8460dd12408a41a4)         | 나만의 기술블로그 만들기(SPA의 정의)| 03/26    |
 | Optional 06 | [Optional/Work06](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.HTML_CSS/Optional/Work06)         | 소개 페이지 만들기 | 03/27     |
 | Optional 07 | [Optional/Work07](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.HTML_CSS/Optional/Work07)         | 사이트 디자인 클론하기 | 03/27     |
-| Optional Post | [Blog Post](https://www.notion.so/OZ-bc6f92be73114b698ab85e8d14756e99)         | 나만의 기술블로그 만들기(UI/UX의 정의)| 03/27    |
+| Optional Post | [Blog Post](https://www.notion.so/Minsu-Kim-3d4cdf754f1e42cf8460dd12408a41a4)        | 나만의 기술블로그 만들기(UI/UX의 정의)| 03/27    |
 | Optional 08 | [Optional/Work08](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.HTML_CSS/Optional/Work08)         | 반응형 디자인 만들기 | 03/27     |
 | Optional 09 | [Optional/Work09](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.HTML_CSS/Optional/Work09)         | 햄버거 바 만들기 | 03/27     |
-| Optional Post | [Blog Post](https://www.notion.so/OZ-bc6f92be73114b698ab85e8d14756e99)         | 나만의 기술블로그 만들기(Reset.css vs Normalize.css)| 03/28    |
+| Optional Post | [Blog Post](https://www.notion.so/Minsu-Kim-3d4cdf754f1e42cf8460dd12408a41a4)         | 나만의 기술블로그 만들기(Reset.css vs Normalize.css)| 03/28    |
 
 
 #### 개인 스터디
@@ -80,7 +80,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 
 | Project      | Repository                                                                                               | 과제 명                                          | 제출 날짜 |
 | ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------- |
-| Optional Post | [Blog Post](https://www.notion.so/OZ-bc6f92be73114b698ab85e8d14756e99) | 나만의 기술블로그 만들기(var를 사용하지 않는 이유)              | 03/29     |
+| Optional Post | [Blog Post](https://www.notion.so/Minsu-Kim-3d4cdf754f1e42cf8460dd12408a41a4) | 나만의 기술블로그 만들기(var를 사용하지 않는 이유)              | 03/29     |
 
 #### 개인 스터디
 
