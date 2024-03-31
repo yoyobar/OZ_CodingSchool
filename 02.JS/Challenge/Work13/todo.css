@@ -113,12 +113,3 @@ ul li:last-child {
 .unmarked button:hover {
     background-color: rgb(157, 59, 42);
 }
-
-@keyframes up {
-    0% {
-        transform: scaleY(0.1);
-    }
-    100% {
-        transform: scaleY(1);
-    }
-}

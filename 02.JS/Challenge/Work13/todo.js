@@ -1,4 +1,5 @@
 //global
+
 const todoForm = document.getElementById('todo-form');
 const todoList = document.getElementById('todo-list');
 const alert = document.querySelector('.alert');
@@ -94,7 +95,10 @@ const todoLoad = () => {
         todoDisplay();
     }
 };
-todoLoad();
+
+document.addEventListener('DOMContentLoaded', () => {
+    todoLoad();
+});
 
 // alert 박스 되돌리기
 alert.addEventListener('click', () => {
