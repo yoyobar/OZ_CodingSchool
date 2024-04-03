@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // 문제 1: 온도에 따른 의상 추천하기
+            // 문제 설명: 사용자로부터 현재 온도를 입력받아, 온도에 따라 의상을 추천하는 프로그램을 작성하세요.
+            // 조건:
+            // 25도 이상이면 "반팔 티셔츠를 추천합니다."
+            // 10도 이상 25도 미만이면 "긴팔 티셔츠를 추천합니다."
+            // 0도 이상 10도 미만이면 "자켓을 추천합니다."
+            // 0도 미만이면 "코트를 추천합니다."
+
+            let temp = Number(prompt('현재 온도를 입력해주세요'));
+            if (temp >= 25) {
+                alert('반팔 티셔츠를 추천합니다.');
+            } else if (temp >= 10) {
+                alert('긴팔 티셔츠를 추천합니다.');
+            } else if (temp >= 0) {
+                alert('자켓을 추천합니다.');
+            } else if (temp < 0) {
+                alert('코트를 추천합니다.');
+            } else {
+                alert('정상적인 값이 맞나요?');
+            }
+        </script>
+    </body>
+</html>

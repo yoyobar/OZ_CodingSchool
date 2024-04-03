@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // 문제 3: 교통수단 선택하기
+            // 문제 설명: 사용자로부터 이동 거리(단위: km)를 입력받아, 이동 거리에 따라 권장 교통수단을 추천하는 프로그램을 작성하세요.
+            // 조건:
+            // 0.5km 미만이면 "걷기를 추천합니다."
+            // 0.5km 이상 2km 미만이면 "자전거를 추천합니다."
+            // 2km 이상 10km 미만이면 "버스를 추천합니다."
+            // 10km 이상이면 "지하철을 추천합니다."
+            let km = Number(prompt('거리를 입력하세요 (단위 km)'));
+            if (km >= 10) {
+                alert('지하철을 추천합니다');
+            } else if (km >= 2) {
+                alert('버스를 추천합니다');
+            } else if (km >= 0.5) {
+                alert('자전거를 추천합니다');
+            } else if (km > 0) {
+                alert('걷기를 추천합니다');
+            } else {
+                alert('예?');
+            }
+        </script>
+    </body>
+</html>

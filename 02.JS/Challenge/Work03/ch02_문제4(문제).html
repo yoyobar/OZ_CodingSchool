@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // 문제 2: 성적 등급 매기기
+            // 문제 설명: 사용자로부터 성적을 입력받아, 해당 성적의 등급(A, B, C, D, F)을 출력하는 프로그램을 작성하세요.
+            // 조건:
+            // 90점 이상이면 A
+            // 80점 이상 90점 미만이면 B
+            // 70점 이상 80점 미만이면 C
+            // 60점 이상 70점 미만이면 D
+            // 60점 미만이면 F
+
+            let score = Number(prompt('성적 값 입력'));
+            if (score >= 90) {
+                alert('A');
+            } else if (score >= 80) {
+                alert('B');
+            } else if (score >= 70) {
+                alert('C');
+            } else if (score >= 60) {
+                alert('D');
+            } else if (score < 60) {
+                alert('F');
+            } else {
+                alert('Unknown Data');
+            }
+        </script>
+    </body>
+</html>

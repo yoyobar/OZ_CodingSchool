@@ -56,6 +56,8 @@ const todoDisplay = () => {
         });
         todoList.appendChild(todoItem);
         todoItem.appendChild(todoItemBtn);
+        const newList = document.querySelectorAll('li');
+        console.log(newList);
     });
 };
 
