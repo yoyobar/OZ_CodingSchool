@@ -17,6 +17,7 @@ const todoDel = (todoId) => {
 // 생성된 li의 mark변환, 조건 : 이벤트 발생 후 함수호출, Array.map로 변환
 const todoMark = (todoId) => {
     todoArray = todoArray.map((aTodo) => {
+        console.log(aTodo);
         if (aTodo.id === todoId) {
             return {
                 ...aTodo,
