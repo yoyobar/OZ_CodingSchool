@@ -85,7 +85,8 @@ todoForm.addEventListener('submit', (event) => {
     event.preventDefault();
     console.log(todoForm.todo.value);
 
-    if (todoForm.todo.value === '') {
+    //trim(), 문자열 공백 값 제거
+    if (todoForm.todo.value.trim() === '') {
         return alertBoxMsg('빈 내용의 리스트는 허용되지 않습니다.');
     }
 
@@ -138,8 +139,8 @@ const weatherSearch = function (position) {
             box.classList.remove('disabled');
             box.style.bottom = '0px';
         })
-        .catch(() => {
-            return alert('날씨 데이터를 불러오는데 실패하였습니다.');
+        .catch((err) => {
+            return alertBoxMsg(new Error(err));
         });
 };
 
