@@ -66,8 +66,9 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 03 | [Challenge/Work03](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work03) | 문제풀기 | 04/03 |
 | Challenge 04 | [CHallenge/Work04](https://stackblitz.com/edit/stackblitz-starters-mdz6eg?file=test1.js) | 문제풀기 | 04/03 |
 | Challenge 05 | [Challenge/Work05](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work05) | Mini Project : 몬스터 잡기 게임 | 03/29 |
-| Challenge 05 | [Challenge/Work05](https://stackblitz.com/edit/vitejs-vite-pebqw7?file=package.json) | Mini Project : 투두 리스트 구현 | 04/05 |
-| Challenge 06 | 현재 제출 불가 | - | - |
+| Challenge 05 | [StackBlitz](https://stackblitz.com/edit/vitejs-vite-pebqw7?file=package.json) | Mini Project : 투두 리스트 구현 | 04/05 |
+| Challenge 06 | [StackBlitz](https://stackblitz.com/edit/stackblitz-starters-p99gyt?file=package.json) | 함수의 활용 1 | 04/05 |
+| Challenge 06 | [StackBlitz](https://stackblitz.com/edit/stackblitz-starters-keeqlp?file=package.json) | 함수의 활용 2 | 04/05 |
 | Challenge 07 | 현재 제출 불가 | - | - |
 | Challenge 08 | [Challenge/Work08](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work08) | Mini Project : 회원가입 폼 만들기 | 03/29 |
 | Challenge 09 | 현재 제출 불가 | - | - |
