@@ -42,3 +42,14 @@ function alertBoxMsg(text) {
     }
 }
 ```
+
+- `Input.value`에 공백을 넣을 경우 값이 전달되어 투두리스트가 생성된다.<br>
+
+  해결 수단 : `todoForm.todovalue === ""`로 할 경우 공백을 넣으면 작동해버린다. 따라서 `trim()` 메소드를 활용
+
+  ```javascript
+      //trim(), 문자열 공백 값 제거
+    if (todoForm.todo.value.trim() === '') {
+        return alertBoxMsg('빈 내용의 리스트는 허용되지 않습니다.');
+    }
+  ```
