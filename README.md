@@ -82,7 +82,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Project      | Repository                                                                                               | 과제 명                                          | 제출 날짜 |
 | ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------- |
 | Timer & Stopwatch | [Study/Timer](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Study/Counter) | 타이머/스톱워치 프로젝트 | 03/28     |
-| TodoList | [Study/Timer](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Study/Counter) | 투두리스트 프로젝트 | 04/05     |
+| TodoList | [TodoList](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Study/TodoList) | 투두리스트 프로젝트 | 04/05     |
 
 ### POST
 - [자바스크립트 회고](https://www.notion.so/1-63ceb21d0f5b4687822ba9ddf3743e8a?pvs=4)
