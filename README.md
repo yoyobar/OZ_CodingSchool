@@ -66,6 +66,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 03 | [Challenge/Work03](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work03) | 문제풀기 | 04/03 |
 | Challenge 04 | [CHallenge/Work04](https://stackblitz.com/edit/stackblitz-starters-mdz6eg?file=test1.js) | 문제풀기 | 04/03 |
 | Challenge 05 | [Challenge/Work05](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work05) | Mini Project : 몬스터 잡기 게임 | 03/29 |
+| Challenge 05 | [Challenge/Work05](https://stackblitz.com/edit/vitejs-vite-pebqw7?file=package.json) | Mini Project : 투두 리스트 구현 | 04/05 |
 | Challenge 06 | 현재 제출 불가 | - | - |
 | Challenge 07 | 현재 제출 불가 | - | - |
 | Challenge 08 | [Challenge/Work08](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work08) | Mini Project : 회원가입 폼 만들기 | 03/29 |
@@ -75,22 +76,34 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 12 | 현재 제출 불가 | - | - |
 | Challenge 13 | [Challenge/Work13](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work13) | Mini Project : 투두 리스트 | 03/31 |
 
-
-#### 선택 과제
-
-| Project      | Repository                                                                                               | 과제 명                                          | 제출 날짜 |
-| ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------- |
-| Optional Post | [Blog Post](https://www.notion.so/Minsu-Kim-3d4cdf754f1e42cf8460dd12408a41a4) | 나만의 기술블로그 만들기(var를 사용하지 않는 이유)              | 03/29     |
-
 #### 개인 스터디
 
 | Project      | Repository                                                                                               | 과제 명                                          | 제출 날짜 |
 | ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------- |
 | Timer & Stopwatch | [Study/Timer](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Study/Counter) | 타이머/스톱워치 프로젝트 | 03/28     |
-| TodoList | [Study/Timer](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Study/Counter) | 투두리스트 프로젝트 | 03/31     |
+| TodoList | [Study/Timer](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Study/Counter) | 투두리스트 프로젝트 | 04/05     |
 
 ### POST
-
-- [**오래된 Var와 호이스팅**](https://www.notion.so/var-3f1b7e9f5ca344bf83d0465810e56fb2?pvs=4)
-- [**다양한 기능이 있는 투두리스트 만들기**](https://www.notion.so/bff6c3851324437fb5e35a73e6bd934f?pvs=4)
-- [**자바스크립트 회고 1**](https://www.notion.so/1-63ceb21d0f5b4687822ba9ddf3743e8a?pvs=4)
+- [자바스크립트 회고](https://www.notion.so/1-63ceb21d0f5b4687822ba9ddf3743e8a?pvs=4)
+- [자바스크립트와 ES6](https://plaid-plow-0e3.notion.site/ES6-9b8be153e10c406d97187b429bdac23e)
+- [오래된 Var와 호이스팅](https://www.notion.so/var-3f1b7e9f5ca344bf83d0465810e56fb2?pvs=4)
+- [브라우저의 동작원리](https://plaid-plow-0e3.notion.site/d617ab47df3e4e20a5aa377489c50c5c)
+- [다양한 기능이 있는 투두리스트 만들기](https://www.notion.so/bff6c3851324437fb5e35a73e6bd934f?pvs=4)
+- [중급 : 심볼](https://plaid-plow-0e3.notion.site/Symbol-283f1deea55144f69a3e3156a2ed1038?pvs=74)
+- [중급 : 생성자 함수](https://www.notion.so/150e224a004e4cb58eea96d9b5c74961?pvs=21)
+- [중급 : 객체 메소드, 계산 메소드](https://www.notion.so/e11f131b671f49658e3b470f7544eef7?pvs=21)
+- [중급 : 숫자 메소드, 수학 메소드](https://www.notion.so/072bd29510c2450495e7c533ea304ffa?pvs=21)
+- [중급 : 배열 메소드](https://www.notion.so/3164d5d449894cde964f6a45fc56b7c2?pvs=21)
+- [중급 : Array-like Object](https://www.notion.so/Array-like-Object-7a3c0f45519a455a81bf5a5f930bf677?pvs=21)
+- [중급 : 메서드 체이닝과 옵셔널 체이닝](https://www.notion.so/33d827b1837644708947bce2e1f3bb9f?pvs=21)
+- [중급 : 타입 변환](https://www.notion.so/fb556c198a9c4776bf5007817dbcc865?pvs=21)
+- [중급 : 메모이제이션](https://www.notion.so/f36357203b5845a6a8a560ca5285aa70?pvs=21)
+- [중급 : 호이스팅, TDZ(Temporal Dead Zone)](https://www.notion.so/TDZ-Temporal-Dead-Zone-c994152ee8d445b6ae8c950bb76f026f?pvs=21)
+- [중급 : 분해 할당](https://www.notion.so/6eaf95ccb8424215a026ccab8ea5eb68?pvs=21)
+- [중급 : 나머지 매개변수, 전개 구문(Rest Parameter)](https://www.notion.so/Rest-Parameter-73cc345343b445448e875433c1df3615?pvs=21)
+- [중급 : 클로저 (Closure)](https://www.notion.so/Closure-6ef48610218c42a2b4f5ce75e96dc019?pvs=21)
+- [중급 : call, apply, bind](https://www.notion.so/call-apply-bind-bf0b1df9a750458da5360f8f73ac8b73?pvs=21)
+- [중급 : 상속, 프로토타입 (Prototype)](https://www.notion.so/Prototype-d4f1b36c48234071838f83fda73d58bf?pvs=21)
+- [중급 : 클래스 (Class)](https://www.notion.so/Class-fd9f717b9ac140128063295ab70c44be?pvs=21)
+- [중급 : 프로미스 (Promise)](https://www.notion.so/Promise-8de10c6853bb467c982f78d9665b3edc?pvs=21)
+- [중급 : Generator](https://www.notion.so/Generator-9f62d29e1c6443c0b6edb09e28a0b5b0?pvs=21)
