@@ -24,3 +24,21 @@
             return res.json();
         })
 ```
+<br>
+
+- `ClassList.remove` 를 활용하여 애니메이션을 구성하니, 작동되기 이전에 클래스가 사라짐<br>
+
+  해결 수단 : `setTimeout` 을 활용하여 비동기 작업처리로 진행하니 실제로 정상적으로 동작함, 다른수단이 있는지 확인해볼 필요성 있음<br>
+```javascript
+  
+function alertBoxMsg(text) {
+    if (alertBox.classList[1] === 'disabled') {
+        alertBox.style.transition = 'all 1s';
+        setTimeout(() => {
+            alertBox.classList.remove('disabled');
+            alertBox.textContent = text;
+            alertBox.style.right = '0vw';
+        }, 10);
+    }
+}
+```
