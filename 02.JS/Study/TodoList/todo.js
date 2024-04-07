@@ -18,7 +18,7 @@
 const todoForm = document.getElementById('todo-form');
 const todoList = document.getElementById('todo-list');
 const alertBox = document.querySelector('.notice-box');
-const box = document.querySelector('.weather');
+const weather = document.querySelector('.weather');
 const weatherBox = document.querySelector('.weather-description');
 const weatherIconBox = document.querySelector('.weather-icon-img');
 const progressBar = document.querySelector('progress');
@@ -76,7 +76,6 @@ const todoDisplay = () => {
         });
         todoList.appendChild(todoItem);
         todoItem.appendChild(todoItemBtn);
-        const newList = document.querySelectorAll('li');
     });
 };
 
@@ -118,26 +117,57 @@ const todoLoad = () => {
         todoDisplay();
     }
 };
+//API 처리
+const weatherDataActive = function ({ weatherLoc, weatherTemp, weatherMain, weatherIcon }) {
+    progressBar.classList.add('disabled');
+
+    switch (weatherMain) {
+        case 'Clear':
+            weatherMain = '맑음';
+            break;
+        case 'Clouds':
+            weatherMain = '구름 낌';
+            break;
+        case 'Drizzle':
+            weatherMain = '이슬비';
+            break;
+        case 'Fog':
+            weatherMain = '안개';
+            break;
+        case 'Rain':
+            weatherMain = '비';
+            break;
+        case 'Snow':
+            weatherMain = '눈';
+            break;
+        case 'Thunderstorm':
+            weatherMain = '뇌우';
+            break;
+        default:
+            break;
+    }
+    weatherBox.textContent = `위치 : ${weatherLoc} 온도 : ${weatherTemp} 날씨 : ${weatherMain}`;
+    weatherIconBox.src = weatherIcon;
+    weather.classList.remove('disabled');
+    weather.style.bottom = '0px';
+};
 
 //API 요청
-const weatherSearch = function (position) {
+const weatherSearch = function ({ latitude, longitude }) {
     fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${position.latitude}&lon=${position.longitude}&appid=e83cbcd7f0cb5b4bb7a22680f6cdd447`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=e83cbcd7f0cb5b4bb7a22680f6cdd447`
     )
         .then((res) => {
             return res.json(); //res -> json, parse는 header존재시 사용불가
         })
         .then((json) => {
-            const weatherLoc = json.name;
-            const weatherTemp = (json.main.temp - 273.15).toFixed(1);
-            const weatherMain = json.weather[0].main;
-            const weatherIcon = `https://openweathermap.org/img/wn/${json.weather[0].icon}@4x.png`;
-
-            progressBar.classList.add('disabled');
-            weatherBox.textContent = `위치 : ${weatherLoc} 온도 : ${weatherTemp} 날씨 : ${weatherMain}`;
-            weatherIconBox.src = weatherIcon;
-            box.classList.remove('disabled');
-            box.style.bottom = '0px';
+            const weatherData = {
+                weatherLoc: json.name,
+                weatherTemp: (json.main.temp - 273.15).toFixed(0) + '°C',
+                weatherMain: json.weather[0].main,
+                weatherIcon: `https://openweathermap.org/img/wn/${json.weather[0].icon}@4x.png`,
+            };
+            weatherDataActive(weatherData);
         })
         .catch((err) => {
             return alertBoxMsg(new Error(err));
@@ -145,10 +175,12 @@ const weatherSearch = function (position) {
 };
 
 //geo 경도, 위도 데이터 처리
-const accessToGeo = (position) => {
+const accessToGeo = ({ coords }) => {
+    const { latitude, longitude } = coords;
     const positionObj = {
-        latitude: position.coords.latitude, //경도
-        longitude: position.coords.longitude, //위도
+        //shorthand property
+        latitude, //경도
+        longitude, //위도
     };
     weatherSearch(positionObj);
 };
