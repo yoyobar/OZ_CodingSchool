@@ -17,7 +17,7 @@ let tweetDb = [];
 
 //input 버튼 이벤트
 postTweet.addEventListener('click', function () {
-    if (tweetInput.value.length === 0) {
+    if (tweetInput.value.trim() === '') {
         return tweetAlert();
     }
     tweetData();
@@ -26,10 +26,10 @@ postTweet.addEventListener('click', function () {
 });
 //input 엔터키 이벤트, form 태그를 사용해서 처리해도 되나, 여기선 엔터키로 연습
 tweetInput.addEventListener('keyup', function (e) {
-    if (tweetInput.value.length === 0) {
-        return tweetAlert();
-    }
     if (e.key === 'Enter') {
+        if (tweetInput.value.trim() === '') {
+            return tweetAlert();
+        }
         tweetData();
         tweetDisplay();
         tweetInput.value = '';
@@ -78,9 +78,7 @@ function tweetDisplay() {
 
 //input 알림 처리
 function tweetAlert() {
-    if (tweetInput.value.length === 0) {
-        tweetAlertMsg.style.visibility = 'visible';
-    }
+    tweetAlertMsg.style.visibility = 'visible';
 }
 //input 내용 처리
 tweetInput.addEventListener('keyup', (e) => {
