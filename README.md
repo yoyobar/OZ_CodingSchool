@@ -42,18 +42,22 @@ Front-end 3기 김민수의 개인 기록입니다.
 | ---------------- | -------------------------------------------------------------------------------------------- | ------------------------ | ----------- |
 | Chat refactoring | [Refac/Chat](https://github.com/yoyobar/OZ_CodingSchool/tree/main/01.HTML_CSS/Refac/Chat) | 채팅방 리팩토링 프로젝트 | 03/24 ~ 03/25 |
 
-### POST
+<details><summary>
 
-- [**HTML 회고**](https://www.notion.so/HTML-4ca1f79fae8b4992a4594ab709a2443b?pvs=4)
-- [**인라인 구조 / 블록 레벨 구조의 특징과 차이점**](https://www.notion.so/2b7c40fc0cd24495a5ca8dcaf1918037?pvs=4)
-- [**CSS 회고**](https://www.notion.so/CSS-3d553c614a3a4d238dbbaa0773dc37af?pvs=4)
-- [**맥북 기본설정 및 유틸리티**](https://www.notion.so/5c566b23522a46dfbfb60576220ae3da?pvs=4)
-- [**채팅방 리팩토링 1일차**](https://www.notion.so/1-8a9f51061e1d4acbbfce221225ac330f?pvs=4)
-- [**채팅방 리팩토링 2일차**](https://www.notion.so/2-335aa918b25a4ce2b92266de0677c002?pvs=4)
-- [**SPA의 정의**](https://www.notion.so/SPA-068a26fd11a74e1c91bd42710d1b4c44?pvs=4)
-- [**UI/UX의 차이**](https://www.notion.so/UI-UX-ab3e81ae93974f40b4e8b9c115f94098?pvs=4)
-- [**햄버거바 제작해보기(CSS)**](https://www.notion.so/CSS-c9fc1192a3594a699038ea55ed173dae?pvs=4)
-- [**Reset.css vs Normalize.css**](https://www.notion.so/Normalize-css-VS-Reset-css-e8a0ef87b80d4fa1a8c9591584fac813?pvs=4)
+### 작성한 게시글
+</summary>
+
+- [HTML 회고](https://www.notion.so/HTML-4ca1f79fae8b4992a4594ab709a2443b?pvs=4)
+- [인라인 구조 / 블록 레벨 구조의 특징과 차이점](https://www.notion.so/2b7c40fc0cd24495a5ca8dcaf1918037?pvs=4)
+- [CSS 회고](https://www.notion.so/CSS-3d553c614a3a4d238dbbaa0773dc37af?pvs=4)
+- [맥북 기본설정 및 유틸리티](https://www.notion.so/5c566b23522a46dfbfb60576220ae3da?pvs=4)
+- [채팅방 리팩토링 1일차](https://www.notion.so/1-8a9f51061e1d4acbbfce221225ac330f?pvs=4)
+- [채팅방 리팩토링 2일차](https://www.notion.so/2-335aa918b25a4ce2b92266de0677c002?pvs=4)
+- [SPA의 정의](https://www.notion.so/SPA-068a26fd11a74e1c91bd42710d1b4c44?pvs=4)
+- [UI/UX의 차이](https://www.notion.so/UI-UX-ab3e81ae93974f40b4e8b9c115f94098?pvs=4)
+- [햄버거바 제작해보기(CSS)](https://www.notion.so/CSS-c9fc1192a3594a699038ea55ed173dae?pvs=4)
+- [Reset.css vs Normalize.css](https://www.notion.so/Normalize-css-VS-Reset-css-e8a0ef87b80d4fa1a8c9591584fac813?pvs=4)
+</details>
 
 <hr>
 
@@ -82,7 +86,11 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Timer & Stopwatch | [Study/Timer](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Study/Counter) | 타이머/스톱워치 프로젝트 | 03/28     |
 | TodoList | [TodoList](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Study/TodoList) | 투두리스트 프로젝트 | 04/05     |
 
-### POST
+<details><summary>
+  
+### 작성한 게시글
+</summary>
+
 - [자바스크립트 회고](https://www.notion.so/1-63ceb21d0f5b4687822ba9ddf3743e8a?pvs=4)
 - [자바스크립트와 ES6](https://plaid-plow-0e3.notion.site/ES6-9b8be153e10c406d97187b429bdac23e)
 - [오래된 Var와 호이스팅](https://www.notion.so/var-3f1b7e9f5ca344bf83d0465810e56fb2?pvs=4)
@@ -106,3 +114,28 @@ Front-end 3기 김민수의 개인 기록입니다.
 - [중급 : 클래스 (Class)](https://www.notion.so/Class-fd9f717b9ac140128063295ab70c44be?pvs=21)
 - [중급 : 프로미스 (Promise)](https://www.notion.so/Promise-8de10c6853bb467c982f78d9665b3edc?pvs=21)
 - [중급 : Generator](https://www.notion.so/Generator-9f62d29e1c6443c0b6edb09e28a0b5b0?pvs=21)
+</details>
+
+<hr>
+
+### 03. React
+  
+| Project      | Repository                                                                                               | 과제 명                                          | 제출 날짜 |
+| ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------- |
+| | | | |
+
+#### 개인 스터디
+
+| Project      | Repository                                                                                               | 과제 명                                          | 제출 날짜 |
+| ------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------- |
+| Voca | [Voca](https://github.com/yoyobar/Voca-JP) | 일본어 단어 서비스 만들어보기 (Json-Server) | 04/07 |
+| TicTacTo | [TicTacTo](https://github.com/yoyobar/OZ_CodingSchool/tree/main/03.React/Study/tictacto) | 리액트 자습서 공부 | 04/07 |
+
+<details><summary>
+
+### 작성한 게시글
+</summary>
+
+ - [React 환경 구축하기](https://www.notion.so/React-With-Next-js-dc9bcf89623644dca2baf53fbf6f68ce)
+ - [React useState / Props](https://www.notion.so/useState-props-22e38df54da349628100f50cb7a8ef9c)
+</details>
