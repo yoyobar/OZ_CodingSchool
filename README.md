@@ -73,7 +73,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 06 | [StackBlitz1](https://stackblitz.com/edit/stackblitz-starters-p99gyt?file=package.json) [StackBlitz2](https://stackblitz.com/edit/stackblitz-starters-keeqlp?file=package.json) | 함수의 활용 | 04/05 |
 | Challenge 07 | [StackBlitz](https://stackblitz.com/edit/stackblitz-starters-xqig8j?file=script.js) | 트위터 작성하기 | 04/07 |
 | Challenge 08 | [Challenge/Work08](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work08) | Mini Project : 회원가입 폼 만들기 | 03/29 |
-| Challenge 09 | 현재 제출 불가 | - | - |
+| Challenge 09 | [StackBlitz](https://stackblitz.com/edit/stackblitz-starters-bnta9s?file=script.js) | 회원가입 폼 만들기 | 04/09 |
 | Challenge 10 | 현재 제출 불가 | - | - |
 | Challenge 11 | [Challenge/Work11](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work11) | Mini Project : 로또 번호 추첨 게임 | 03/30 |
 | Challenge 12 | 현재 제출 불가 | - | - |
@@ -136,6 +136,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 ### 작성한 게시글
 </summary>
 
+ - [Node.js 란](https://plaid-plow-0e3.notion.site/Node-js-fba4f8334041440f950f621837006034?pvs=74)
  - [React 환경 구축하기](https://www.notion.so/React-With-Next-js-dc9bcf89623644dca2baf53fbf6f68ce)
  - [React useState / Props](https://www.notion.so/useState-props-22e38df54da349628100f50cb7a8ef9c)
 </details>
