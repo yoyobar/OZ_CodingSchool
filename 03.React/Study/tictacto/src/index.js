@@ -12,7 +12,6 @@ function Square(props) {
 }
 
 function Board(props) {
-    const [length, setLength] = useState(0);
     function renderSquare(i) {
         return <Square onClick={() => props.onClick(i)} value={props.squares[i]} />;
     }

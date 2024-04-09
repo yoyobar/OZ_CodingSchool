@@ -102,6 +102,7 @@ function tweetLikePlus(id) {
             };
         }
     });
+    // tweetDisplay();
     tweetDisplay();
     tweetSave();
 }

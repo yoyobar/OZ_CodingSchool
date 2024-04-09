@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>회원가입 폼</title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    </head>
+    <body>
+        <!-- 여기에 HTML문서를 작성하세요. -->
+        <div class="container">
+            <form class="user-info" autocomplete="off">
+                <label class="native" for="user-name">성명 *</label>
+                <input required autocomplete="off" type="text" name="user-name" id="user-name" />
+                <label class="native" for="user-ssn">주민번호 *</label>
+                <input required autocomplete="off" type="text" name="user-ssn" id="user-ssn" />
+
+                <label class="native" for="user-id">아이디 *</label>
+                <input required autocomplete="off" type="text" name="user-id" id="user-id" />
+                <label class="native" for="user-password">비밀번호 *</label>
+                <input required autocomplete="off" type="password" name="user-password" id="user-password" />
+                <label class="native" for="user-password-cf">비밀번호 확인 *</label>
+                <input required autocomplete="off" type="password" name="user-password-cf" id="user-password-cf" />
+                <label class="native" for="user-password-cf">성별 선택 *</label>
+                <label class="native-gender" for="user-male">
+                    남성
+                    <input value="남성" type="radio" name="user-gender" id="user-male" />
+                </label>
+                <label class="native-gender" for="user-female">
+                    <span>여성</span>
+                    <input required value="여성" type="radio" name="user-gender" id="user-female" />
+                </label>
+
+                <label class="native" for="user-address">주소 *</label>
+                <input required autocomplete="off" type="text" name="user-address" id="user-address" />
+                <label class="native" for="user-email">이메일 *</label>
+                <input required autocomplete="off" type="text" name="user-email" id="user-email" />
+                <select required autocomplete="off">
+                    <option selected disabled value="naver.com">naver.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="icloud.com">icloud.com</option>
+                    <option value="hotmail.com">hotmail.com</option>
+                    <option value="daum.net">daum.net</option>
+                    <option>직접 입력</option>
+                </select>
+                <label class="native-check" for="user-confirm"
+                    >개인정보 동의
+                    <input required autocomplete="off" type="checkbox" name="user-confirm" id="user-confirm" />
+                </label>
+                <button type="submit">회원 가입</button>
+            </form>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  */
+
+.user-info {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 24px;
+}
+.error {
+    font-size: 0.8rem;
+    color: tomato;
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+.visible {
+    visibility: visible;
+}
+.native {
+    color: white;
+    background-color: tomato;
+    width: 120px;
+    height: 1.5em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5em;
+    font-size: 1rem;
+}
+.native-gender {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    width: 100px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.native-check {
+    background-color: aliceblue;
+    width: 180px;
+    height: 2em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.5em;
+    font-size: 1rem;
+}
+.native-check:hover {
+    background-color: rgb(170, 213, 250);
+}
+#user-confirm {
+}
+.native-gender:hover {
+    background-color: rgb(170, 213, 250);
+}
+#user-male,
+#user-female {
+    appearance: none;
+    border: none;
+    display: flex;
+}
+#user-male:checked,
+#user-female:checked {
+    background-color: cornflowerblue;
+    width: 10px;
+    height: 10px;
+}
+input {
+    border: 2px solid cornflowerblue;
+    border-radius: inherit;
+    padding: 2px;
+    margin-bottom: 0.5em;
+}
+button {
+    margin-top: auto;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    height: 2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(53, 76, 119);
+}

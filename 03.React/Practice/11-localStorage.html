@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="item">이봉주</p>
+        <button id="set">SET</button>
+        <button id="get">GET</button>
+        <button id="remove">REMOVE</button>
+        <button id="clear">CLEAR</button>
+    </body>
+
+    <script>
+        const item = document.getElementById('item');
+        // 데이터 저장
+        document.getElementById('set').addEventListener('click', () => {
+            localStorage.setItem('마라토너', item.textContent);
+        });
+
+        // 데이터 가져오기
+        document.getElementById('get').addEventListener('click', () => {
+            alert(localStorage.getItem('마라토너'));
+        });
+
+        // 데이터 삭제
+        document.getElementById('remove').addEventListener('click', () => {
+            localStorage.removeItem('마라토너');
+        });
+
+        // 데이터 초기화
+        document.getElementById('clear').addEventListener('click', () => {
+            localStorage.clear();
+        });
+
+        // 다른 타입
+        localStorage.setItem(
+            '커피',
+            JSON.stringify({
+                name: '에티오피아',
+                taste: '산미',
+            })
+        );
+    </script>
+</html>
