@@ -54,8 +54,9 @@ function getUserInfo(name, ssn_front, ssn_back, username, password, emailId, mai
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     let genderSelect = '';
-    if (e.target[5].checked) genderSelect = e.target[5].value;
-    if (e.target[6].checked) genderSelect = e.target[6].value;
+    if (e.target[8].checked) genderSelect = e.target[8].value;
+    if (e.target[9].checked) genderSelect = e.target[9].value;
+    console.log(e.target[6].value);
 
     const data = {
         name: e.target[0].value,
@@ -65,10 +66,10 @@ form.addEventListener('submit', (e) => {
         id: e.target[2].value,
         pw: e.target[3].value,
         pwc: e.target[4].value,
+        address: e.target[5].value,
+        email: e.target[6].value,
+        emailNext: e.target[7].value,
         gender: genderSelect,
-        address: e.target[7].value,
-        email: e.target[8].value,
-        emailNext: e.target[9].value,
         checked: e.target[10].checked,
         certification: true,
     };
@@ -97,6 +98,10 @@ function informationCheck() {
     }
 
     //이메일 검증
+    if (this.emailNext === '이메일을 선택해주세요') {
+        return alert('이메일을 선택해야 합니다.');
+    }
+
     if (this.emailNext === '직접 입력' && this.email.includes('@')) {
         const splitEmail = this.email.split('@');
         this.email = splitEmail[0];

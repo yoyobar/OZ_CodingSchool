@@ -21,7 +21,22 @@
                 <input required autocomplete="off" type="password" name="user-password" id="user-password" />
                 <label class="native" for="user-password-cf">비밀번호 확인 *</label>
                 <input required autocomplete="off" type="password" name="user-password-cf" id="user-password-cf" />
-                <label class="native" for="user-password-cf">성별 선택 *</label>
+                <label class="native" for="user-address">주소 *</label>
+                <input required autocomplete="off" type="text" name="user-address" id="user-address" />
+                <label class="native" for="user-email">이메일 * </label>
+                <div class="flex">
+                    <input class="half" required autocomplete="off" type="text" name="user-email" id="user-email" />
+                    <select class="half selectBox" required autocomplete="off">
+                        <option selected disabled>이메일을 선택해주세요</option>
+                        <option>naver.com</option>
+                        <option>gmail.com</option>
+                        <option>icloud.com</option>
+                        <option>hotmail.com</option>
+                        <option>daum.net</option>
+                        <option>직접 입력</option>
+                    </select>
+                </div>
+                <label class="native top" for="user-password-cf">성별 선택 *</label>
                 <label class="native-gender" for="user-male">
                     남성
                     <input value="남성" type="radio" name="user-gender" id="user-male" />
@@ -30,19 +45,6 @@
                     <span>여성</span>
                     <input required value="여성" type="radio" name="user-gender" id="user-female" />
                 </label>
-
-                <label class="native" for="user-address">주소 *</label>
-                <input required autocomplete="off" type="text" name="user-address" id="user-address" />
-                <label class="native" for="user-email">이메일 *</label>
-                <input required autocomplete="off" type="text" name="user-email" id="user-email" />
-                <select required autocomplete="off">
-                    <option selected disabled value="naver.com">naver.com</option>
-                    <option value="gmail.com">gmail.com</option>
-                    <option value="icloud.com">icloud.com</option>
-                    <option value="hotmail.com">hotmail.com</option>
-                    <option value="daum.net">daum.net</option>
-                    <option>직접 입력</option>
-                </select>
                 <label class="native-check" for="user-confirm"
                     >개인정보 동의
                     <input required autocomplete="off" type="checkbox" name="user-confirm" id="user-confirm" />

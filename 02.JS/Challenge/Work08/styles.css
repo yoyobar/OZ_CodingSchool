@@ -17,22 +17,13 @@ body {
     align-items: center;
 }
 /*  */
-
 .user-info {
     width: 400px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
     padding: 24px;
-}
-.error {
-    font-size: 0.8rem;
-    color: tomato;
-    margin-bottom: 20px;
-    visibility: hidden;
-}
-.visible {
-    visibility: visible;
+    border: 1px solid black;
 }
 .native {
     color: white;
@@ -46,6 +37,22 @@ body {
     margin-bottom: 0.5em;
     font-size: 1rem;
 }
+.top {
+    margin-top: 10px;
+}
+.half {
+    width: 50%;
+}
+.flex {
+    display: flex;
+}
+.selectBox {
+    border: 2px solid cornflowerblue;
+    border-radius: inherit;
+    padding: 2px;
+    margin-bottom: 0.5em;
+    margin-left: 5px;
+}
 .native-gender {
     background-color: aliceblue;
     display: flex;
@@ -56,38 +63,58 @@ body {
     margin: 2px;
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
+}
+.native-gender:hover {
+    background-color: rgb(170, 213, 250);
+}
+.native-gender:has(#user-male:checked) {
+    background-color: rgb(78, 193, 58);
+    color: white;
+}
+.native-gender:has(#user-female:checked) {
+    background-color: rgb(78, 193, 58);
+    color: white;
+}
+#user-male,
+#user-female {
+    appearance: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
 }
 .native-check {
-    background-color: aliceblue;
-    width: 180px;
+    width: 100%;
     height: 2em;
     padding: 1em;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 2em;
     margin-bottom: 0.5em;
     font-size: 1rem;
+    position: relative;
+    border-radius: 5px;
+    background-color: aliceblue;
 }
 .native-check:hover {
     background-color: rgb(170, 213, 250);
 }
+.native-check:has(#user-confirm:checked) {
+    background-color: rgb(78, 193, 58);
+    color: white;
+}
 #user-confirm {
-}
-.native-gender:hover {
-    background-color: rgb(170, 213, 250);
-}
-#user-male,
-#user-female {
     appearance: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     border: none;
-    display: flex;
+    cursor: pointer;
 }
-#user-male:checked,
-#user-female:checked {
-    background-color: cornflowerblue;
-    width: 10px;
-    height: 10px;
-}
+
 input {
     border: 2px solid cornflowerblue;
     border-radius: inherit;
