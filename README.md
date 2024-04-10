@@ -72,8 +72,8 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 05 | [Challenge/Work05](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work05) [StackBlitz](https://stackblitz.com/edit/vitejs-vite-pebqw7?file=package.json) | Mini Project : 몬스터 잡기 / 투두 리스트 구현 | 04/05 |
 | Challenge 06 | [StackBlitz1](https://stackblitz.com/edit/stackblitz-starters-p99gyt?file=package.json) [StackBlitz2](https://stackblitz.com/edit/stackblitz-starters-keeqlp?file=package.json) | 함수의 활용 | 04/05 |
 | Challenge 07 | [StackBlitz](https://stackblitz.com/edit/stackblitz-starters-xqig8j?file=script.js) | 트위터 작성하기 | 04/07 |
-| Challenge 08 | [Challenge/Work08](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work08) | Mini Project : 회원가입 폼 만들기 | 03/29 |
-| Challenge 09 | [StackBlitz](https://stackblitz.com/edit/stackblitz-starters-bnta9s?file=script.js) | 회원가입 폼 만들기 | 04/09 |
+| Challenge 08 | [Challenge/Work08](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work08) | Mini Project : 회원가입 폼 만들기 | 04/08 |
+| Challenge 09 | [StackBlitz1](https://stackblitz.com/edit/stackblitz-starters-liq1ug?file=index.html) [StackBlitz2](https://stackblitz.com/edit/stackblitz-starters-s9qddf?file=index.js) | 시계 만들기, 드림카 소개하기  | 04/10 |
 | Challenge 10 | 현재 제출 불가 | - | - |
 | Challenge 11 | [Challenge/Work11](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work11) | Mini Project : 로또 번호 추첨 게임 | 03/30 |
 | Challenge 12 | 현재 제출 불가 | - | - |
