@@ -76,7 +76,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 09 | [StackBlitz1](https://stackblitz.com/edit/stackblitz-starters-liq1ug?file=index.html) [StackBlitz2](https://stackblitz.com/edit/stackblitz-starters-s9qddf?file=index.js) | 시계 만들기, 드림카 소개하기  | 04/10 |
 | Challenge 10 | [StackBlitz1](https://stackblitz.com/edit/stackblitz-starters-brxegh?file=script.js) [StackBlitz2](https://stackblitz.com/edit/stackblitz-starters-9ocdnx?file=index.js) | 햄버거바 만들기, Math 빌트인 | 04/11 |
 | Challenge 11 | [Challenge/Work11](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work11) | Mini Project : 로또 번호 추첨 게임 | 03/30 |
-| Challenge 12 | 현재 제출 불가 | - | - |
+| Challenge 12 | [StackBlitz1](https://stackblitz.com/edit/stackblitz-starters-tfxpcu?file=script.js)[StackBlitz2](https://stackblitz.com/edit/stackblitz-starters-nmuf7q?file=script.ts) | 사용자 정보 다루기 | 04/16 |
 | Challenge 13 | [Challenge/Work13](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work13) | Mini Project : 투두 리스트 | 03/31 |
 
 #### 개인 스터디
@@ -139,4 +139,7 @@ Front-end 3기 김민수의 개인 기록입니다.
  - [Node.js 란](https://plaid-plow-0e3.notion.site/Node-js-fba4f8334041440f950f621837006034?pvs=74)
  - [React 환경 구축하기](https://www.notion.so/React-With-Next-js-dc9bcf89623644dca2baf53fbf6f68ce)
  - [React useState / Props](https://www.notion.so/useState-props-22e38df54da349628100f50cb7a8ef9c)
+ - [렌더링 과정과 useEffect](https://plaid-plow-0e3.notion.site/useEffect-a214c8a2dfb14bd3b959d8798c2f3e66?pvs=74)
+ - [메모이제이션과 useMemo, useCallback](https://plaid-plow-0e3.notion.site/useMemo-useCallback-98649a65522d49cd9456d00fa4121586)
+ - [Props drilling과 useContext](https://plaid-plow-0e3.notion.site/Props-drilling-useContext-f9e44e83d44e46929825d063150fee6d)
 </details>
