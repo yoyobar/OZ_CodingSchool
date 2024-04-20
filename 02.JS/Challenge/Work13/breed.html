@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="breed.css" />
+        <title>견종 정보 페이지</title>
+    </head>
+    <body>
+        <div id="container">
+            <header class="header">
+                <div class="header__search">
+                    <input placeholder="dogs type..." id="filter-text" />
+                    <button id="filter-button">필터링</button>
+                    <button id="reset">리셋</button>
+                </div>
+
+                <select id="filter-select">
+                    <option value="">all</option>
+                </select>
+            </header>
+            <main class="main" id="main"></main>
+            <div class="more" id="more">MORE</div>
+            <div class="top" id="top">TOP</div>
+        </div>
+        <script src="breed.js"></script>
+    </body>
+</html>

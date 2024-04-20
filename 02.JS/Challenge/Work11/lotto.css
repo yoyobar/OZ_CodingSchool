@@ -1,66 +1,122 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Gothic A1', sans-serif;
-}
-html,
 body {
-    width: 100%;
-    height: 100%;
-}
-.container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.lotto {
-    width: 500px;
-    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-h3 {
-    font-size: 2rem;
-}
-span {
-    padding-right: 10px;
-}
-.numbers {
-    width: 100%;
-    height: 4rem;
-    margin: 1rem;
-    border: 1px solid black;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    font-size: 1.5rem;
-}
-.eachNum {
-    display: flex;
-    color: white;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 2rem;
-    margin: auto;
-    padding: auto;
 }
+
+h2 {
+    color: #444;
+}
+
+.number-set {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.number {
+    margin: 8px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    color: #555;
+}
+
+.match {
+    background-color: #ffdd57;
+}
+
 button {
-    width: 60px;
-    padding: 5px;
+    background-color: #007bff;
     color: white;
-    border: transparent;
+    border: none;
+    width: 300px;
+    padding: 10px 20px;
     border-radius: 5px;
-    background: #f87f70;
+    cursor: pointer;
+    font-size: 16px;
 }
+button:disabled {
+    filter: brightness(70%);
+}
+button:disabled:hover {
+    background-color: #007bff;
+}
+
 button:hover {
-    background: rgb(131, 66, 58);
+    background-color: #0056b3;
+}
+
+.winningNumber {
+    display: inline-block;
+    margin: 15px 20px;
+    background-color: #aaaaaa;
+    border-bottom: 3px solid black;
+    padding: 10px;
+    border-radius: 2rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.winningNumber:nth-child(1) {
+    background-color: #fbc400;
+}
+.winningNumber:nth-child(2) {
+    background-color: #68c8f2;
+}
+.winningNumber:nth-child(3) {
+    background-color: #ff7272;
+}
+
+#lottoNumbers {
+    width: 574px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.randomNumber {
+    display: inline-block;
+    margin: 15px 20px;
+    background-color: #aaaaaa;
+    padding: 10px;
+    border-radius: 2rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+.randomNumber:nth-child(1),
+.randomNumber:nth-child(7),
+.randomNumber:nth-child(13),
+.randomNumber:nth-child(19),
+.randomNumber:nth-child(25) {
+    background-color: #fbc400;
+}
+.randomNumber:nth-child(2),
+.randomNumber:nth-child(8),
+.randomNumber:nth-child(14),
+.randomNumber:nth-child(20),
+.randomNumber:nth-child(26) {
+    background-color: #68c8f2;
+}
+.randomNumber:nth-child(3),
+.randomNumber:nth-child(9),
+.randomNumber:nth-child(15),
+.randomNumber:nth-child(21),
+.randomNumber:nth-child(27) {
+    background-color: #ff7272;
 }
