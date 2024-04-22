@@ -2,7 +2,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Carousel from './Carousel';
-
 export default function Content() {
     const weeklyCarousel = [1, 2, 3, 4, 5, 6, 7];
 
