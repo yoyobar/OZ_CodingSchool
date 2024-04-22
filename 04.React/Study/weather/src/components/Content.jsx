@@ -4,6 +4,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import Carousel from './Carousel';
 
 export default function Content() {
+    const weeklyCarousel = [1, 2, 3, 4, 5, 6, 7];
+
     var settings = {
         dots: true,
         infinite: true,
@@ -27,13 +29,9 @@ export default function Content() {
         <div className='w-full h-full flex justify-center mt-8'>
             <div className='min-w-96'>
                 <Slider {...settings}>
-                    <Carousel />
-                    <Carousel />
-                    <Carousel />
-                    <Carousel />
-                    <Carousel />
-                    <Carousel />
-                    <Carousel />
+                    {weeklyCarousel.map((item) => (
+                        <Carousel key={item} />
+                    ))}
                 </Slider>
             </div>
         </div>

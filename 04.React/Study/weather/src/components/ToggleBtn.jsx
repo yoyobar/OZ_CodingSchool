@@ -1,16 +1,13 @@
-import { useState } from 'react';
-
-export default function ToggleBtn() {
-    const [check, setCheck] = useState(false);
-    const checkHandler = () => {
-        setCheck(!check);
+export default function ToggleBtn({ checkHandler }) {
+    const onClick = () => {
+        checkHandler();
     };
 
     return (
         <div className='ml-10 mt-4 font-mono flex gap-1'>
             <span className='text-white'>°C</span>
             <label className='inline-flex items-center cursor-pointer'>
-                <input type='checkbox' onChange={checkHandler} value={check} className='sr-only peer' />
+                <input type='checkbox' onChange={onClick} className='sr-only peer' />
                 <div
                     className='relative w-12 h-4 bg-gray-200 
                 peer-focus:outline-none

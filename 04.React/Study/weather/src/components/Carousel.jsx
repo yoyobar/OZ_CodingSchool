@@ -12,7 +12,7 @@ export default function Carousel() {
                 <div className='flex pt-24 gap-4 justify-center items-center'>
                     <div className='relative text-5xl gap-4 font-sans flex justify-center items-center'>
                         <img className='w-3 h-10' src={temp}></img>
-                        <div>27°C</div>
+                        <div>27도</div>
                     </div>
                     <img src='http://via.placeholder.com/48x48'></img>
                 </div>
