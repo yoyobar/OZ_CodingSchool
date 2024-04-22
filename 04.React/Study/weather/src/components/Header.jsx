@@ -5,14 +5,14 @@ import Nav from './Nav';
 import NavMobile from './NavMobile';
 import { useMediaQuery } from 'react-responsive';
 
-export default function Header({ checkHandler }) {
+export default function Header() {
     const isMobile = useMediaQuery({ maxWidth: 1024 });
 
     return (
         <>
             {!isMobile ? <Nav /> : <NavMobile />}
             <Clock />
-            <ToggleBtn checkHandler={checkHandler} />
+            <ToggleBtn />
             <Search />
         </>
     );

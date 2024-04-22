@@ -1,4 +1,8 @@
-export default function ToggleBtn({ checkHandler }) {
+import { useContext } from 'react';
+import { CheckStateContext } from '../App';
+
+export default function ToggleBtn() {
+    const checkHandler = useContext(CheckStateContext);
     const onClick = () => {
         checkHandler();
     };
