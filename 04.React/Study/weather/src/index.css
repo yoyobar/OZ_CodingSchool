@@ -7,3 +7,6 @@
     box-sizing: border-box;
     background-color: #111827;
 }
+.slick-slider .slick-slide {
+    padding: 0 15px;
+}
