@@ -24,8 +24,8 @@ export default function Content() {
         ),
     };
     return (
-        <div className='flex justify-center mt-8'>
-            <div className='w-8/12'>
+        <div className='w-full h-full flex justify-center mt-8'>
+            <div className='min-w-96'>
                 <Slider {...settings}>
                     <Carousel />
                     <Carousel />

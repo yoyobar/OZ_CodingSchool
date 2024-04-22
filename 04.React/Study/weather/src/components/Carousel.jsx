@@ -10,8 +10,8 @@ export default function Carousel() {
                     <img className='w-6 h-6 hover:brightness-75' src={location}></img>
                 </div>
                 <div className='flex pt-24 gap-4 justify-center items-center'>
-                    <div className='relative text-4xl font-sans flex justify-center items-center'>
-                        <img className='w-3 h-10 absolute -left-4 top-0 ' src={temp}></img>
+                    <div className='relative text-5xl gap-4 font-sans flex justify-center items-center'>
+                        <img className='w-3 h-10' src={temp}></img>
                         <div>27°C</div>
                     </div>
                     <img src='http://via.placeholder.com/48x48'></img>

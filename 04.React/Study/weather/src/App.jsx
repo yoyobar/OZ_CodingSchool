@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 function App() {
     return (
-        <div className=''>
+        <div className='main bg-slate-900 '>
             <Header />
             <Content />
             <Weekly />
