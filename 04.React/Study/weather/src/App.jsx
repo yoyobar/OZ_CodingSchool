@@ -12,6 +12,7 @@ export const CheckStateContext = createContext();
 function App() {
     const [check, setCheck] = useState(false);
     const [weather, setWeather] = useState({});
+    const [slide, setSlide] = useState(0);
     const apiRequest = useRef(true);
     const checkHandler = () => {
         setCheck(!check);
@@ -51,7 +52,7 @@ function App() {
     //OPENWEATHER API DATA LOAD
     async function weatherApiCall(latitude, longitude) {
         if (apiRequest.current) {
-            apiRequest.current = !apiRequest.current;
+            apiRequest.current = false;
 
             try {
                 const response = await fetch(
@@ -60,10 +61,10 @@ function App() {
                 const json = await response.json();
                 const { list } = json;
                 dataSetting(json, list);
-                apiRequest.current = !apiRequest.current;
+                apiRequest.current = true;
             } catch (error) {
                 console.error('WEATHER DATA ERROR', error);
-                apiRequest.current = !apiRequest.current;
+                apiRequest.current = true;
             }
         } else {
             return alert('API 처리중 입니다.');
@@ -73,11 +74,11 @@ function App() {
     //OPENWEATHER API DATA REQUEST
     async function weatherApiSearch(city) {
         if (apiRequest.current) {
-            apiRequest.current = !apiRequest.current;
+            apiRequest.current = false;
 
             try {
                 const response = await fetch(
-                    `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=e83cbcd7f0cb5b4bb7a22680f6cdd447`
+                    `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=e83cbcd7f0cb5b4bb7a22680f6cdd447`
                 );
                 const [json] = await response.json();
                 //도시정보 API와 날씨정보 API가 버전이 달라 실제 geo데이터가 다른경우가 있음
@@ -93,11 +94,11 @@ function App() {
                         geoData = [json.lat, json.lon];
                         break;
                 }
-                apiRequest.current = !apiRequest.current;
+                apiRequest.current = true;
                 weatherApiCall(geoData[0], geoData[1]);
             } catch (error) {
                 console.error('SEARCH DATA ERROR');
-                apiRequest.current = !apiRequest.current;
+                apiRequest.current = true;
             }
         } else {
             return alert('API 처리중 입니다.');
@@ -122,8 +123,8 @@ function App() {
 
     return (
         <div className='main bg-slate-900 '>
-            <WeatherStateContext.Provider value={{ weather, weatherApiSearch }}>
-                <CheckStateContext.Provider value={checkHandler}>
+            <WeatherStateContext.Provider value={{ weather, slide, setSlide, weatherApiSearch }}>
+                <CheckStateContext.Provider value={{ check, checkHandler }}>
                     <Header />
                     <Content />
                     <Footer />

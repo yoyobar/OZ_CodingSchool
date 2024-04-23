@@ -17,21 +17,18 @@ export default function Search() {
     const searchSubmit = () => {
         if (cityDataKr.includes(input.trim(), 0)) {
             const index = cityDataKr.indexOf(input.trim(), 0);
+            setInput('');
             return weatherApiSearch(cityData[index]);
         }
         if (cityData.includes(input.trim(), 0)) {
             const index = cityData.indexOf(input.trim(), 0);
+            setInput('');
             return weatherApiSearch(cityData[index]);
         } else {
             return alert('지원하지 않는 지역입니다.');
         }
     };
-    const searchEnter = (e) => {
-        if (e.key === 'Enter' && !e.repeat) {
-            searchSubmit();
-            setInput('');
-        }
-    };
+
     const searchFocus = () => {
         setShow(true);
     };
@@ -45,7 +42,6 @@ export default function Search() {
         <div className='relative w-full flex-col justify-center mt-12'>
             <input
                 value={input}
-                onKeyDown={searchEnter}
                 onFocus={searchFocus}
                 onBlur={searchBlur}
                 onChange={inputChange}

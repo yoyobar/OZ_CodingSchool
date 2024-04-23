@@ -6,17 +6,18 @@ import { WeatherStateContext } from '../App';
 import { useContext } from 'react';
 
 export default function Content() {
-    const { weather } = useContext(WeatherStateContext);
+    const { weather, setSlide } = useContext(WeatherStateContext);
     const mockData = [1, 2, 3, 4, 5];
 
     var settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
         className: 'slides',
+        beforeChange: (slide, nextSlide) => setSlide(nextSlide),
         appendDots: (dots) => (
             <div
                 style={{
@@ -33,7 +34,7 @@ export default function Content() {
             <div className='min-w-96'>
                 <Slider {...settings}>
                     {mockData.map((item, index) => (
-                        <Carousel key={item} weather={weather[index]} />
+                        <Carousel key={item} index={index} weather={weather[index] ? weather[index] : null} />
                     ))}
                 </Slider>
             </div>
