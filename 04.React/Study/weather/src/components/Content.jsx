@@ -2,12 +2,16 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Carousel from './Carousel';
+import { WeatherStateContext } from '../App';
+import { useContext } from 'react';
+
 export default function Content() {
-    const weeklyCarousel = [1, 2, 3, 4, 5, 6, 7];
+    const { weather } = useContext(WeatherStateContext);
+    const mockData = [1, 2, 3, 4, 5];
 
     var settings = {
         dots: true,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -28,8 +32,8 @@ export default function Content() {
         <div className='w-full h-full flex justify-center mt-8'>
             <div className='min-w-96'>
                 <Slider {...settings}>
-                    {weeklyCarousel.map((item) => (
-                        <Carousel key={item} />
+                    {mockData.map((item, index) => (
+                        <Carousel key={item} weather={weather[index]} />
                     ))}
                 </Slider>
             </div>

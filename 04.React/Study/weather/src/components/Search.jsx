@@ -29,6 +29,7 @@ export default function Search() {
     const searchEnter = (e) => {
         if (e.key === 'Enter' && !e.repeat) {
             searchSubmit();
+            setInput('');
         }
     };
     const searchFocus = () => {
@@ -43,7 +44,8 @@ export default function Search() {
     return (
         <div className='relative w-full flex-col justify-center mt-12'>
             <input
-                onKeyPress={searchEnter}
+                value={input}
+                onKeyDown={searchEnter}
                 onFocus={searchFocus}
                 onBlur={searchBlur}
                 onChange={inputChange}
