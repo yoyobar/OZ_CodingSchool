@@ -1,3 +1,5 @@
+// ! 평소에 안써본 기능
+
 const http = require('http');
 
 //포트 설정
@@ -14,5 +16,3 @@ const server = http.createServer((req, res) => {
 server.listen(port, () => {
     console.log(`Server running at port ${port}`);
 });
-
-// TODO: 기능개발 유지
