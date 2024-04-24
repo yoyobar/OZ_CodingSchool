@@ -10,4 +10,4 @@ const log = {
     },
 };
 
-module.exports = lo;
+module.exports = log;
