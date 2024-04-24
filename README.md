@@ -59,7 +59,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 10 | [StackBlitz1](https://stackblitz.com/edit/stackblitz-starters-brxegh?file=script.js) [StackBlitz2](https://stackblitz.com/edit/stackblitz-starters-9ocdnx?file=index.js)                        | 햄버거바 만들기, Math 빌트인                   | 04/11     |
 | Challenge 11 | [Challenge/Work11](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work11)                                                                                                 | Mini Project : 로또 번호 추첨 게임             | 03/30     |
 | Challenge 12 | [StackBlitz1](https://stackblitz.com/edit/stackblitz-starters-tfxpcu?file=script.js)[StackBlitz2](https://stackblitz.com/edit/stackblitz-starters-nmuf7q?file=script.ts)                        | 사용자 정보 다루기                             | 04/16     |
-| Challenge 13 | [Challenge/Work13](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work13) [Challenge/Work13](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work13) | Mini Project : 투두 리스트, 강아지 정보 페이지 | 03/31     |
+| Challenge 13 | [Challenge/Work13](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work13) | Mini Project : 투두 리스트, 강아지 정보 페이지 | 03/31     |
 
 #### 개인 스터디
 
