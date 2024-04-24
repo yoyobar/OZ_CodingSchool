@@ -52,7 +52,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 01 | [Challenge/Work01](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work01) | 문제풀기 | 03/29 |
 | Challenge 02 | [Challenge/Work02](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work02) | 문제풀기 | 03/29 |
 | Challenge 03 | [Challenge/Work03](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work03) | 문제풀기 | 04/03 |
-| Challenge 04 | [CHallenge/Work04](https://stackblitz.com/edit/stackblitz-starters-mdz6eg?file=test1.js) | 문제풀기 | 04/03 |
+| Challenge 04 | [Challenge/Work04](https://stackblitz.com/edit/stackblitz-starters-mdz6eg?file=test1.js) | 문제풀기 | 04/03 |
 | Challenge 05 | [Challenge/Work05](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work05) [StackBlitz](https://stackblitz.com/edit/vitejs-vite-pebqw7?file=package.json) | Mini Project : 몬스터 잡기 / 투두 리스트 구현 | 04/05 |
 | Challenge 06 | [StackBlitz1](https://stackblitz.com/edit/stackblitz-starters-p99gyt?file=package.json) [StackBlitz2](https://stackblitz.com/edit/stackblitz-starters-keeqlp?file=package.json) | 함수의 활용 | 04/05 |
 | Challenge 07 | [StackBlitz](https://stackblitz.com/edit/stackblitz-starters-xqig8j?file=script.js) | 트위터 작성하기 | 04/07 |
@@ -60,7 +60,7 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 09 | [StackBlitz1](https://stackblitz.com/edit/stackblitz-starters-liq1ug?file=index.html) [StackBlitz2](https://stackblitz.com/edit/stackblitz-starters-s9qddf?file=index.js) | 시계 만들기, 드림카 소개하기  | 04/10 |
 | Challenge 10 | [StackBlitz1](https://stackblitz.com/edit/stackblitz-starters-brxegh?file=script.js) [StackBlitz2](https://stackblitz.com/edit/stackblitz-starters-9ocdnx?file=index.js) | 햄버거바 만들기, Math 빌트인 | 04/11 |
 | Challenge 11 | [Challenge/Work11](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work11) | Mini Project : 로또 번호 추첨 게임 | 03/30 |
-| Challenge 12 | [StackBlitz1](https://stackblitz.com/edit/stackblitz-starters-tfxpcu?file=script.js)[StackBlitz2](https://stackblitz.com/edit/stackblitz-starters-nmuf7q?file=script.ts) | 사용자 정보 다루기 | 04/16 |
+| Challenge 12 | [StackBlitz1](https://stackblitz.com/edit/stackblitz-starters-tfxpcu?file=script.js) [StackBlitz2](https://stackblitz.com/edit/stackblitz-starters-nmuf7q?file=script.ts) | 사용자 정보 다루기 | 04/16 |
 | Challenge 13 | [Challenge/Work13](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work13) [Challenge/Work13](https://github.com/yoyobar/OZ_CodingSchool/tree/main/02.JS/Challenge/Work13) | Mini Project : 투두 리스트, 강아지 정보 페이지 | 03/31 |
 
 
