@@ -6,6 +6,8 @@ const server = http.createServer((req, res) => {
     //? POST 분기처리
     if (req.method === 'POST' && req.url === '/home') {
         //? 데이터를 받아서 처리,
+        req.on('');
+
         req.on('data', (data) => {
             //? 해쉬 형태로 데이터가 전송됨, String 변환
             const stringifyData = data.toString();
