@@ -53,8 +53,8 @@ app.listen(PORT, () => {
 
 //? HOW TO RUN
 //! First. npm install & Testing
-//! npm run test node 서버 테스트
-//! npm run sync nodemon 서버 테스트
+//! npm run test | node 서버 테스트
+//! npm run sync | nodemon 서버 테스트
 
 //? HOW TO LINK
 //! localhost:4000 -> Layout.hbs, images.controller.js (Default)
