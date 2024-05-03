@@ -24,7 +24,7 @@ app.get('/users/:id', (req, res) => {
     if (user) {
         res.json(user);
     } else {
-        res.sendStatus(404);
+        res.sendStatus(404).end();
     }
 });
 

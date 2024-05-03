@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    width: 80%; /* 적절한 너비 설정 */
+    max-width: 1200px; /* 최대 너비 제한 */
+    margin: 0 auto; /* 수평 중앙 정렬 */
+    display: flex;
+    justify-content: space-around; /* 내부 요소 간격 조정 */
+    flex-wrap: wrap; /* 내용이 많을 때 줄바꿈 */
+    gap: 20px; /* 요소 간 간격 */
+}
+
+form {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%; /* 폼의 너비 */
+    max-width: 350px; /* 최대 너비 제한 */
+}
+
+input, button {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 100%; /* 너비를 폼에 맞춤 */
+    box-sizing: border-box; /* padding과 border 포함한 너비 계산 */
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h1, h2 {
+    text-align: center;
+    width: 100%; /* 제목의 너비 */
+}
+
+#postsList {
+    list-style: none;
+    padding: 0;
+    width: calc(100% - 350px); /* 폼의 너비를 제외한 나머지 너비 */
+    max-width: 800px; /* 최대 너비 제한 */
+}
+
+#postsList li {
+    display: flex; /* Flexbox를 사용하여 내부 요소를 배치 */
+    justify-content: space-between; /* 내부 요소 사이에 균일한 간격을 제공 */
+    align-items: center; /* 내부 요소들을 중앙 정렬 */
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+#postsList li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.post-id {
+    margin-right: 10px; /* ID와 나머지 내용 사이의 간격 */
+    font-weight: bold; /* ID를 강조 */
+    color: #007BFF;
+}
+
+.post-username {
+    margin-right: 10px;
+    font-style: italic; /* 사용자 이름 스타일링 */
+}
+
+.hide {
+    display: none;
+}
