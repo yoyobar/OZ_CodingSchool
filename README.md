@@ -75,6 +75,10 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Project      | Repository                                                                         | 과제 명                         | 제출 날짜 |
 | ------------ | ---------------------------------------------------------------------------------- | ------------------------------- | --------- |
 | Challenge 01 | [StackBlitz](https://stackblitz.com/edit/stackblitz-starters-6is33y?file=index.js) | Import/Export 다루기 (CommonJS) | 04/24     |
+| Challenge 02 | [StackBlitz](https://stackblitz.com/edit/stackblitz-starters-j6uz7e?file=server.js) | 웹 서버 생성 | 04/25     |
+| Challenge 03 | [Challenge/Work03](https://github.com/yoyobar/OZ_CodingSchool/tree/main/04.Node_JS/Challenge/Work03) | MVC 패턴 | 04/26     |
+| Challenge 04 | [Challenge/Work04](https://github.com/yoyobar/OZ_CodingSchool/tree/main/04.Node_JS/Challenge/Work04) | Refresh Token 다루기 | 04/26     |
+| Challenge 07 | [Challenge/Work07](https://github.com/yoyobar/OZ_CodingSchool/tree/main/04.Node_JS/Challenge/Work07) | 에어비엔비 백엔드 구현 | 05/03     |
 
 <hr>
 
@@ -91,3 +95,4 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Voca      | [Voca](https://github.com/yoyobar/Voca-JP)                                               | 일본어 단어 서비스 만들어보기 (Json-Server) | 04/07     |
 | TicTacTo  | [TicTacTo](https://github.com/yoyobar/OZ_CodingSchool/tree/main/03.React/Study/tictacto) | 리액트 자습서 공부                          | 04/07     |
 | WeatherME | [WeatherMe](https://github.com/yoyobar/weatherMe)                                        | 반응형 날씨 웹                              | 04/24     |
+| AdminPage | [AdminPage](https://github.com/yoyobar/adminpage)                                        | 어드민 페이지 프로젝트                            | 04/28 ~     |
