@@ -3,15 +3,16 @@ import React from 'react';
 
 interface TodoItemProps extends FormType {
     modalActive: (e: React.MouseEvent<HTMLButtonElement>) => void;
+    modalExit: () => void;
 }
 
-const TodoItem = ({ id, content, isChecked, modalActive }: TodoItemProps) => {
+const TodoItem = ({ id, content, isChecked, modalActive, modalExit }: TodoItemProps) => {
     const date = new Date(id);
     const { deleteTodo, checkTodo } = useTodo();
 
     const deleteHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
+        modalExit();
         const currentId = Number(e.currentTarget.value);
-
         deleteTodo(currentId);
     };
 

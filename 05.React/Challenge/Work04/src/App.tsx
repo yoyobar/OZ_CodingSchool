@@ -56,7 +56,7 @@ function App() {
                 <div className='h-[600px] w-[500px] overflow-y-scroll mt-4 bg-slate-100 p-2 border rounded-md'>
                     {modalVisible && <Modal modalId={modalId} modalExit={modalExit} />}
                     {todo.map((item) => (
-                        <TodoItem modalActive={modalActive} key={item.id} {...item} />
+                        <TodoItem modalExit={modalExit} modalActive={modalActive} key={item.id} {...item} />
                     ))}
                 </div>
             </div>
