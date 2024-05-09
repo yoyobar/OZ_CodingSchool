@@ -86,9 +86,11 @@ Front-end 3기 김민수의 개인 기록입니다.
 
 | Project | Repository | 과제 명 | 제출 날짜 |
 | ------- | ---------- | ------- | --------- |
-|         |            |         |           |
+| Challenge 01 | [Challenge/Work01](https://github.com/yoyobar/OZ_CodingSchool/tree/main/05.React/Challenge/Work01) | 리액트 환경구축 | 05/09 |
+| Challenge 02 | [StackBlitz](https://stackblitz.com/edit/vitejs-vite-dresj8?file=src%2Fcomponents%2FProfileCard.jsx) | State, Props 다루기 | 05/09 |
+| Challenge 03 | [StackBlitz](https://stackblitz.com/edit/vitejs-vite-xp3nb2?file=src%2FApp.jsx) | map을 활용한 list 렌더링 | 05/09 |
 
-#### 개인 스터디
+#### 개인 프로젝트
 
 | Project   | Repository                                                                               | 과제 명                                     | 제출 날짜 |
 | --------- | ---------------------------------------------------------------------------------------- | ------------------------------------------- | --------- |
