@@ -100,4 +100,4 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Voca      | [Voca](https://github.com/yoyobar/Voca-JP)                                               | 일본어 단어 서비스 만들어보기 (Json-Server) | 04/07     |
 | TicTacTo  | [TicTacTo](https://github.com/yoyobar/OZ_CodingSchool/tree/main/03.React/Study/tictacto) | 리액트 자습서 공부                          | 04/07     |
 | WeatherME | [WeatherMe](https://github.com/yoyobar/weatherMe)                                        | 반응형 날씨 웹                              | 04/24     |
-| AdminPage | [AdminPage](https://github.com/yoyobar/adminpage)                                        | 어드민 페이지 프로젝트                            | 04/28 ~     |
+| AdminPage | [AdminPage](https://github.com/yoyobar/adminpage)                                        | 어드민 페이지 프로젝트                            | 04/28 ~ 05/13     |
