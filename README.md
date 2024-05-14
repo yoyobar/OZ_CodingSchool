@@ -92,6 +92,9 @@ Front-end 3기 김민수의 개인 기록입니다.
 | Challenge 04 | [Challenge/Work04](https://github.com/yoyobar/OZ_CodingSchool/tree/main/05.React/Challenge/Work04) | CRUD 구현 | 05/10 |
 | Challenge 05 | [StackBlitz](https://stackblitz.com/edit/vitejs-vite-c3t8g7?file=src%2FApp.jsx) | useMemo, React.memo, useCallback 최적화 | 05/10 |
 | Challenge 06 | [Challenge/Work06](https://github.com/yoyobar/OZ_CodingSchool/tree/main/05.React/Challenge/Work06) | API 통신 | 05/14 |
+| Challenge 07 | [StackBlitz](https://stackblitz.com/edit/vitejs-vite-7ypvac?file=src%2Fstyles%2FCards.css) | 리액트 반응형 디자인 | 05/14 |
+
+
 
 
 #### 개인 프로젝트
