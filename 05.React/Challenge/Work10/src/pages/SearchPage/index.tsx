@@ -29,6 +29,10 @@ const SearchPage = () => {
         if (debouncedSearchTerm) {
             fetchSearchMovie(debouncedSearchTerm as string);
         }
+
+        if (searchTerm === '') {
+            navigate('/main');
+        }
     }, [debouncedSearchTerm]);
 
     if (searchResults.length > 0) {

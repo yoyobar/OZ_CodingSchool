@@ -57,7 +57,7 @@ const Row = ({ title, id, fetchUrl }: RowProps) => {
     return (
         <Container>
             <h2>{title}</h2>
-            <Swiper loop={true} slidesPerView={6} spaceBetween={20} id={id}>
+            <Swiper slidesPerView={6} spaceBetween={20} id={id}>
                 {movies.map((movie) => (
                     <SwiperSlide key={movie.id}>
                         <Poster onClick={() => handleClick(movie)} alt={movie.name} src={`${basePath}${movie.backdrop_path}`}></Poster>

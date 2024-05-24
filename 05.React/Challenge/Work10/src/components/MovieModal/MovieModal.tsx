@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { basePath } from '../../constant';
+import React, { useRef } from 'react';
+import useOnClickOutside from '../../hooks/useOnClickOutsite';
 
 interface MovieModalProps {
     setModalOpen: (set: boolean) => void;
@@ -125,10 +127,16 @@ const MovieModal = ({
     first_air_date,
     vote_average,
 }: MovieModalProps) => {
+    const ref = useRef<HTMLDivElement | null>(null);
+
+    useOnClickOutside(ref, () => {
+        setModalOpen(false);
+    });
+    console.log(ref);
     return (
         <Presentation>
             <Wrapper_Modal>
-                <Modal>
+                <Modal ref={ref}>
                     <Close onClick={() => setModalOpen(false)}>X</Close>
                     <Img alt='modal_post-img' src={`${basePath}${backdrop_path}`}></Img>
                     <Content>

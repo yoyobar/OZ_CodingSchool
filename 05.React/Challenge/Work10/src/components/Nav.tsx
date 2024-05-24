@@ -1,6 +1,8 @@
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, User, signInWithEmailAndPassword } from 'firebase/auth';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import app from '../firebase';
 
 const Logo = styled.div`
     width: 70px;
@@ -28,8 +30,8 @@ const NavWrapper = styled.div<NavWrapperProps>`
     padding: 0 36px;
     letter-spacing: 16px;
     z-index: 3;
-    transition: all 1s;
-    opacity: ${(props) => (props.show === 'true' ? '0.9' : '0.5')};
+    transition: all 0.3s;
+    opacity: ${(props) => (props.show === 'true' ? '0.7' : '1')};
 `;
 
 const Input = styled.input`
@@ -56,16 +58,46 @@ const Login = styled.a`
     letter-spacing: 1.5px;
     border: 1px solid #f9f9f9;
     transition: all 0.2s ease;
+    cursor: pointer;
+
+    &&:hover {
+        background-color: white;
+        color: black;
+    }
 `;
 
 interface NavWrapperProps {
     show: string;
 }
 
+const initialUserData = localStorage.getItem('userData') ? localStorage.getItem('userData') : null;
+
 const Nav = () => {
     const [show, setShow] = useState(false);
     const [searchValue, setSearchValue] = useState('');
+    const [userData, setUserData] = useState<User | null>(initialUserData as unknown as User);
+
     const navigate = useNavigate();
+    const { pathname } = useLocation();
+
+    const auth = getAuth(app);
+    const googleProvider = new GoogleAuthProvider();
+
+    const handleAuth = () => {
+        signInWithPopup(auth, googleProvider)
+            .then((result) => {
+                setUserData(result.user);
+                localStorage.setItem('userData', JSON.stringify(result.user));
+            })
+            .catch((error) => {
+                alert(error.message);
+            });
+    };
+
+    const handleLogout = () => {
+        signOut(auth);
+        localStorage.removeItem('userData');
+    };
 
     const listener = () => {
         if (window.scrollY > 100) {
@@ -81,6 +113,16 @@ const Nav = () => {
     };
 
     useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            if (!user && pathname !== '/register') {
+                navigate('/');
+            } else if (user && pathname === '/') {
+                navigate('/main');
+            }
+        });
+    }, [auth, navigate]);
+
+    useEffect(() => {
         window.addEventListener('scroll', listener);
         return () => {
             window.removeEventListener('scroll', listener);
@@ -92,14 +134,20 @@ const Nav = () => {
             <Logo>
                 <img alt='logo' src='/images/apple-logo.png' onClick={() => (window.location.href = '/')} />
             </Logo>
-            <Login>로그인</Login>
-            <Input
-                onChange={handleChange}
-                value={searchValue}
-                type='text'
-                className='nav__input'
-                placeholder='영화를 검색해주세요.'
-            ></Input>
+            {pathname === '/' || pathname === '/register' ? (
+                <Login onClick={handleAuth}>로그인</Login>
+            ) : (
+                <>
+                    <Login onClick={handleLogout}>로그아웃</Login>
+                    <Input
+                        onChange={handleChange}
+                        value={searchValue}
+                        type='text'
+                        className='nav__input'
+                        placeholder='영화를 검색해주세요.'
+                    ></Input>
+                </>
+            )}
         </NavWrapper>
     );
 };

@@ -32,7 +32,7 @@ const DetailPage = () => {
                         </FlexCol>
                         <Type>
                             {movie.genres.map((item) => {
-                                return <div>{item.name}</div>;
+                                return <div key={item.name}>{item.name}</div>;
                             })}
                         </Type>
                         <Score>✨ {movie.vote_average}</Score>
