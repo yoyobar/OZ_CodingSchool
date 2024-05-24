@@ -36,7 +36,7 @@ const DetailPage = () => {
                             })}
                         </Type>
                         <Score>✨ {movie.vote_average}</Score>
-                        <Button onClick={() => navigate('/main')}>닫기</Button>
+                        <Button onClick={() => navigate(-1)}>닫기</Button>
                     </Flex>
                 </Information>
                 <Content>{movie.overview}</Content>
@@ -60,7 +60,7 @@ const Banner = styled.img`
     filter: brightness(0.4);
     height: 1200px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
         height: 400px;
     }
 `;
@@ -90,7 +90,7 @@ const Tag = styled.div`
     font-weight: 200;
     font-size: 2rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
         font-size: 1.25rem;
     }
 `;
@@ -107,7 +107,7 @@ const Type = styled.div`
     border-radius: 10px;
     opacity: 0.9;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
         display: none;
     }
 `;
@@ -124,7 +124,7 @@ const Score = styled.div`
     opacity: 0.9;
     color: black;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
         font-size: 1rem;
         width: 200px;
         margin-left: 10px;
@@ -154,7 +154,7 @@ const Content = styled.div`
     font-weight: 200;
     line-height: 2rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
         display: none;
     }
 `;
