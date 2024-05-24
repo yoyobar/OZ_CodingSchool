@@ -40,7 +40,7 @@ const Message = () => {
 
 const AlertContainer = styled.div`
     background-color: rgb(7 89 133);
-    z-index: 99;
+    z-index: 9999;
     min-width: 256px;
     border-radius: 0.375rem;
     padding-top: 0.25rem;

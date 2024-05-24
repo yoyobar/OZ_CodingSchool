@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import Banner from '../../components/Banner';
 import Row from '../../components/Row';
 import requests from '../../api/request';
+import { useEffect } from 'react';
+import { useModal } from '../../store';
+import { useNavigate } from 'react-router-dom';
 
 const Container = styled.main`
     position: relative;
@@ -12,6 +15,10 @@ const Container = styled.main`
 `;
 
 const MainPage = () => {
+    const navigate = useNavigate();
+
+    const { modalOn } = useModal();
+
     return (
         <Container>
             <Banner />

@@ -1,14 +1,47 @@
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import { useModal } from '../../store';
 
 const LoginPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
+    const { modalOn } = useModal();
 
     const linkHandler = () => {
         navigate('/register');
+    };
+
+    const inputHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+        switch (e.target.name) {
+            case 'email':
+                setEmail(e.target.value);
+                break;
+            case 'password':
+                setPassword(e.target.value);
+                break;
+        }
+    };
+
+    const loginHandler = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const auth = getAuth();
+        signInWithEmailAndPassword(auth, email, password)
+            .then((auth) => {
+                localStorage.setItem('userData', JSON.stringify(auth));
+                navigate('/main');
+            })
+            .catch((error) => {
+                switch (error.code) {
+                    case 'auth/invalid-credential':
+                        modalOn('잘못된 계정입니다. 아이디와 비밀번호를 확인하십시오.');
+                        break;
+                    default:
+                        modalOn(`로그인 에러 발생 ${error.message}`);
+                }
+            });
     };
 
     return (
@@ -17,9 +50,9 @@ const LoginPage = () => {
                 <Logo src='/images/apple-gray-logo.svg' alt='logo' />
                 <HeadingText>Login with your Email ID</HeadingText>
                 <Description>You will be signed in to Apple TV and Apple Music.</Description>
-                <Form>
-                    <Input required type='email' placeholder='Email ID' />
-                    <Input required type='password' placeholder='Email password' />
+                <Form onSubmit={loginHandler}>
+                    <Input name='email' onChange={inputHandler} value={email} required type='email' placeholder='Email ID' />
+                    <Input name='password' onChange={inputHandler} value={password} required type='password' placeholder='Email password' />
                     <ButtonWrapper>
                         <Button type='submit'>Login</Button>
                     </ButtonWrapper>

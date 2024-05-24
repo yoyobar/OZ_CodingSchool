@@ -90,7 +90,7 @@ const Nav = () => {
                 localStorage.setItem('userData', JSON.stringify(result.user));
             })
             .catch((error) => {
-                alert(error.message);
+                console.log(error.message);
             });
     };
 
@@ -118,6 +118,10 @@ const Nav = () => {
                 navigate('/');
             } else if (user && pathname === '/') {
                 navigate('/main');
+            }
+
+            if (userData === null) {
+                navigate('/');
             }
         });
     }, [auth, navigate]);

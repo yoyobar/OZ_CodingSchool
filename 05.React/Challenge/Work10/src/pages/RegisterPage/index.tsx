@@ -37,8 +37,8 @@ const RegisterPage = () => {
         const auth = getAuth();
         createUserWithEmailAndPassword(auth, email, password1)
             .then((auth) => {
-                modalOn('회원가입 성공');
                 localStorage.setItem('userData', JSON.stringify(auth));
+                navigate('/main');
             })
             .catch((error) => {
                 switch (error.code) {
