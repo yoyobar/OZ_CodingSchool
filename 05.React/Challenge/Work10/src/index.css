@@ -1,0 +1,14 @@
+:root,
+body,
+html {
+    background-color: #2d2d2d;
+    color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
