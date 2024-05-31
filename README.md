@@ -93,6 +93,17 @@
 | Challenge 05 | [StackBlitz](https://stackblitz.com/edit/vitejs-vite-c3t8g7?file=src%2FApp.jsx) | useMemo, React.memo, useCallback 최적화 | 05/10 |
 | Challenge 06 | [Challenge/Work06](https://github.com/yoyobar/OZ_CodingSchool/tree/main/05.React/Challenge/Work06) | API 통신 | 05/14 |
 | Challenge 07 | [StackBlitz](https://stackblitz.com/edit/vitejs-vite-7ypvac?file=src%2Fstyles%2FCards.css) | 리액트 반응형 디자인 | 05/14 |
+| Challenge 08 | [StackBlitz](https://stackblitz.com/edit/vitejs-vite-ugcv7f?file=src%2FApp.jsx) | React-Router-DOM | 05/20 |
+| Challenge 09 | [Challenge/Work09](https://github.com/yoyobar/OZ_CodingSchool/tree/main/05.React/Challenge/Work09) | Apple-TV Clone Coding : Modal 구현 | 05/24 |
+| Challenge 10 | [Challenge/Work10](https://github.com/yoyobar/OZ_CodingSchool/tree/main/05.React/Challenge/Work10) | Apple-TV Clone Coding : FireBase | 05/24 |
+| Challenge 11 | [StackBlitz](https://stackblitz.com/edit/vitejs-vite-gttdvp?file=src%2FDataContext.jsx) | Context API | 05/27 |
+| Challenge 12 | [Challenge/Work12](https://github.com/yoyobar/OZ_CodingSchool/tree/main/05.React/Challenge/Work12/src) | 수입/지출 관리 어플리케이션 | 05/27 |
+| Challenge 13 | [Challenge/Work13](https://github.com/yoyobar/OZ_CodingSchool/tree/main/05.React/Challenge/Work13) | Redux를 활용한 카운트 앱 | 05/27 |
+| Challenge 14 | [Challenge/Work14](https://github.com/yoyobar/OZ_CodingSchool/tree/main/05.React/Challenge/Work14) | Redux를 활용한 Todo-App | 05/28 |
+| Challenge 15 | [Challenge/Work15](https://github.com/yoyobar/OZ_CodingSchool/tree/main/05.React/Challenge/Work15) | Jest를 통한 Test주도 개발 | 05/29 |
+| Challenge 16 | [StackBlitz](https://stackblitz.com/edit/stackblitz-starters-kvyv9h?file=pages%2Fposts%2F%5Bslug%5D.js) | Next.js Pages Router 구현 | 05/29 |
+| Challenge 17 | [Challenge/Work17](https://github.com/yoyobar/OZ_CodingSchool/tree/main/05.React/Challenge/Work17) | Next.js Pages Router 간단한 포스트 구현 | 05/29 |
+| Challenge 18 | [Challenge/Work18](https://github.com/yoyobar/OZ_CodingSchool/tree/main/05.React/Challenge/Work18) | Next.js / Json-Server CRUD 구현 | 05/30 |
 
 
 
@@ -105,3 +116,5 @@
 | TicTacTo  | [TicTacTo](https://github.com/yoyobar/OZ_CodingSchool/tree/main/03.React/Study/tictacto) | 리액트 자습서 공부                          | 04/07     |
 | WeatherME | [WeatherMe](https://github.com/yoyobar/weatherMe)                                        | 반응형 날씨 웹                              | 04/24     |
 | AdminPage | [AdminPage](https://github.com/yoyobar/adminpage)                                        | 어드민 페이지 프로젝트                            | 04/28 ~ 05/13     |
+| Blog | [Blog](https://wiki-drab-sigma.vercel.app/)                                        | Next.js 블로그 프로젝트 (With. Nextra FrameWork)                           | 05/18 ~     |
+| newBlog | [newBlog](https://github.com/yoyobar/newBlog) | Next.js로 처음부터 제작하는 인터랙티브 블로그 프로젝트 | 05/31 ~
