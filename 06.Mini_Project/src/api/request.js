@@ -9,6 +9,4 @@ const requests = {
     fetchDocumentaries: '/discover/movie?with_genres=99',
 };
 
-export const baseURL = 'https://api.themoviedb.org/3';
-
 export default requests;
