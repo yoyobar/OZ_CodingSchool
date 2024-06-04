@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase';
 import Message from './components/Message';
+import SearchPage from './pages/SearchPage';
 
 const Layout = () => {
     const { pathname } = useLocation();
@@ -53,6 +54,7 @@ function App() {
                 <Route path='/main' element={<MainPage />}></Route>
                 <Route path='/main/:id' element={<DetailPage />}></Route>
                 <Route path='/register' element={<RegisterPage />}></Route>
+                <Route path='/search' element={<SearchPage />}></Route>
             </Route>
         </Routes>
     );

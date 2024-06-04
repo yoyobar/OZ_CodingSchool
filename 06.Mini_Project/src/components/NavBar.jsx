@@ -5,6 +5,7 @@ import { auth } from '../firebase';
 
 const Header = () => {
     const [modalActive, setModalActive] = useState(false);
+    const [search, setSearch] = useState('');
     const { pathname } = useLocation();
     const router = useNavigate();
 
@@ -17,6 +18,11 @@ const Header = () => {
     const logoutHandler = () => {
         auth.signOut();
         router('/');
+    };
+
+    const inputHandler = (e) => {
+        setSearch(e.target.value);
+        router(`/search?q=${e.target.value}`);
     };
 
     return (
@@ -71,6 +77,12 @@ const Header = () => {
                 </div>
             ) : (
                 <div className='flex gap-2'>
+                    <input
+                        value={search}
+                        onChange={inputHandler}
+                        className='p-2 border bg-black rounded-md placeholder:text-gray-200'
+                        placeholder='Search...'
+                    ></input>
                     <button
                         onClick={logoutHandler}
                         className='hover:bg-white hover:text-black transition p-2 rounded-md border border-white hidden justify-center items-center lg:flex'

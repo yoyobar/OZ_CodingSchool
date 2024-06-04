@@ -7,14 +7,20 @@ import axios from '../api/axios';
 import request from '../api/request';
 import { useNavigate } from 'react-router-dom';
 
-const MovieCard = ({ type }) => {
+const MovieCard = ({ type, data }) => {
     const [movies, setMovies] = useState([]);
     const router = useNavigate();
 
     useEffect(() => {
+        function filterMovie(data) {
+            const filterList = data.filter((item) => item.title !== null && item.title !== undefined && item.backdrop_path !== null);
+            return filterList;
+        }
+
         async function fetchData(request) {
             const response = await axios.get(request);
-            setMovies(response.data.results);
+            const filterData = filterMovie(response.data.results);
+            setMovies(filterData);
         }
 
         switch (type) {
@@ -30,8 +36,11 @@ const MovieCard = ({ type }) => {
             case 'REGISTER':
                 fetchData(request.fetchNowPlaying);
                 break;
+            case 'SEARCH':
+                setMovies(filterMovie(data));
+                break;
         }
-    }, [type]);
+    }, [type, data]);
 
     const imgHandler = (id) => {
         if (type === 'REGISTER') return;
@@ -68,7 +77,7 @@ const MovieCard = ({ type }) => {
                         key={item.id}
                     >
                         <img
-                            className='rounded-md scale-95 hover:scale-100 transition'
+                            className='rounded-md scale-95 hover:scale-100 transition w-full h-full'
                             src={`https://image.tmdb.org/t/p/w1280/${item.backdrop_path}`}
                         />
                         <div className='text-white text-center'>{item.title ? item.title : '제목 정보 없음'}</div>

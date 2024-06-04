@@ -5,13 +5,11 @@ import DetailDes from './DetailDes';
 import DetailTag from './DetailTag';
 import DetailTitle from './DetailTitle';
 import Loading from './Loading';
-import { useModal } from '../store';
 
 const MovieDetail = () => {
     const { id } = useParams();
     const [detail, setDetail] = useState('');
     const [loading, setLoading] = useState(true);
-    const { modalOn } = useModal();
     const router = useNavigate();
 
     const buttonHandler = () => {
@@ -19,30 +17,14 @@ const MovieDetail = () => {
     };
 
     useEffect(() => {
-        let isMounted = true;
-
         async function fetchData() {
-            try {
-                const response = await axios.get(`movie/${id}`);
-                if (isMounted) {
-                    setDetail(response.data);
-                    setLoading(false);
-                }
-            } catch {
-                if (isMounted) {
-                    setLoading(false);
-                    modalOn('DB내 존재하지 않는 상세 데이터 페이지입니다.');
-                    router('/', { replace: true });
-                }
-            }
+            const response = await axios.get(`movie/${id}`);
+            setDetail(response.data);
+            setLoading(false);
         }
 
         fetchData();
-
-        return () => {
-            isMounted = false;
-        };
-    }, [id, router, modalOn]);
+    }, [id]);
 
     if (loading) return <Loading />;
 
