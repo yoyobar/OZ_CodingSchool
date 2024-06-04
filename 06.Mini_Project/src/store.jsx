@@ -16,3 +16,13 @@ export const useModal = create((set) => ({
         }));
     },
 }));
+
+export const useBookmark = create((set) => ({
+    mark: [],
+
+    setMark: (data) => {
+        set((state) => ({
+            mark: [...state.mark, data],
+        }));
+    },
+}));
