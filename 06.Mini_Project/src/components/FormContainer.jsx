@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import Input from './Input';
 import { useState } from 'react';
-import { createUser, loginUser } from '../utils/auth';
+import { createUser, googleUser, loginUser } from '../utils/auth';
 import { useModal } from '../store';
 
 const FormContainer = () => {
@@ -17,12 +17,23 @@ const FormContainer = () => {
         router('/');
     };
 
+    const handleGoogleAuth = async () => {
+        const result = await googleUser();
+
+        if (result.status === false) {
+            modalOn(result.data);
+        } else {
+            router('/main');
+        }
+    };
+
     const handleLogin = async () => {
         const result = await loginUser(id, pw1);
         if (result.status === false) {
             modalOn('잘못된 이메일 또는 비밀번호 입니다.');
         }
     };
+
     const handleRegister = async () => {
         if (pw1.trim() !== pw2.trim()) return modalOn('비밀번호가 일치하지 않습니다.');
 
@@ -111,6 +122,16 @@ const FormContainer = () => {
                         >
                             Register New Account
                         </button>
+                        <button
+                            onClick={handleGoogleAuth}
+                            className='mt-10 p-2 rounded-md hover:brightness-125 transition bg-[#782b26] text-white font-mono flex justify-center items-center gap-2'
+                        >
+                            <img
+                                className='w-8'
+                                src='https://upload.wikimedia.org/wikipedia/commons/0/0b/Google_Plus_logo_%282015-2019%29.svg'
+                            />
+                            <div>Signup & Login With Google Account</div>
+                        </button>
                     </form>
                 </div>
             );
@@ -158,6 +179,16 @@ const FormContainer = () => {
                                 Back
                             </button>
                         </div>
+                        <button
+                            onClick={handleGoogleAuth}
+                            className='mt-10 p-2 rounded-md hover:brightness-125 transition bg-[#782b26] text-white font-mono flex justify-center items-center gap-2'
+                        >
+                            <img
+                                className='w-8'
+                                src='https://upload.wikimedia.org/wikipedia/commons/0/0b/Google_Plus_logo_%282015-2019%29.svg'
+                            />
+                            <div>Signup & Login With Google Account</div>
+                        </button>
                     </form>
                 </div>
             );
