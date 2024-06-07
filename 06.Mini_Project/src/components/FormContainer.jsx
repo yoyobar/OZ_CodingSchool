@@ -36,8 +36,14 @@ const FormContainer = () => {
 
     const handleRegister = async () => {
         if (pw1 !== pw2) return modalOn('비밀번호가 일치하지 않습니다.');
-
         const result = await createUser(id, pw1);
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(id)) {
+            modalOn('유효하지 않은 이메일 주소입니다.');
+            return;
+        }
+
         if (result.status === false) {
             switch (result.data) {
                 case 'auth/weak-password':

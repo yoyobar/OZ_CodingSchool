@@ -15,8 +15,10 @@ const Layout = () => {
     return (
         <div className='select-none'>
             <Navbar />;
-            <Outlet />;
-            <Message />
+            <div className='relative top-12'>
+                <Message />
+                <Outlet />;
+            </div>
         </div>
     );
 };

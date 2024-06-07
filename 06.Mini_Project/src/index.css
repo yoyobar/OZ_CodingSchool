@@ -8,5 +8,26 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1d293b;
+    background-color: #302b25;
+}
+/* Webkit (Chrome, Safari) */
+*::-webkit-scrollbar {
+    width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #565656;
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+}
+
+@layer utilities {
+    .transition-maximize {
+        @apply transition-width-height;
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+    }
 }

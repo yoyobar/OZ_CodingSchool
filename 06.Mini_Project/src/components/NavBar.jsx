@@ -8,7 +8,7 @@ const Header = () => {
     const { pathname } = useLocation();
 
     return (
-        <div className='w-full h-[50px] bg-black text-white flex p-2 justify-between'>
+        <div className='opacity-80 z-50 w-full h-[50px] bg-black fixed text-white flex p-2 justify-between'>
             {pathname === '/' && <UnAuthorizedNav />}
             {pathname === '/register' && <UnAuthorizedNav />}
             {pathname !== '/' && pathname !== '/register' && <AuthorizedNav />}
@@ -37,7 +37,7 @@ const UnAuthorizedNav = () => {
                     onClick={() => {
                         router('/');
                     }}
-                    className='text-xl font-bold cursor-pointer hover:text-gray-400'
+                    className='text-xl font-bold cursor-pointer text-black hover:text-gray-400'
                 >
                     Movie App
                 </div>

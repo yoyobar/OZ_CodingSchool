@@ -29,8 +29,8 @@ const MovieDetail = () => {
     if (loading) return <Loading />;
 
     return (
-        <>
-            <div onClick={buttonHandler} className='w-full bg-black h-[calc(100%-40px)] absolute top-10 left-0 z-30 opacity-45'></div>
+        <div>
+            <div onClick={buttonHandler} className='bg-black absolute -top-[90px] w-full left-0 z-30 opacity-45 h-[100vh]'></div>
             <div onClick={buttonHandler} className='text-white cursor-pointer absolute text-3xl font-bold right-6 top-16 z-40'>
                 X
             </div>
@@ -38,7 +38,7 @@ const MovieDetail = () => {
                 <div className='w-full h-full p-4 gap-1 flex'>
                     <div className='relative rounded-md bg-slate-700 lg:h-full'>
                         <img
-                            className='rounded-md min-h-[500px] h-full w-full'
+                            className='rounded-md min-h-[300px] h-full w-full'
                             src={`https://image.tmdb.org/t/p/original/${detail.backdrop_path}`}
                             alt={detail.title}
                         />
@@ -56,7 +56,7 @@ const MovieDetail = () => {
                     </nav>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
