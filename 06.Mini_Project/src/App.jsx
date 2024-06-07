@@ -15,7 +15,7 @@ const Layout = () => {
     return (
         <>
             <Navbar />
-            <div className='fixed select-none w-full h-[100vh] overflow-y-auto'>
+            <div className='fixed select-none w-full h-[100vh] overflow-y-auto '>
                 <Message />
                 <Outlet />
             </div>
