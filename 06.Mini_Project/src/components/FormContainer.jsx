@@ -35,7 +35,7 @@ const FormContainer = () => {
     };
 
     const handleRegister = async () => {
-        if (pw1.trim() !== pw2.trim()) return modalOn('비밀번호가 일치하지 않습니다.');
+        if (pw1 !== pw2) return modalOn('비밀번호가 일치하지 않습니다.');
 
         const result = await createUser(id, pw1);
         if (result.status === false) {

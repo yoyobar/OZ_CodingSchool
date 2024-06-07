@@ -13,7 +13,7 @@ const SearchPage = () => {
     const router = useNavigate();
 
     const query = useQuery();
-    const searchTerm = useDebounce(query.get('q'), 500);
+    const searchTerm = useDebounce(query.get('data'), 500);
 
     const fetchSearch = async (text) => {
         try {

@@ -98,7 +98,7 @@ const AuthorizedNav = () => {
 
     const inputHandler = (e) => {
         setSearch(e.target.value);
-        router(`/search?q=${e.target.value}`);
+        router(`/search?data=${e.target.value}`);
     };
     return (
         <div className='flex justify-between w-full'>

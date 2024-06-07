@@ -12,6 +12,16 @@ import SearchPage from './pages/SearchPage';
 import MyPage from './pages/MyPage';
 
 const Layout = () => {
+    return (
+        <div className='select-none'>
+            <Navbar />;
+            <Outlet />;
+            <Message />
+        </div>
+    );
+};
+
+function App() {
     const { pathname } = useLocation();
     const router = useNavigate();
     const [user, setUser] = useState(false);
@@ -38,16 +48,6 @@ const Layout = () => {
         }
     }, [pathname, router, user]);
 
-    return (
-        <div className='select-none'>
-            <Navbar />;
-            <Outlet />;
-            <Message />
-        </div>
-    );
-};
-
-function App() {
     return (
         <Routes>
             <Route path='/' element={<Layout />}>
