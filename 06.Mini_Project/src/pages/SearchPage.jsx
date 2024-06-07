@@ -68,7 +68,7 @@ const SearchPage = () => {
                                     e.stopPropagation();
                                     imgHandler(item.id);
                                 }}
-                                className='w-1/3 relative lg:w-[300px] rounded-md cursor-pointer flex flex-col justify-center items-center flex-wrap'
+                                className='relative sm:w-[200px] rounded-md cursor-pointer flex flex-col justify-center items-center flex-wrap'
                             >
                                 <img
                                     className='scale-95 hover:scale-100 rounded-md transition w-full'
@@ -76,19 +76,19 @@ const SearchPage = () => {
                                 />
 
                                 <div className='text-white'>{item.title}</div>
-                                <button
-                                    onClick={bookmarkHandler}
-                                    value={item.id}
-                                    name={item.title}
-                                    className={
-                                        loading
-                                            ? 'hidden'
-                                            : 'absolute bottom-10 right-8 text-2xl text-white [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] hover:scale-125 transition'
-                                    }
-                                >
-                                    ▲
-                                </button>
                             </div>
+                            <button
+                                onClick={bookmarkHandler}
+                                value={item.id}
+                                name={item.title}
+                                className={
+                                    loading
+                                        ? 'hidden'
+                                        : 'absolute bottom-10 right-8 text-2xl text-white [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] hover:scale-125 transition'
+                                }
+                            >
+                                ▲
+                            </button>
                         </div>
                     );
                 })}

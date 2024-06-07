@@ -6,15 +6,19 @@ import axios from '../api/axios';
 import Loading from '../components/Loading';
 
 const MyPage = () => {
-    const { mark } = useBookmark();
+    const { mark, deleteMark } = useBookmark();
     const [userData, setUserData] = useState(null);
     const router = useNavigate();
     const [movieData, setMovieData] = useState([]);
     const [loading, setLoading] = useState(true);
-    const ref = useRef(0); // 초기값 설정
+    const ref = useRef(0);
 
     const imgHandler = (id) => {
         router(`/main/${id}`);
+    };
+
+    const deleteHandler = (e) => {
+        deleteMark(e.target.value);
     };
 
     useEffect(() => {
@@ -58,20 +62,29 @@ const MyPage = () => {
             {mark.length > 0 ? (
                 <div className='relative flex  flex-wrap'>
                     {movieData.map((item) => (
-                        <div
-                            key={ref.current++}
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                imgHandler(item.id);
-                            }}
-                            className='w-1/3 relative lg:w-[300px] rounded-md cursor-pointer flex flex-col justify-center items-center flex-wrap'
-                        >
-                            <img
-                                className='scale-95 hover:scale-100 rounded-md transition w-full'
-                                src={`https://image.tmdb.org/t/p/w1280/${item.backdrop_path}`}
-                                alt={item.title}
-                            />
-                            <div className='text-white'>{item.title}</div>
+                        <div key={ref.current++} className='relative'>
+                            <div
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    imgHandler(item.id);
+                                }}
+                                className='relative w-full md:w-[300px] rounded-md cursor-pointer flex flex-col justify-center items-center flex-wrap'
+                            >
+                                <img
+                                    className='scale-95 hover:scale-100 rounded-md transition w-full'
+                                    src={`https://image.tmdb.org/t/p/w1280/${item.backdrop_path}`}
+                                    alt={item.title}
+                                />
+                                <div className='text-white'>{item.title}</div>
+                            </div>
+                            <button
+                                onClick={deleteHandler}
+                                value={item.id}
+                                name={item.title}
+                                className='absolute top-2 right-5 text-2xl text-white [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] hover:scale-125 transition'
+                            >
+                                X
+                            </button>
                         </div>
                     ))}
                 </div>
