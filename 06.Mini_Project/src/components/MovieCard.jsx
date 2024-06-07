@@ -91,7 +91,9 @@ const MovieCard = ({ type, data }) => {
                                 className='rounded-t-md transition w-full h-[240px] mb:h-[250px] xl:h-[350px]'
                                 src={`https://image.tmdb.org/t/p/w1280/${item.backdrop_path}`}
                             />
-                            <div className='text-white text-center bg-slate-950'>{item.title ? item.title : '제목 정보 없음'}</div>
+                            <div className='text-white text-center bg-slate-950 rounded-b-md'>
+                                {item.title ? item.title : '제목 정보 없음'}
+                            </div>
                         </SwiperSlide>
                     ))}
                 </Swiper>

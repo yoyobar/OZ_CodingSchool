@@ -3,12 +3,20 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import requests from '../api/request';
 import Loading from './Loading';
+import { useBookmark, useModal } from '../store';
 
 const MovieBrowse = () => {
     const [movies, setMovies] = useState([]);
     const router = useNavigate();
     const [isLoading, setIsLoading] = useState(false);
     const [page, setPage] = useState(1);
+    const { setMark } = useBookmark();
+    const { modalOn } = useModal();
+
+    const bookmarkHandler = (e) => {
+        setMark(e.target.value);
+        modalOn(`북마크 추가됨 ${e.target.name}`);
+    };
 
     useEffect(() => {
         const handleObserver = (entries) => {
@@ -64,18 +72,29 @@ const MovieBrowse = () => {
                         truncatedTitle = `${item.title.substring(0, 12)}...`;
                     }
                     return (
-                        <div
-                            onClick={() => {
-                                imgHandler(item.id);
-                            }}
-                            className='w-1/3 lg:w-[300px] rounded-md cursor-pointer flex flex-col justify-center items-center flex-wrap'
-                            key={item.id}
-                        >
-                            <img
-                                className='scale-95 hover:scale-100 rounded-md transition w-full'
-                                src={`https://image.tmdb.org/t/p/w1280/${item.backdrop_path}`}
-                            />
-                            <div className='text-white'>{truncatedTitle}</div>
+                        <div key={item.id} className='relative'>
+                            <div
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    imgHandler(item.id);
+                                }}
+                                className='w-1/3 relative lg:w-[300px] rounded-md cursor-pointer flex flex-col justify-center items-center flex-wrap'
+                            >
+                                <img
+                                    className='scale-95 hover:scale-100 rounded-md transition w-full'
+                                    src={`https://image.tmdb.org/t/p/w1280/${item.backdrop_path}`}
+                                />
+
+                                <div className='text-white'>{truncatedTitle}</div>
+                            </div>
+                            <button
+                                onClick={bookmarkHandler}
+                                value={item.id}
+                                name={item.title}
+                                className='absolute bottom-10 right-8 text-2xl text-white [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] hover:scale-125 transition'
+                            >
+                                ▲
+                            </button>
                         </div>
                     );
                 })}
