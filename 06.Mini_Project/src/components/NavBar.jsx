@@ -37,7 +37,7 @@ const UnAuthorizedNav = () => {
                     onClick={() => {
                         router('/');
                     }}
-                    className='text-xl font-bold cursor-pointer text-black hover:text-gray-400'
+                    className='text-xl font-bold cursor-pointer text-white '
                 >
                     Movie App
                 </div>
@@ -108,7 +108,7 @@ const AuthorizedNav = () => {
                     onClick={() => {
                         router('/');
                     }}
-                    className='text-xl font-bold cursor-pointer hover:text-gray-400'
+                    className='text-xl font-bold cursor-pointer  text-white'
                 >
                     Movie App
                 </div>

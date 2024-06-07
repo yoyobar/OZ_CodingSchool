@@ -92,9 +92,6 @@ const MovieCard = ({ type, data }) => {
                                 src={`https://image.tmdb.org/t/p/w1280/${item.backdrop_path}`}
                             />
                             <div className='text-white text-center bg-slate-950'>{item.title ? item.title : '제목 정보 없음'}</div>
-                            <div className='text-center text-white bg-slate-950 rounded-b-md'>
-                                {type !== 'REGISTER' && item.vote_average}
-                            </div>
                         </SwiperSlide>
                     ))}
                 </Swiper>

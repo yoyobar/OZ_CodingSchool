@@ -22,6 +22,7 @@ html {
 
 *::-webkit-scrollbar-thumb {
     background-color: #ddd;
+    border-radius: 10px;
 }
 
 @layer utilities {

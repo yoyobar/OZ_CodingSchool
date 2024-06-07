@@ -14,7 +14,7 @@ const MyPage = () => {
 
     if (mark.length === 0)
         return (
-            <div className='ml-4 flex flex-col gap-4'>
+            <div className='ml-4 flex flex-col gap-4 pt-[100px]'>
                 <div className='flex gap-2 items-center text-xl font-bold text-white mb-2'>
                     <img className='w-[50px] h-[50px] rounded-md' src={userData?.photoURL} />
                     <div>{userData?.email}, 환영합니다.</div>

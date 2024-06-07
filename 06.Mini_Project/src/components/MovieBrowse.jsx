@@ -79,8 +79,8 @@ const MovieBrowse = () => {
                         </div>
                     );
                 })}
+                <div id='observer'></div>
             </div>
-            <div id='observer'></div>
             {isLoading && <Loading />}
         </>
     );

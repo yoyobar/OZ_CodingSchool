@@ -13,13 +13,13 @@ import MyPage from './pages/MyPage';
 
 const Layout = () => {
     return (
-        <div className='select-none'>
-            <Navbar />;
-            <div className='relative top-12'>
+        <>
+            <Navbar />
+            <div className='fixed select-none w-full h-[100vh] overflow-y-auto'>
                 <Message />
-                <Outlet />;
+                <Outlet />
             </div>
-        </div>
+        </>
     );
 };
 

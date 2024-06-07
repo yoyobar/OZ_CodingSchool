@@ -10,6 +10,7 @@ const MovieDetail = () => {
     const { id } = useParams();
     const [detail, setDetail] = useState('');
     const [loading, setLoading] = useState(true);
+    const [imageLoading, setImageLoading] = useState(true);
     const router = useNavigate();
 
     const buttonHandler = () => {
@@ -30,31 +31,27 @@ const MovieDetail = () => {
 
     return (
         <div>
-            <div onClick={buttonHandler} className='bg-black absolute -top-[90px] w-full left-0 z-30 opacity-45 h-[100vh]'></div>
             <div onClick={buttonHandler} className='text-white cursor-pointer absolute text-3xl font-bold right-6 top-16 z-40'>
                 X
             </div>
-            <div className='w-full h-full relative z-40 mt-4'>
-                <div className='w-full h-full p-4 gap-1 flex'>
-                    <div className='relative rounded-md bg-slate-700 lg:h-full'>
+            <div className='relative mt-10 justify-center '>
+                <div className='rounded-md flex justify-center flex-col max-h-[1080px]'>
+                    <nav className='rounded-md lg:flex flex-col max-h-[1080px]'>
                         <img
-                            className='rounded-md min-h-[300px] h-full w-full'
-                            src={`https://image.tmdb.org/t/p/original/${detail.backdrop_path}`}
+                            className='rounded-md max-h-[1080px]'
+                            src={`${imageLoading ? 'http://via.placeholder.com/1920x1080' : `https://image.tmdb.org/t/p/original/${detail.backdrop_path}`}`}
                             alt={detail.title}
+                            onLoad={() => {
+                                setImageLoading(false);
+                            }}
                         />
-                        <div className='absolute bottom-0 w-full bg-gradient-to-t from-black h-[200px]'></div>
-                        <nav className='lg:hidden absolute w-full bg-slate-700 flex flex-col gap-4 p-4'>
-                            <DetailTitle {...detail} />
-                            <DetailTag genres={detail.genres} />
-                            <DetailDes description={detail.overview} />
-                        </nav>
-                    </div>
-                    <nav className='hidden lg:flex flex-col gap-1 bg-slate-700 w-[1200px] min-h-[500px] rounded-md p-4'>
-                        <DetailTitle {...detail} />
-                        <DetailTag genres={detail.genres} />
-                        <DetailDes description={detail.overview} />
                     </nav>
                 </div>
+                <nav className='w-full bg-gradient-to-t rounded-b-md from-black to-transparent flex flex-col gap-4 p-4 lg:absolute lg:bottom-0'>
+                    <DetailTitle {...detail} />
+                    <DetailTag genres={detail.genres} />
+                    <DetailDes description={detail.overview} />
+                </nav>
             </div>
         </div>
     );
