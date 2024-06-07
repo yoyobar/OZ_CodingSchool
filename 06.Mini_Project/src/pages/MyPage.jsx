@@ -41,7 +41,11 @@ const MyPage = () => {
     return (
         <div className='ml-4 flex flex-col gap-4 pt-[100px]'>
             <div className='flex gap-2 items-center text-xl font-bold text-white mb-2'>
-                <img className='w-[50px] h-[50px] rounded-md' src={userData?.photoURL} alt='User Avatar' />
+                <img
+                    className='w-[50px] h-[50px] rounded-md'
+                    src={userData?.photoURL || 'http://via.placeholder.com/50x50'}
+                    alt='User Avatar'
+                />
                 <div>{userData?.email}, 환영합니다.</div>
             </div>
             <button
@@ -72,7 +76,7 @@ const MyPage = () => {
                     ))}
                 </div>
             ) : (
-                <div>북마크 목록이 없습니다!</div>
+                <div className='text-2xl font-mono text-white'>북마크 목록이 없습니다!</div>
             )}
         </div>
     );

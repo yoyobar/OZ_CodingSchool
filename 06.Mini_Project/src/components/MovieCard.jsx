@@ -51,6 +51,7 @@ const MovieCard = ({ type, data }) => {
                 break;
             case 'SEARCH':
                 setMovies(filterMovie(data));
+                setLoading(false);
                 break;
         }
     }, [type, data]);
@@ -88,7 +89,7 @@ const MovieCard = ({ type, data }) => {
                             key={ref.current++}
                         >
                             <img
-                                className='rounded-t-md transition w-full h-[240px] mb:h-[250px] xl:h-[350px]'
+                                className={`rounded-t-md transition w-full h-[240px] mb:h-[250px] xl:h-[350px]`}
                                 src={`https://image.tmdb.org/t/p/w1280/${item.backdrop_path}`}
                             />
                             <div className='text-white text-center bg-slate-950 rounded-b-md'>

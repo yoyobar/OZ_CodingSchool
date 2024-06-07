@@ -29,7 +29,7 @@ const Message = () => {
 
     return (
         <>
-            <div className='absolute flex flex-col gap-2 bottom-10 right-10 min-w-[240px] p-2 bg-indigo-700 text-white rounded-md z-50'>
+            <div className='fixed flex flex-col gap-2 bottom-10 right-10 min-w-[240px] p-2 bg-indigo-700 text-white rounded-md z-50'>
                 <div>{text}</div>
                 <div className='h-[4px] bg-green-600 rounded-md' style={{ width: `${(indicator / 3000) * 100}%` }}></div>
             </div>
