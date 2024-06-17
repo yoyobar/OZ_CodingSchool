@@ -1,0 +1,57 @@
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    background: var(--bg-color-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.todo-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.todo-item input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    background: var(--bg-color-light);
+}
+
+.todo-item span {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    accent-color: #007bff;
+}
+
+.todo-item button {
+    padding: 10px;
+    max-width: 80px;
+    margin-left: 8px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    background: var(--primary-color);
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.todo-item button:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.todo-item.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
